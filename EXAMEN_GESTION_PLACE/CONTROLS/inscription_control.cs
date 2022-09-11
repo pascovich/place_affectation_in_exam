@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EXAMEN_GESTION_PLACE.CLASSES;
+//using System.Configuration
 
 namespace EXAMEN_GESTION_PLACE.CONTROLS
 {
@@ -150,6 +151,17 @@ MessageBoxIcon.Question);
             {
                 MessageBox.Show("ID doit etre rensigne");
             }
+        }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
+            string d1 = textBox1.Text;
+
+            var mydata = QG.CreateQrCode(d1, QRCoder.QRCodeGenerator.ECCLevel.H);
+
+            var code = new QRCoder.QRCode(mydata);
+            pictureEdit2.Image = code.GetGraphic(50);
         }
     }
 }

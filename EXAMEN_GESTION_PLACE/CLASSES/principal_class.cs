@@ -319,6 +319,35 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
             }
             return _id.ToString();
         }
+
+        public string GetQllInfoQr(String champ, String table, String champcondition1, String valeur1)
+        {
+            string _id = string.Empty;
+
+            innitialiseConnect();
+            if (!con.State.ToString().Trim().ToLower().Equals("open")) con.Open();
+            try
+            {
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandText = "SELECT DISTINCT " + champ + " FROM " + table + " WHERE " + champcondition1 + " = @valeur1";
+                cmd.Parameters.Add(new SqlParameter("@valeur1", SqlDbType.NVarChar)).Value = valeur1;
+                SqlDataReader dr = null;
+                dr = cmd.ExecuteReader();
+                if (dr.HasRows)
+                    while (dr.Read())
+                        _id = dr.GetFieldValue<object>(0).ToString();
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return _id.ToString();
+        }
         private static void setParameter(SqlCommand cmd, string name, DbType type, int length, object paramValue)
         {
             IDbDataParameter a = cmd.CreateParameter();
@@ -620,7 +649,36 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
                 MessageBox.Show(ex.Message);
             }
         }
-        
+
+        //public void operation_exemple_test(exemple_class foc, PictureBox pic)
+        public void operation_exemple_test(exemple_class foc, PictureEdit pic)
+        {
+            try
+            {
+                innitialiseConnect();
+                con.Open();
+                cmd = new SqlCommand("execute pro_exemple_qr @code,@champ,@image_qr", con);
+                cmd.Parameters.AddWithValue("@code", foc.Id);
+                cmd.Parameters.AddWithValue("@champ", foc.Champ);
+                MemoryStream m = new MemoryStream();
+               // pic.Image.Save(m, pic.Image.RawFormat);
+                pic.Image.Save(m, System.Drawing.Imaging.ImageFormat.Jpeg);
+                //byte[] im = m.GetBuffer();
+                byte[] im = m.ToArray();
+                //SqlParameter sp = new SqlParameter("@image_qr", SqlDbType.Image);
+                cmd.Parameters.AddWithValue("@image_qr", im);
+                //sp.Value = im;
+                //cmd.Parameters.Add(sp);
+                
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("operation reussi avec succes");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
 
         public void operation_affectation_place(affectation_place_class foc)
         {
