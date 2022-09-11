@@ -47,8 +47,8 @@
             this.sECTIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pRONOTIONFACULTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aFFECTATIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel_principal = new System.Windows.Forms.Panel();
             this.fACULTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel_principal = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -287,7 +287,7 @@
             this.sALLEToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sALLEToolStripMenuItem.Image")));
             this.sALLEToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.sALLEToolStripMenuItem.Name = "sALLEToolStripMenuItem";
-            this.sALLEToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sALLEToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.sALLEToolStripMenuItem.Text = "SESSION";
             this.sALLEToolStripMenuItem.Click += new System.EventHandler(this.sALLEToolStripMenuItem_Click);
             // 
@@ -296,7 +296,7 @@
             this.cOURSToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cOURSToolStripMenuItem.Image")));
             this.cOURSToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cOURSToolStripMenuItem.Name = "cOURSToolStripMenuItem";
-            this.cOURSToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cOURSToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.cOURSToolStripMenuItem.Text = "COURS";
             this.cOURSToolStripMenuItem.Click += new System.EventHandler(this.cOURSToolStripMenuItem_Click);
             // 
@@ -305,7 +305,7 @@
             this.aNNEEACToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aNNEEACToolStripMenuItem.Image")));
             this.aNNEEACToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.aNNEEACToolStripMenuItem.Name = "aNNEEACToolStripMenuItem";
-            this.aNNEEACToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aNNEEACToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.aNNEEACToolStripMenuItem.Text = "ANNEE-AC";
             this.aNNEEACToolStripMenuItem.Click += new System.EventHandler(this.aNNEEACToolStripMenuItem_Click);
             // 
@@ -326,7 +326,7 @@
             this.pRONOTIONFACULTEToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pRONOTIONFACULTEToolStripMenuItem.Image")));
             this.pRONOTIONFACULTEToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.pRONOTIONFACULTEToolStripMenuItem.Name = "pRONOTIONFACULTEToolStripMenuItem";
-            this.pRONOTIONFACULTEToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pRONOTIONFACULTEToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.pRONOTIONFACULTEToolStripMenuItem.Text = "PROMOTION";
             this.pRONOTIONFACULTEToolStripMenuItem.Click += new System.EventHandler(this.pRONOTIONFACULTEToolStripMenuItem_Click);
             // 
@@ -335,9 +335,17 @@
             this.aFFECTATIONToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aFFECTATIONToolStripMenuItem.Image")));
             this.aFFECTATIONToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.aFFECTATIONToolStripMenuItem.Name = "aFFECTATIONToolStripMenuItem";
-            this.aFFECTATIONToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aFFECTATIONToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.aFFECTATIONToolStripMenuItem.Text = "AFFECTATION";
             this.aFFECTATIONToolStripMenuItem.Click += new System.EventHandler(this.aFFECTATIONToolStripMenuItem_Click);
+            // 
+            // fACULTEToolStripMenuItem
+            // 
+            this.fACULTEToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fACULTEToolStripMenuItem.Image")));
+            this.fACULTEToolStripMenuItem.Name = "fACULTEToolStripMenuItem";
+            this.fACULTEToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.fACULTEToolStripMenuItem.Text = "FACULTE";
+            this.fACULTEToolStripMenuItem.Click += new System.EventHandler(this.fACULTEToolStripMenuItem_Click);
             // 
             // panel_principal
             // 
@@ -346,14 +354,6 @@
             this.panel_principal.Name = "panel_principal";
             this.panel_principal.Size = new System.Drawing.Size(1150, 674);
             this.panel_principal.TabIndex = 2;
-            // 
-            // fACULTEToolStripMenuItem
-            // 
-            this.fACULTEToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fACULTEToolStripMenuItem.Image")));
-            this.fACULTEToolStripMenuItem.Name = "fACULTEToolStripMenuItem";
-            this.fACULTEToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.fACULTEToolStripMenuItem.Text = "FACULTE";
-            this.fACULTEToolStripMenuItem.Click += new System.EventHandler(this.fACULTEToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -365,6 +365,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

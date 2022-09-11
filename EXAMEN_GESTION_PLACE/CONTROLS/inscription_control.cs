@@ -75,7 +75,7 @@ namespace EXAMEN_GESTION_PLACE.CONTROLS
                 j.Ref_affecter = int.Parse(textBox2.Text);
                 j.Ref_etudiant = int.Parse(textBox1.Text);
                 j.Ref_annee = int.Parse(principal_class.GetInstance().GetID("id_annee","t_annee_ac","designation_annee",cb_annee_ac.Text));
-                principal_class.GetInstance().operation_inscription(j);
+                principal_class.GetInstance().operation_inscription(j,pictureEdit2);
                 gunaDataGridView3.DataSource = principal_class.GetInstance().GetTable("inscription_view");
                 init();
             }
@@ -95,6 +95,8 @@ namespace EXAMEN_GESTION_PLACE.CONTROLS
             cb_annee_ac.Text = "";
             textBox1.Text = "";
             textBox2.Text = "";
+            pictureEdit2.Text = "";
+            pictureEdit1.Text = "";
         }
 
         private void gunaDataGridView3_DoubleClick(object sender, EventArgs e)
@@ -105,6 +107,7 @@ namespace EXAMEN_GESTION_PLACE.CONTROLS
                 txt_nom.Text = gunaDataGridView3.CurrentRow.Cells["nom_complet"].Value.ToString();
                 txt_adress.Text = gunaDataGridView3.CurrentRow.Cells["matricule"].Value.ToString();
                 cb_annee_ac.Text = gunaDataGridView3.CurrentRow.Cells["designation_annee"].Value.ToString();
+                pictureEdit2.EditValue = gunaDataGridView3.CurrentRow.Cells["imager_qr"].FormattedValue;
             }
             catch(Exception ex)
             {
@@ -122,7 +125,7 @@ namespace EXAMEN_GESTION_PLACE.CONTROLS
                 j.Ref_affecter = int.Parse(textBox2.Text);
                 j.Ref_etudiant = int.Parse(textBox1.Text);
                 j.Ref_annee = int.Parse(principal_class.GetInstance().GetID("id_annee", "t_annee_ac", "designation_annee", cb_annee_ac.Text));
-                principal_class.GetInstance().operation_inscription(j);
+                principal_class.GetInstance().operation_inscription(j,pictureEdit2);
                 gunaDataGridView3.DataSource = principal_class.GetInstance().GetTable("inscription_view");
                 init();
             }

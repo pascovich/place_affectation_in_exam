@@ -660,15 +660,12 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
                 cmd = new SqlCommand("execute pro_exemple_qr @code,@champ,@image_qr", con);
                 cmd.Parameters.AddWithValue("@code", foc.Id);
                 cmd.Parameters.AddWithValue("@champ", foc.Champ);
+
                 MemoryStream m = new MemoryStream();
-               // pic.Image.Save(m, pic.Image.RawFormat);
                 pic.Image.Save(m, System.Drawing.Imaging.ImageFormat.Jpeg);
-                //byte[] im = m.GetBuffer();
                 byte[] im = m.ToArray();
-                //SqlParameter sp = new SqlParameter("@image_qr", SqlDbType.Image);
                 cmd.Parameters.AddWithValue("@image_qr", im);
-                //sp.Value = im;
-                //cmd.Parameters.Add(sp);
+                
                 
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("operation reussi avec succes");
@@ -796,18 +793,25 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
             }
         }
 
-        public void operation_inscription(inscription_class foc)
+        public void operation_inscription(inscription_class foc,PictureEdit pic)
         {
             try
             {
                 innitialiseConnect();
                 con.Open();
-                cmd = new SqlCommand("execute pro_inscription @code,@ref_affecter,@ref_etudiant,@ref_annee,@date_inscription", con);
+                cmd = new SqlCommand("execute pro_inscription @code,@ref_affecter,@ref_etudiant,@ref_annee,@date_inscription,@imager_qr", con);
                 cmd.Parameters.AddWithValue("@code", foc.Id);
                 cmd.Parameters.AddWithValue("@ref_affecter", foc.Ref_affecter);
                 cmd.Parameters.AddWithValue("@ref_etudiant", foc.Ref_etudiant);
                 cmd.Parameters.AddWithValue("@ref_annee", foc.Ref_annee);
                 cmd.Parameters.AddWithValue("@date_inscription", foc.Date_inscr);
+
+                MemoryStream m = new MemoryStream();
+                pic.Image.Save(m, System.Drawing.Imaging.ImageFormat.Jpeg);
+                byte[] im = m.ToArray();
+                cmd.Parameters.AddWithValue("@imager_qr", im);
+
+
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("operation reussi avec succes");
             }
@@ -912,6 +916,12 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
                 dt.Dispose(); con.Close();
             }
             return dst;
+        }
+        public void generaterandom()
+        {
+            Random rnd = new Random();
+            MessageBox.Show(rnd.Next().ToString());
+           
         }
     }
 }

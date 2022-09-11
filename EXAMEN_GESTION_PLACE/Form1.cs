@@ -80,5 +80,10 @@ namespace EXAMEN_GESTION_PLACE
             affectation_frm f = new affectation_frm();
             f.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //principal_class.GetInstance().generaterandom();
+        }
     }
 }
