@@ -513,6 +513,46 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
             return dst;
         }
 
+        public DataSet search_data_depend_date(string nomTable, string nomchamp, DateTime val1)
+        {
+            DataSet dst;
+            try
+            {
+                innitialiseConnect();
+                if (!con.State.ToString().ToLower().Equals("open")) con.Open();
+                cmd = new SqlCommand("SELECT * FROM " + nomTable + " WHERE id_paiement=@date1", con);
+                
+                setParameter(cmd, "@date1", DbType.DateTime, 30, val1);
+                dt = new SqlDataAdapter(cmd);
+                dst = new DataSet();
+                dt.Fill(dst, nomTable);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                dt.Dispose(); con.Close();
+            }
+            return dst;
+        }
+        public DataTable GetTabledependdate(string nomTable, DateTime val1)
+        {
+            innitialiseConnect();
+            if (!con.State.ToString().Trim().ToLower().Equals("open")) ;
+            con.Open();
+            cmd = new SqlCommand("SELECT * FROM " + nomTable + " WHERE date_examen=@date1", con);
+
+            setParameter(cmd, "@date1", DbType.DateTime, 30, val1);
+            dt = null;
+            dt = new SqlDataAdapter(cmd);
+            ds = new DataSet();
+            
+            dt.Fill(ds);
+            con.Close();
+            return ds.Tables[0];
+        }
         public DataSet get_Report_S(string nomTable, string idTable)
         {
             DataSet dst;
