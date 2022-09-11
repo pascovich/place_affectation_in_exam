@@ -1,0 +1,1191 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Pdf.v15.2.Drawing</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Pdf.PdfGraphicsJpegImageQuality">
+
+            <summary>
+                <para>Specifies how images are exported to PDF format.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Pdf.PdfGraphicsJpegImageQuality.High">
+            <summary>
+                <para>The resulting Jpeg image quality is high. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Pdf.PdfGraphicsJpegImageQuality.Highest">
+            <summary>
+                <para>The resulting Jpeg image quality is the highest. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Pdf.PdfGraphicsJpegImageQuality.Low">
+            <summary>
+                <para>The resulting Jpeg image quality is low.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Pdf.PdfGraphicsJpegImageQuality.Lowest">
+            <summary>
+                <para>The resulting Jpeg image quality is the lowest.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Pdf.PdfGraphicsJpegImageQuality.Medium">
+            <summary>
+                <para>The resulting Jpeg image quality is medium. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Pdf.PdfGraphicsTextOrigin">
+
+            <summary>
+                <para>Contains values specifying how the text is positioned  on the page content with respect to the origin.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Pdf.PdfGraphicsTextOrigin.Baseline">
+            <summary>
+                <para>The text is positioned against a base line with respect to the origin. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Pdf.PdfGraphicsTextOrigin.TopLeftCorner">
+            <summary>
+                <para>The text is positioned in the top left corner with respect to the origin. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Pdf.PdfGraphics">
+
+            <summary>
+                <para>Implements drawing on a PDF page.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PdfGraphics class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.AddLinkToPage(System.Drawing.RectangleF,System.Int32,System.Single)">
+            <summary>
+                <para>Adds a link to the page with specified page number and zoom factor.
+</para>
+            </summary>
+            <param name="linkArea">
+		A <see cref="T:System.Drawing.RectangleF"/> structure that specifies the area on the page where a link is added.   
+
+
+            </param>
+            <param name="pageNumber">
+		An integer value specifying the page number.
+
+            </param>
+            <param name="zoom">
+		The zoom level by which the document is zoomed after a link is clicked on the page.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.AddLinkToPage(System.Drawing.RectangleF,System.Int32,System.Single,System.Single)">
+            <summary>
+                <para>Adds a link to the page with the specified page number and page destination.
+
+</para>
+            </summary>
+            <param name="linkArea">
+		A <see cref="T:System.Drawing.RectangleF"/> structure that specifies the area on the page where a link is added.   
+
+            </param>
+            <param name="pageNumber">
+		An integer value specifying the page number.
+
+            </param>
+            <param name="destinationX">
+		A <see cref="T:System.Single"/> object that is the horizontal coordinate of a page destination where the link is referred to.
+
+            </param>
+            <param name="destinationY">
+		A <see cref="T:System.Single"/> object that is the vertical coordinate of a page destination where the link is referred to.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.AddLinkToPage(System.Drawing.RectangleF,System.Int32)">
+            <summary>
+                <para>Adds a link to the page with the specified page number.
+
+</para>
+            </summary>
+            <param name="linkArea">
+		A <see cref="T:System.Drawing.RectangleF"/> structure that specifies the area on the page where a link is added.   
+
+            </param>
+            <param name="pageNumber">
+		An integer value specifying the page number.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.AddLinkToPage(System.Drawing.RectangleF,System.Int32,System.Single,System.Single,System.Single)">
+            <summary>
+                <para>Adds a link to the page with the specified page number, page destination, and zoom factor.
+
+</para>
+            </summary>
+            <param name="linkArea">
+		A <see cref="T:System.Drawing.RectangleF"/> structure that specifies the area on the page where a link is added.   
+
+            </param>
+            <param name="pageNumber">
+		An integer value specifying the page number.
+
+            </param>
+            <param name="destinationX">
+		A <see cref="T:System.Single"/> object that is the horizontal coordinate of a page destination where the link is referred to.
+
+            </param>
+            <param name="destinationY">
+		A <see cref="T:System.Single"/> object that is the vertical coordinate of a page destination where the link is referred to.
+
+            </param>
+            <param name="zoom">
+		The zoom level by which the document is zoomed after a link is clicked on the page.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.AddLinkToUri(System.Drawing.RectangleF,System.Uri)">
+            <summary>
+                <para>Adds a link to the Uri at the specified link area on the page. 
+
+</para>
+            </summary>
+            <param name="linkArea">
+		A <see cref="T:System.Drawing.RectangleF"/> structure that specifies the area on the page where a link is added.   
+
+
+            </param>
+            <param name="uri">
+		A <see cref="T:System.Uri"/> object that is the link URI.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.AddToPageBackground(DevExpress.Pdf.PdfPage,System.Single,System.Single)">
+            <summary>
+                <para>Adds graphics  to a PDF page background with the specified horizontal and vertical resolutions. 
+</para>
+            </summary>
+            <param name="page">
+		A <see cref="T:DevExpress.Pdf.PdfPage"/> object that is the page where graphics are drawn.
+
+            </param>
+            <param name="dpiX">
+		A <see cref="T:System.Single"/> object that represents the value, in dots per inch, for the horizontal resolution. 
+
+            </param>
+            <param name="dpiY">
+		A <see cref="T:System.Single"/> object that represents the value, in dots per inch, for the vertical resolution. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.AddToPageBackground(DevExpress.Pdf.PdfPage)">
+            <summary>
+                <para>Adds graphics to a PDF page background. 
+</para>
+            </summary>
+            <param name="page">
+		A <see cref="T:DevExpress.Pdf.PdfPage"/> object that is the page in the document where graphics are drawn.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.AddToPageForeground(DevExpress.Pdf.PdfPage,System.Single,System.Single)">
+            <summary>
+                <para>Adds graphics to a PDF page foreground with the specified horizontal and vertical resolutions. 
+</para>
+            </summary>
+            <param name="page">
+		A <see cref="T:DevExpress.Pdf.PdfPage"/> object that is the page in the document where graphics are drawn.
+
+            </param>
+            <param name="dpiX">
+		A <see cref="T:System.Single"/> object that represents the value, in dots per inch, for the horizontal resolution. 
+
+            </param>
+            <param name="dpiY">
+		A <see cref="T:System.Single"/> object that represents the value, in dots per inch, for the vertical resolution. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.AddToPageForeground(DevExpress.Pdf.PdfPage)">
+            <summary>
+                <para>Adds graphics to a PDF page foreground. 
+</para>
+            </summary>
+            <param name="page">
+		A <see cref="T:DevExpress.Pdf.PdfPage"/> object that is the page in the document where graphics are drawn.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Pdf.PdfGraphics.ConvertImagesToJpeg">
+            <summary>
+                <para>Gets or sets a value that specifies whether bitmap images are converted to the Jpeg format.
+</para>
+            </summary>
+            <value><b>true</b>, to convert bitmap images to the Jpeg format; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Pdf.PdfGraphics.DefaultDpi">
+            <summary>
+                <para>The default DPI of a page that is the default size to display text and other content on the page.  
+
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawBezier(System.Drawing.Pen,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+                <para>Draws a Bezier spline defined by four <b>Point</b> structures.
+</para>
+            </summary>
+            <param name="pen">
+		A <see cref="T:System.Drawing.Pen"/> structure that determines the color, width, and style of the curve. 
+
+            </param>
+            <param name="pt1">
+		A <see cref="T:System.Drawing.Point"/> structure that is the starting point of the curve. 
+
+            </param>
+            <param name="pt2">
+		A <see cref="T:System.Drawing.Point"/> structure that is the first control point of the curve. 
+
+            </param>
+            <param name="pt3">
+		A <see cref="T:System.Drawing.Point"/> structure that is the second control point of the curve. 
+
+            </param>
+            <param name="pt4">
+		A <see cref="T:System.Drawing.Point"/> structure that is the final point of the curve. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawBeziers(System.Drawing.Pen,System.Drawing.PointF[])">
+            <summary>
+                <para>Draws a series of Bezier splines from an array of <b>PointF</b> structures.
+</para>
+            </summary>
+            <param name="pen">
+		A <see cref="T:System.Drawing.Pen"/> structure that determines the color, width, and style of the curve. 
+
+            </param>
+            <param name="points">
+		An array of <see cref="T:System.Drawing.PointF"/> structures that represent the points that determine the curve. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawEllipse(System.Drawing.Pen,System.Drawing.RectangleF)">
+            <summary>
+                <para>Draws an ellipse specified by a <b>RectangleF</b> structure.
+</para>
+            </summary>
+            <param name="pen">
+		A <see cref="T:System.Drawing.Pen"/> structure that determines the color, width, and style of the ellipse. 
+
+            </param>
+            <param name="rect">
+		A <see cref="T:System.Drawing.RectangleF"/> structure that represents the boundaries of the ellipse. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawImage(System.Drawing.Image,System.Drawing.RectangleF)">
+            <summary>
+                <para>Draws the specified Image with bounds. 
+</para>
+            </summary>
+            <param name="image">
+		 An <see cref="T:System.Drawing.Image"/> object that specifies the image to draw. 
+
+            </param>
+            <param name="bounds">
+		A <see cref="T:System.Drawing.RectangleF"/> structure that specifies the image bounds. 
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawImage(System.Drawing.Image,System.Drawing.PointF)">
+            <summary>
+                <para>Draws the specified Image in its original size at the specified location. 
+
+</para>
+            </summary>
+            <param name="image">
+		 An <see cref="T:System.Drawing.Image"/> object that specifies the image to draw. 
+
+            </param>
+            <param name="location">
+		A <see cref="T:System.Drawing.PointF"/> structure that represents the image location. 
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawImage(System.Byte[],System.Drawing.PointF)">
+            <summary>
+                <para>Draws the specified Image using the byte array data at the specified location. 
+</para>
+            </summary>
+            <param name="data">
+		An array of bytes representing an image to draw.
+
+            </param>
+            <param name="location">
+		A <see cref="T:System.Drawing.PointF"/> structure that represents the image location. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawImage(System.IO.Stream,System.Drawing.PointF)">
+            <summary>
+                <para>Draws an image at the specified location using the stream data. 
+</para>
+            </summary>
+            <param name="data">
+		A <see cref="T:System.IO.Stream"/> class descendant, specifying the stream with the image data.
+
+            </param>
+            <param name="location">
+		A <see cref="T:System.Drawing.PointF"/> structure that represents the image location. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawImage(System.Byte[],System.Drawing.RectangleF)">
+            <summary>
+                <para>Draws an image with bounds using the byte data array. 
+</para>
+            </summary>
+            <param name="data">
+		An array of bytes representing an image to draw.
+
+            </param>
+            <param name="bounds">
+		A <see cref="T:System.Drawing.RectangleF"/> structure that specifies the bounds used to draw an image. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawImage(System.IO.Stream,System.Drawing.RectangleF)">
+            <summary>
+                <para>Draws an image with the bounds and stream. 
+
+</para>
+            </summary>
+            <param name="data">
+		A <see cref="T:System.IO.Stream"/> class descendant, specifying the stream with the image data.
+
+            </param>
+            <param name="bounds">
+		A <see cref="T:System.Drawing.RectangleF"/> structure that specifies the bounds used to draw an image. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawImage(System.Drawing.Image,System.Drawing.RectangleF,System.Drawing.RectangleF,System.Drawing.GraphicsUnit)">
+            <summary>
+                <para>Draws the portion of the specified Image at the specified location in the specified size. 
+
+
+</para>
+            </summary>
+            <param name="image">
+		An <see cref="T:System.Drawing.Image"/> object that specifies the image to draw. 
+
+            </param>
+            <param name="destRect">
+		A <see cref="T:System.Drawing.RectangleF"/> structure that specifies the location and size of the drawn image. The image is scaled to fit the rectangle. 
+
+            </param>
+            <param name="srcRect">
+		A <see cref="T:System.Drawing.RectangleF"/> structure that specifies the portion of the image object to draw.
+
+            </param>
+            <param name="srcUnit">
+		A <see cref="T:System.Drawing.GraphicsUnit"/> enumeration that is the units of measure used by the srcRect parameter. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawLine(System.Drawing.Pen,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+                <para>Draws a line connecting two points on the page specified by the coordinate pairs. 
+</para>
+            </summary>
+            <param name="pen">
+		A <see cref="T:System.Drawing.Pen"/> object that determines the color, width, and style of the line. 
+
+            </param>
+            <param name="x1">
+		A <see cref="T:System.Single"/> object that represents the x-coordinate of the first point. 
+
+            </param>
+            <param name="y1">
+		A <see cref="T:System.Single"/> object that represents the y-coordinate of the first point. 
+
+            </param>
+            <param name="x2">
+		A <see cref="T:System.Single"/> object that represents the x-coordinate of the second point. 
+
+            </param>
+            <param name="y2">
+		A <see cref="T:System.Single"/> object that represents the y-coordinate of the second point. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawLines(System.Drawing.Pen,System.Drawing.PointF[])">
+            <summary>
+                <para>Draws a series of line segments that connect an array of PointF structures. 
+</para>
+            </summary>
+            <param name="pen">
+		A <see cref="T:System.Drawing.Pen"/> object that determines the color, width, and style of the line segments. 
+
+            </param>
+            <param name="points">
+		An array of <see cref="T:System.Drawing.PointF"/> structures that represent the points to connect. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawPath(System.Drawing.Pen,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+                <para>Draws a path on a page. 
+</para>
+            </summary>
+            <param name="pen">
+		A <see cref="T:System.Drawing.Pen"/> object that determines the color, width, and style of the path. 
+
+            </param>
+            <param name="path">
+		A <see cref="T:System.Drawing.Drawing2D.GraphicsPath"/> object to draw.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawPolygon(System.Drawing.Pen,System.Drawing.PointF[])">
+            <summary>
+                <para>Draws a polygon defined by an array of PointF structures. 
+</para>
+            </summary>
+            <param name="pen">
+		A <see cref="T:System.Drawing.Pen"/> object that determines the color, width, and style of the polygon. 
+
+            </param>
+            <param name="points">
+		An array of <see cref="T:System.Drawing.PointF"/> structures that represent the vertices of the polygon. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawRectangle(System.Drawing.Pen,System.Drawing.RectangleF)">
+            <summary>
+                <para>Draws a rectangle specified by a Rectangle structure.
+</para>
+            </summary>
+            <param name="pen">
+		A <see cref="T:System.Drawing.Pen"/> object that determines the color, width, and style of the rectangle. 
+
+            </param>
+            <param name="bounds">
+		A <see cref="T:System.Drawing.Rectangle"/> structure that represents the rectangle to draw. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawString(System.String,System.Drawing.Font,System.Drawing.SolidBrush,System.Single,System.Single)">
+            <summary>
+                <para>Draws the text string at the specified location with the specified Brush and Font objects.
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> object to draw. 
+
+            </param>
+            <param name="font">
+		A <see cref="T:System.Drawing.Font"/> object that defines the text format of the string. 
+
+            </param>
+            <param name="brush">
+		A <see cref="T:System.Drawing.SolidBrush"/> object that determines the color and texture of the drawn text. 
+
+            </param>
+            <param name="x">
+		A <see cref="T:System.Single"/> object that represents the x-coordinate of the upper-left corner of the drawn text. 
+
+            </param>
+            <param name="y">
+		A <see cref="T:System.Single"/> object that represents the y-coordinate of the upper-left corner of the drawn text. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawString(System.String,System.Drawing.Font,System.Drawing.SolidBrush,System.Drawing.RectangleF)">
+            <summary>
+                <para>Draws the specified text in the specified rectangle with the specified SolidBrush and Font objects. 
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> object to draw. 
+
+            </param>
+            <param name="font">
+		A <see cref="T:System.Drawing.Font"/> object that defines the text format of the string. 
+
+            </param>
+            <param name="brush">
+		A <see cref="T:System.Drawing.SolidBrush"/> object that determines the color and texture of the drawn text. 
+
+            </param>
+            <param name="layout">
+		A <see cref="T:System.Drawing.RectangleF"/> structure that specifies the location of the drawn text. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawString(System.String,System.Drawing.Font,System.Drawing.SolidBrush,System.Drawing.RectangleF,DevExpress.Pdf.PdfStringFormat)">
+            <summary>
+                <para>Draws the specified text at the specified rectangle with the specified SolidBrush and Font objects using the formatting attributes of the specified PdfStringFormat. 
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> object to draw. 
+
+            </param>
+            <param name="font">
+		A <see cref="T:System.Drawing.Font"/> object that defines the text format of the string. 
+
+            </param>
+            <param name="brush">
+		A <see cref="T:System.Drawing.SolidBrush"/> object that determines the color and texture of the drawn text. 
+
+            </param>
+            <param name="layout">
+		A <see cref="T:System.Drawing.RectangleF"/> structure that specifies the location of the drawn text. 
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.Pdf.PdfStringFormat"/> that specifies formatting attributes, such as line spacing and alignment, that are applied to the drawn text. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawString(System.String,System.Drawing.Font,System.Drawing.SolidBrush,System.Single,System.Single,DevExpress.Pdf.PdfStringFormat)">
+            <summary>
+                <para>Draws the specified text string at the specified location with the specified SolidBrush and Font objects using the formatting attributes of the specified <see cref="T:DevExpress.Pdf.PdfStringFormat"/>. 
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> object to draw. 
+
+            </param>
+            <param name="font">
+		A <see cref="T:System.Drawing.Font"/> object that defines the text format of the string. 
+
+            </param>
+            <param name="brush">
+		A <see cref="T:System.Drawing.SolidBrush"/> object that determines the color and texture of the drawn text. 
+
+            </param>
+            <param name="x">
+		A <see cref="T:System.Single"/> object that represents the x-coordinate of the upper-left corner of the drawn text. 
+
+            </param>
+            <param name="y">
+		A <see cref="T:System.Single"/> object that represents the y-coordinate of the upper-left corner of the drawn text. 
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.Pdf.PdfStringFormat"/> that specifies formatting attributes, such as line spacing and alignment, that are applied to the drawn text. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawString(System.String,System.Drawing.Font,System.Drawing.SolidBrush,System.Drawing.PointF)">
+            <summary>
+                <para>Draws the specified text string at the specified location with the specified SolidBrush and Font objects. 
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> object to draw. 
+
+            </param>
+            <param name="font">
+		A <see cref="T:System.Drawing.Font"/> object that defines the text format of the string. 
+
+            </param>
+            <param name="brush">
+		A <see cref="T:System.Drawing.SolidBrush"/> object that determines the color and texture of the drawn text. 
+
+            </param>
+            <param name="point">
+		A <see cref="T:System.Drawing.PointF"/> structure that specifies the upper-left corner of the drawn text. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.DrawString(System.String,System.Drawing.Font,System.Drawing.SolidBrush,System.Drawing.PointF,DevExpress.Pdf.PdfStringFormat)">
+            <summary>
+                <para>Draws the specified text string at the specified location with the specified SolidBrush and Font objects using the formatting attributes of the specified <see cref="T:DevExpress.Pdf.PdfStringFormat"/>. 
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> object to draw. 
+
+            </param>
+            <param name="font">
+		A <see cref="T:System.Drawing.Font"/> object that defines the text format of the string. 
+
+            </param>
+            <param name="brush">
+		A <see cref="T:System.Drawing.SolidBrush"/> object that determines the color and texture of the drawn text. 
+
+            </param>
+            <param name="point">
+		A <see cref="T:System.Drawing.PointF"/> structure that specifies the upper-left corner of the drawn text. 
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.Pdf.PdfStringFormat"/> that specifies formatting attributes, such as line spacing and alignment, that are applied to the drawn text. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.FillEllipse(System.Drawing.Brush,System.Drawing.RectangleF)">
+            <summary>
+                <para>Fills the interior of an ellipse defined by a bounding rectangle specified by a <b>RectangleF</b> structure. 
+</para>
+            </summary>
+            <param name="brush">
+		A <see cref="T:System.Drawing.Brush"/> object that represents the brush used to fill the ellipse.
+
+            </param>
+            <param name="rect">
+		A <see cref="T:System.Drawing.RectangleF"/> structure that represents the bounding rectangle that defines the ellipse.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.FillPath(System.Drawing.Brush,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+                <para>Fills the interior of a GraphicsPath. 
+</para>
+            </summary>
+            <param name="brush">
+		A <see cref="T:System.Drawing.Brush"/> that determines the characteristics of the fill. 
+
+            </param>
+            <param name="path">
+		A <see cref="T:System.Drawing.Drawing2D.GraphicsPath"/> that represents the path to fill. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.FillPolygon(System.Drawing.Brush,System.Drawing.PointF[])">
+            <summary>
+                <para>Fills the interior of a polygon defined by an array of points specified by PointF structures. 
+</para>
+            </summary>
+            <param name="brush">
+		A <see cref="T:System.Drawing.Brush"/> object which represents the brush used to fill the polygon.
+
+            </param>
+            <param name="points">
+		Array of <see cref="T:System.Drawing.PointF"/> structures that represent the vertices of the polygon to fill. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.FillRectangle(System.Drawing.Brush,System.Drawing.RectangleF)">
+            <summary>
+                <para>Fills the interior of a rectangle specified by a RectangleF structure. 
+</para>
+            </summary>
+            <param name="brush">
+		A <see cref="T:System.Drawing.Brush"/> object which represents the brush used to fill the rectangle.
+
+            </param>
+            <param name="bounds">
+		A <see cref="T:System.Drawing.RectangleF"/> structure representing the rectangle bounds to fill.  
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.IntersectClip(System.Drawing.RectangleF)">
+            <summary>
+                <para>Updates the clip region of this <see cref="T:DevExpress.Pdf.PdfGraphics"/> object to the intersection of the current clip region and the specified <b>RectangleF</b> structure.
+</para>
+            </summary>
+            <param name="rect">
+		A <see cref="T:System.Drawing.RectangleF"/> structure to intersect with the current clip region.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Pdf.PdfGraphics.JpegImageQuality">
+            <summary>
+                <para>Gets or sets the quality of images in the resulting PDF file.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Pdf.PdfGraphicsJpegImageQuality"/> enumeration value which specifies the quality of images in the resulting PDF file.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.MeasureString(System.String,System.Drawing.Font,DevExpress.Pdf.PdfStringFormat)">
+            <summary>
+                <para>Measures the specified string when drawn with the specified Font and formatted with the specified <see cref="T:DevExpress.Pdf.PdfStringFormat"/>. 
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> to measure.
+
+            </param>
+            <param name="font">
+		A <see cref="T:System.Drawing.Font"/> object that defines the text format of the string. 
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.Pdf.PdfStringFormat"/> object that represents formatting information, such as line spacing, for the string. 
+
+            </param>
+            <returns> A <see cref="T:System.Drawing.SizeF"/> structure that represents the measured size of the string.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.MeasureString(System.String,System.Drawing.Font,System.Drawing.SizeF)">
+            <summary>
+                <para>Measures the specified string when drawn with the specified Font and text layout size. 
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> to measure.
+
+            </param>
+            <param name="font">
+		A <see cref="T:System.Drawing.Font"/> object that defines the text format of the string. 
+
+            </param>
+            <param name="layoutSize">
+		A <see cref="T:System.Drawing.SizeF"/> structure that specifies the maximum layout area for the text. 
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.SizeF"/> structure that represents the measured size of the string.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.MeasureString(System.String,System.Drawing.Font,System.Drawing.SizeF,DevExpress.Pdf.PdfStringFormat)">
+            <summary>
+                <para>Measures the specified string when drawn with the specified Font, text layout size, and format. 
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> to measure.
+
+            </param>
+            <param name="font">
+		A <see cref="T:System.Drawing.Font"/> object that defines the text format of the string. 
+
+            </param>
+            <param name="layoutSize">
+		A <see cref="T:System.Drawing.SizeF"/> structure that specifies the maximum layout area for the text. 
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.Pdf.PdfStringFormat"/> object that represents formatting information, such as line spacing, for the string. 
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.SizeF"/> structure that represents the measured size of the string.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.MeasureString(System.String,System.Drawing.Font)">
+            <summary>
+                <para>Measures the specified string when drawn with the specified Font. 
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> to measure.
+
+            </param>
+            <param name="font">
+		A <see cref="T:System.Drawing.Font"/> object that defines the text format of the string. 
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.SizeF"/> structure that represents the measured size of the string.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.MeasureString(System.String,System.Drawing.Font,System.Drawing.SizeF,DevExpress.Pdf.PdfStringFormat,System.Single,System.Single)">
+            <summary>
+                <para>Measures the specified string when drawn with the specified Font, text layout size, horizontal and vertical resolutions, and format. 
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> to measure.
+
+            </param>
+            <param name="font">
+		A <see cref="T:System.Drawing.Font"/> object that defines the text format of the string. 
+
+            </param>
+            <param name="layoutSize">
+		A <see cref="T:System.Drawing.SizeF"/> structure that specifies the maximum layout area for the text. 
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.Pdf.PdfStringFormat"/> object that represents formatting information, such as line spacing, for the string. 
+
+            </param>
+            <param name="dpiX">
+		A <see cref="T:System.Single"/> object that represents the value, in dots per inch, for the horizontal resolution. 
+
+            </param>
+            <param name="dpiY">
+		A <see cref="T:System.Single"/> object that represents the value, in dots per inch, for the vertical resolution. 
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.SizeF"/> structure that represents the measured size of the string.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.MeasureString(System.String,System.Drawing.Font,DevExpress.Pdf.PdfStringFormat,System.Single,System.Single)">
+            <summary>
+                <para>Measures the specified string when drawn with the specified Font, horizontal and vertical resolutions and format. 
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> to measure.
+
+            </param>
+            <param name="font">
+		A <see cref="T:System.Drawing.Font"/> object that defines the text format of the string. 
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.Pdf.PdfStringFormat"/> object that represents formatting information, such as line spacing, for the string. 
+
+            </param>
+            <param name="dpiX">
+		A <see cref="T:System.Single"/> object that represents the value, in dots per inch, for the horizontal resolution. 
+
+            </param>
+            <param name="dpiY">
+		A <see cref="T:System.Single"/> object that represents the value, in dots per inch, for the vertical resolution. 
+
+            </param>
+            <returns> A <see cref="T:System.Drawing.SizeF"/> structure that represents the measured size of the string.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.RestoreGraphicsState">
+            <summary>
+                <para>Restores the most recently saved graphics state.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.RotateTransform(System.Single)">
+            <summary>
+                <para>Rotates the transformation matrix by the specified angle of this <see cref="T:DevExpress.Pdf.PdfGraphics"/>. 
+</para>
+            </summary>
+            <param name="degree">
+		Angle of rotation in degrees. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.SaveGraphicsState">
+            <summary>
+                <para>Saves the current graphics state to the stack. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Pdf.PdfGraphics.TextOrigin">
+            <summary>
+                <para>Specifies the exact position where you wish the text to be drawn on the page content.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Pdf.PdfGraphicsTextOrigin"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfGraphics.TranslateTransform(System.Single,System.Single)">
+            <summary>
+                <para>Changes the origin of the coordinate system by adding the specified translation to the transformation matrix of this <see cref="T:DevExpress.Pdf.PdfGraphics"/>. 
+</para>
+            </summary>
+            <param name="x">
+		A single structure that is the x-coordinate of the translation. 
+
+            </param>
+            <param name="y">
+		A single structure that is the y-coordinate of the translation. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Pdf.PdfGraphics.UseKerning">
+            <summary>
+                <para>Gets or sets a value which indicates whether kerning is used when drawing characters. 
+</para>
+            </summary>
+            <value><b>true</b> if kerning is used when drawing characters; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Pdf.PdfPrintScaleMode">
+
+            <summary>
+                <para>Lists the available document scale modes.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Pdf.PdfPrintScaleMode.ActualSize">
+            <summary>
+                <para>Print a document actual size.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Pdf.PdfPrintScaleMode.CustomScale">
+            <summary>
+                <para>Scale the printed document by a specific percentage scale factor.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Pdf.PdfPrintScaleMode.Fit">
+            <summary>
+                <para>Scale the printed document to fit a specific paper size.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Pdf.PdfPrinterSettings">
+
+            <summary>
+                <para>Provides the additional printer settings to a PDF Viewer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfPrinterSettings.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PdfPrinterSettings class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Pdf.PdfPrinterSettings.#ctor(System.Drawing.Printing.PrinterSettings)">
+            <summary>
+                <para>Initializes a new instance of the PdfPrinterSettings class with the specified settings.
+</para>
+            </summary>
+            <param name="settings">
+		A <see cref="T:System.Drawing.Printing.PrinterSettings"/> object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Pdf.PdfPrinterSettings.PageNumbers">
+            <summary>
+                <para>Specifies the PDF pages to be printed.
+</para>
+            </summary>
+            <value>An array of integer values that correspond to page numbers.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Pdf.PdfPrinterSettings.PageOrientation">
+            <summary>
+                <para>Specifies the orientation of the PDF pages to be printed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Pdf.PdfPrintPageOrientation"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Pdf.PdfPrinterSettings.PrintingDpi">
+            <summary>
+                <para>Specifies the dpi value used to print the PDF document.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Int32"/> value which represents the printing dpi.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Pdf.PdfPrinterSettings.Scale">
+            <summary>
+                <para>Specifies the percentage scale factor of the document to be printed.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Single"/> value which represents the scale factor of the document.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Pdf.PdfPrinterSettings.ScaleMode">
+            <summary>
+                <para>Specifies the document scale mode.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Pdf.PdfPrintScaleMode"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Pdf.PdfPrinterSettings.Settings">
+            <summary>
+                <para>Provides access to the current printer settings.
+</para>
+            </summary>
+            <value>An <see cref="T:System.Drawing.Printing.PrinterSettings"/> object containing the current printer settings.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Pdf.PdfPrintPageOrientation">
+
+            <summary>
+                <para>Lists the available document orientation modes.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Pdf.PdfPrintPageOrientation.Auto">
+            <summary>
+                <para>The orientation is defined automatically to fit the page content to the specific paper type.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Pdf.PdfPrintPageOrientation.Landscape">
+            <summary>
+                <para>Orientation of the document pages is landscape.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Pdf.PdfPrintPageOrientation.Portrait">
+            <summary>
+                <para>Orientation of the document pages is portrait.
+</para>
+            </summary>
+
+
+        </member>
+    </members>
+</doc>
