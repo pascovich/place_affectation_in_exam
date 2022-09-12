@@ -186,31 +186,52 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
                 cmd.Dispose();
             }
         }
-        public void getAllBYID(GunaLabel l1,GunaLabel l2,GunaLabel l3,PictureEdit pic1)
+        public void getAllBYID(GunaLabel nom,GunaLabel postnom,GunaLabel prenom, GunaLabel matr,GunaLabel des_aff,GunaLabel des_ann,GunaLabel des_cours,GunaLabel des_session, string nomTable,string nomChampcode,string value,DateTime dat)
         {
             innitialiseConnect();
             if (!con.State.ToString().Trim().ToLower().Equals("open")) con.Open();
             using (IDbCommand cmd = con.CreateCommand())
             {
-                //cmd.CommandText = "SELECT montant_a_payer from tfacture where id_facture=" + a;
-                cmd.CommandText = "SELECT nom,postnom,prenom,photo from t_etudiant where";
-
+                cmd.CommandText= "SELECT nom,postnom,prenom,matricule,designation_affecter,designation_annee,designation_cours,designation_session from " + nomTable + " WHERE date_examen=@date1 and format(" + nomChampcode + ",'00000') = '" + value + "'";
+                setParameterIDB(cmd, "@date1", DbType.DateTime, 30, dat);
+                //setParameter(cmd, "@date1", DbType.DateTime, 30, dat);
                 IDataReader rd = cmd.ExecuteReader();
+                ///begin
+                //innitialiseConnect();
+                //if (!con.State.ToString().Trim().ToLower().Equals("open")) ;
+                //con.Open();
+                //cmd = new SqlCommand("SELECT * FROM " + nomTable + " WHERE date_examen=@date1", con);
+
+                //setParameter(cmd, "@date1", DbType.DateTime, 30, val1);
+                //dt = null;
+                //dt = new SqlDataAdapter(cmd);
+                //ds = new DataSet();
+
+                //dt.Fill(ds);
+                //con.Close();
+                //return ds.Tables[0];
+                //end
+
+
 
                 while (rd.Read())
                 {
-                    l1.Text = rd[0].ToString();
-                    l2.Text = rd[1].ToString();
-                    l3.Text = rd[2].ToString();
+                    nom.Text = rd[0].ToString();
+                    postnom.Text = rd[1].ToString();
+                    prenom.Text = rd[2].ToString();
+                    matr.Text = rd[3].ToString();
+                    des_aff.Text = rd[4].ToString();
+                    des_ann.Text = rd[5].ToString(); 
+                    des_cours.Text = rd[6].ToString();
+                    des_session.Text = rd[7].ToString();
 
-                    //pic1.EditValue = rd[3].FormattedValue;
-                    //principal.GetInstance().retreivePhoto("photo", "tclient", "id_client", txt_id.Text, pictureBox1);
                 }
                 rd.Close();
                 rd.Dispose();
                 cmd.Dispose();
             }
         }
+
         public void retreivePhoto(string champPhoto, string nomTable, string nomChampcode, string value, PictureEdit pic)
         {
             try
@@ -409,6 +430,25 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
             return _id.ToString();
         }
         private static void setParameter(SqlCommand cmd, string name, DbType type, int length, object paramValue)
+        {
+            IDbDataParameter a = cmd.CreateParameter();
+            a.ParameterName = name;
+            a.Size = length;
+            a.DbType = type;
+
+            if (paramValue == null)
+            {
+                if (!a.IsNullable)
+                {
+                    a.DbType = DbType.String;
+                }
+                a.Value = DBNull.Value;
+            }
+            else
+                a.Value = paramValue;
+            cmd.Parameters.Add(a);
+        }
+        private static void setParameterIDB(IDbCommand cmd, string name, DbType type, int length, object paramValue)
         {
             IDbDataParameter a = cmd.CreateParameter();
             a.ParameterName = name;
@@ -943,11 +983,12 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
             {
                 innitialiseConnect();
                 con.Open();
-                cmd = new SqlCommand("execute pro_ranger @code,@designation_ranger,@nombre_chaise_ranger,@ref_salle", con);
+                cmd = new SqlCommand("execute pro_ranger @code,@designation_ranger,@nombre_chaise_ranger,@ref_salle,@chaise_restante_par_examen", con);
                 cmd.Parameters.AddWithValue("@code", foc.Id);
                 cmd.Parameters.AddWithValue("@designation_ranger", foc.Designation);
                 cmd.Parameters.AddWithValue("@nombre_chaise_ranger", foc.Nombre_place);
                 cmd.Parameters.AddWithValue("@ref_salle", foc.Ref_salle);
+                cmd.Parameters.AddWithValue("@chaise_restante_par_examen", foc.Chaise_dispo_par_examen);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("operation reussi avec succes");
             }
@@ -1002,7 +1043,7 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
             {
                 innitialiseConnect();
                 if (!con.State.ToString().ToLower().Equals("open")) con.Open();
-                cmd = new SqlCommand("SELECT * FROM " + nomTable + " WHERE id_paiement = " + idTable + "", con);
+                cmd = new SqlCommand("SELECT * FROM " + nomTable + " WHERE id_inscription = " + idTable + "", con);
                 dt = new SqlDataAdapter(cmd);
                 dst = new DataSet();
                 dt.Fill(dst, nomTable);

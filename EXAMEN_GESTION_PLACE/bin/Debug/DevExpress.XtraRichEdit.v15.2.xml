@@ -1,0 +1,3544 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.XtraRichEdit.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.XtraFilterEditor.FilterEditorControl">
+
+            <summary>
+                <para>Allows you to edit filters in visual and text-based forms.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraFilterEditor.FilterEditorControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the FilterEditorControl class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.ActiveEditor">
+            <summary>
+                <para>Gets the currently active editor used to edit operand value(s).
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraEditors.BaseEdit"/> descendant that represents the currently active editor. <b>null</b> (<b>Nothing</b> in Visual Basic) if no operand value is currently being edited. 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraFilterEditor.FilterEditorControl.ActiveEditorValidating">
+            <summary>
+                <para>Fires when the active editor in the tree-like Filter Control is being validated.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.ActiveView">
+            <summary>
+                <para>Gets or sets the control's active View.
+</para>
+            </summary>
+            <value>A FilterEditorActiveView value that specifies the control's active View.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.AllowAggregateEditing">
+            <summary>
+                <para>Gets or sets whether filters can be created against properties that are List objects.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraEditors.FilterControlAllowAggregateEditing"/> value that specifies if filters can be created against properties that are List objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.AllowCreateDefaultClause">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.AppearanceEmptyValueColor">
+            <summary>
+                <para>Gets or sets the color of empty values.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> structure that specifies the color of empty values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.AppearanceFieldNameColor">
+            <summary>
+                <para>Gets or sets the color of field names.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> structure that specifies the color of field names.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.AppearanceGroupOperatorColor">
+            <summary>
+                <para>Gets or sets the color of group operators.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> structure that specifies the color of group operators.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.AppearanceOperatorColor">
+            <summary>
+                <para>Gets or sets the color of logical operators.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> structure that specifies the color of logical operators.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.AppearanceTreeLine">
+            <summary>
+                <para>Gets the appearance settings used to paint tree lines.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint tree lines.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.AppearanceValueColor">
+            <summary>
+                <para>Gets or sets the color of values.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> structure that specifies the color of values.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraFilterEditor.FilterEditorControl.ApplyFilter">
+            <summary>
+                <para>Applies the filter criteria to the source control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraFilterEditor.FilterEditorControl.BeforeShowValueEditor">
+            <summary>
+                <para>Fires before displaying an editor used to edit operands in the FilterEditorControl.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.BorderStyle">
+            <summary>
+                <para>Gets or sets the control's border style.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraEditors.Controls.BorderStyles"/> value that specifies the control's border style.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraFilterEditor.FilterEditorControl.CreateCriteriaCustomParse">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraFilterEditor.FilterEditorControl.CreateCriteriaParseContext">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraFilterEditor.FilterEditorControl.CreateCustomRepositoryItem">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraFilterEditor.FilterEditorControl.FilterChanged">
+            <summary>
+                <para>Occurs after filter criteria in the FilterEditorControl have been modified.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.FilterColumns">
+            <summary>
+                <para>Gets a filter column collection.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraEditors.Filtering.FilterColumnCollection"/> object that represents the collection of filter columns.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.FilterControl">
+            <summary>
+                <para>Returns the <see cref="T:DevExpress.XtraEditors.FilterControl"/> object that encapsulates the tree-like structure of the filter criteria.
+</para>
+            </summary>
+            <value>The <see cref="T:DevExpress.XtraEditors.FilterControl"/> object that encapsulates the tree-like structure of the filter criteria.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.FilterCriteria">
+            <summary>
+                <para>Gets or sets the total filter expression.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> descendant that represents the total filter expression.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.FilterString">
+            <summary>
+                <para>Gets or sets the total filter expression.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value that specifies the total filter expression.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraFilterEditor.FilterEditorControl.FilterTextChanged">
+            <summary>
+                <para>Fires after a value of the <see cref="P:DevExpress.XtraFilterEditor.FilterEditorControl.FilterString"/> property has been changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.FilterViewInfo">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.Font">
+            <summary>
+                <para>Gets or sets the font for the control.
+</para>
+            </summary>
+            <value>A Font for the control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.IsFilterCriteriaValid">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraFilterEditor.FilterEditorControl.ItemDoubleClick">
+            <summary>
+                <para>Fires after any element (logical operator, operand value, field name, etc.) of the <b>Filter Control</b> has been double clicked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.LevelIndent">
+            <summary>
+                <para>Gets or sets a value which specifies the width of level indents (horizontal tree lines).
+</para>
+            </summary>
+            <value>An integer value that specifies the indent, in pixels.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.MenuManager">
+            <summary>
+                <para>Gets or sets the menu manager which controls the look and feel of the context menus.
+</para>
+            </summary>
+            <value>An object which implements the <see cref="T:DevExpress.Utils.Menu.IDXMenuManager"/> interface.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.Model">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.NodeSeparatorHeight">
+            <summary>
+                <para>Gets or sets the distance between logical expressions.
+</para>
+            </summary>
+            <value>An integer value which specifies the distance between logical expressions, in pixels.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraFilterEditor.FilterEditorControl.SetDefaultColumn(DevExpress.XtraEditors.Filtering.FilterColumn)">
+            <summary>
+                <para>Specifies the filter column which is used by default when a new logical expression is created.
+</para>
+            </summary>
+            <param name="column">
+		A <see cref="T:DevExpress.XtraEditors.Filtering.FilterColumn"/> object or a descendant which represents the filter column used by default when a new logical expression is created.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraFilterEditor.FilterEditorControl.SetFilterColumnsCollection(DevExpress.XtraEditors.Filtering.FilterColumnCollection)">
+            <summary>
+                <para>Creates filter columns.
+</para>
+            </summary>
+            <param name="columns">
+		A <see cref="T:DevExpress.XtraEditors.Filtering.FilterColumnCollection"/> object that represents the collection of filter columns.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraFilterEditor.FilterEditorControl.SetFilterColumnsCollection(DevExpress.XtraEditors.Filtering.FilterColumnCollection,DevExpress.Utils.Menu.IDXMenuManager)">
+            <summary>
+                <para>Creates filter columns.
+</para>
+            </summary>
+            <param name="columns">
+		A <see cref="T:DevExpress.XtraEditors.Filtering.FilterColumnCollection"/> object that represents the collection of filter columns.
+
+            </param>
+            <param name="manager">
+		An object which represents the menu manager which controls the look and feel of the context menus.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.ShowDateTimeOperators">
+            <summary>
+                <para>Gets or sets whether date-time specific operators are available for date-time fields.
+</para>
+            </summary>
+            <value><b>true</b> if date-time specific operators are available for date-time fields; otherwise, <b>false</b>
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.ShowFunctions">
+            <summary>
+                <para>Gets or sets whether the FilterEditorControl allows specific functions/constants to be used within operand value boxes.
+</para>
+            </summary>
+            <value><b>true</b> if the FilterEditorControl allows specific functions/constants to be used within operand value boxes; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.ShowGroupCommandsIcon">
+            <summary>
+                <para>Gets or sets whether the group commands icon is displayed.
+</para>
+            </summary>
+            <value><b>true</b> to display the group commands icon; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.ShowIsNullOperatorsForStrings">
+            <summary>
+                <para>Gets or sets whether the IsNull operator is available for string values in the tree-like Filter Control.
+</para>
+            </summary>
+            <value><b>true</b>, if the IsNull operator is available for string values; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.ShowOperandTypeIcon">
+            <summary>
+                <para>Gets or sets whether the operand's value can be swapped.
+</para>
+            </summary>
+            <value><b>true</b> to allow end-users to swap the operand's value; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.SortFilterColumns">
+            <summary>
+                <para>Gets or sets whether column captions appear sorted in the FilterEditorControl's menus.
+</para>
+            </summary>
+            <value><b>true</b> to sort column captions; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.SourceControl">
+            <summary>
+                <para>Gets or sets the source control.
+</para>
+            </summary>
+            <value>An object that represents the source control for the <b>Filter Control</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.StyleController">
+            <summary>
+                <para>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value><b>null</b> (<b>Nothing</b> in Visual Basic)
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.UseMenuForOperandsAndOperators">
+            <summary>
+                <para>Gets or sets whether a menu or combobox editor is used to select operands and operators in a FilterEditorControl. This property is not supported when filters are edited in a text-based form (see <see cref="P:DevExpress.XtraFilterEditor.FilterEditorControl.ViewMode"/>).
+</para>
+            </summary>
+            <value><b>true</b> if a menu is used to select operands and operators in a FilterEditorControl; <b>false</b> if a combobox editor is used.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraFilterEditor.FilterEditorControl.ViewMode">
+            <summary>
+                <para>Gets or sets how a Filter Editor's criteria can be edited.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraEditors.FilterEditorViewMode"/> value that specifies how a Filter Editor's criteria can be edited.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.RichEditViewCustomDrawEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraRichEdit.RichEditControl.CustomDrawActiveView"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditViewCustomDrawEventHandler.Invoke(System.Object,DevExpress.XtraRichEdit.RichEditViewCustomDrawEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraRichEdit.RichEditControl.CustomDrawActiveView"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source. This parameter identifies the <see cref="T:DevExpress.XtraRichEdit.RichEditControl"/>, which raised the event.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraRichEdit.RichEditCustomMarkDrawEventArgs"/> object which contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.RichEditViewCustomDrawEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraRichEdit.RichEditControl.CustomDrawActiveView"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditViewCustomDrawEventArgs.#ctor(DevExpress.Utils.Drawing.GraphicsCache)">
+            <summary>
+                <para>Initializes a new instance of the RichEditViewCustomDrawEventArgs class with the specified graphics cache.
+</para>
+            </summary>
+            <param name="cache">
+		A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditViewCustomDrawEventArgs.Cache">
+            <summary>
+                <para>Gets an object specifying the storage for the most  used pens, fonts and brushes.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.RichEditCustomMarkDrawEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraRichEdit.RichEditControl.CustomMarkDraw"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditCustomMarkDrawEventHandler.Invoke(System.Object,DevExpress.XtraRichEdit.RichEditCustomMarkDrawEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraRichEdit.RichEditControl.CustomMarkDraw"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event sender (typically a <see cref="T:DevExpress.XtraRichEdit.RichEditControl"/>).
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraRichEdit.RichEditCustomMarkDrawEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit">
+
+            <summary>
+                <para>Contains settings specific to an in-place editor that displays RTF data.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RepositoryItemRichTextEdit class with default settings. 
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.AcceptsTab">
+            <summary>
+                <para>Gets or sets a value specifying whether a tab character can be inserted into the editor's text.
+</para>
+            </summary>
+            <value><b>true</b> if tab characters typed within the control are accepted and processed by an editor; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.Assign(DevExpress.XtraEditors.Repository.RepositoryItem)">
+            <summary>
+                <para>Copies the settings of the specified repository item.
+</para>
+            </summary>
+            <param name="item">
+		A <see cref="T:DevExpress.XtraEditors.Repository.RepositoryItem"/> object or its descendant that represents the source of the operation.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.AutoHeight">
+            <summary>
+                <para>Gets whether the editor's height is calculated automatically to fit the editor's content. This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value>Always <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.ConvertEditValueToPlainText(System.Object)">
+            <summary>
+                <para>Converts the specified value to plain text.
+</para>
+            </summary>
+            <param name="editValue">
+		A value to be converted to plain text.
+
+            </param>
+            <returns>A string that is the result of the conversion.
+
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.CustomHeight">
+            <summary>
+                <para>Gets or sets the editor's height.
+</para>
+            </summary>
+            <value>An integer value that specifies the editor's height, in pixels.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.DocumentFormat">
+            <summary>
+                <para>Gets or sets the format of the document contained in the editor.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> enumeration member, specifying the document format.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.EditorTypeName">
+            <summary>
+                <para>Gets the class name of an editor corresponding to the current repository item.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value that identifies the class name of a corresponding editor.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.Encoding">
+            <summary>
+                <para>Gets or sets the character encoding of the document contained in the editor.
+</para>
+            </summary>
+            <value>A  <see cref="T:System.Text.Encoding"/> object specifying the character encoding.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.EncodingWebName">
+            <summary>
+                <para>Gets or sets the character encoding by specifying the name registered with the Internet Assigned Numbers Authority (IANA).
+</para>
+            </summary>
+            <value>A string, representing the IANA encoding.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.GetBrick(DevExpress.XtraEditors.PrintCellHelperInfo)">
+            <summary>
+                <para>Returns a brick object that contains information on how the current editor should be printed.
+</para>
+            </summary>
+            <param name="info">
+		A <see cref="T:DevExpress.XtraEditors.PrintCellHelperInfo"/> object that provides information on the editor's state and appearance settings that will be used when the editor is printed.
+
+            </param>
+            <returns>An <see cref="T:DevExpress.XtraPrinting.IVisualBrick"/> object that provides information on how the current editor should be printed.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.HorizontalIndent">
+            <summary>
+                <para>Gets or sets a horizontal margin between the border and text.
+</para>
+            </summary>
+            <value>An integer value that specifies a horizontal margin, in pixels, between the border and text.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.MaxHeight">
+            <summary>
+                <para>Gets or sets the editor's maximum height.
+</para>
+            </summary>
+            <value>An integer value that specifies the editor's maximum height, in pixels.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.OptionsBehavior">
+            <summary>
+                <para>Provides access to an object that enables you to apply restrictions on different editor operations.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraEditors.Repository.RichTextEditBehaviorOptions"/> class instance containing restriction specifications.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.OptionsExport">
+            <summary>
+                <para>Provides access to options specific for document export to different formats.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.Export.RichTextEditDocumentExportOptions"/> class instance containing export options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.OptionsHorizontalScrollbar">
+            <summary>
+                <para>Provides access to the options specific to the horizontal scrollbar of the rich text editor.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraEditors.Repository.RichTextEditHorizontalScrollbarOptions"/> object used to specify options for the horizontal scrollbar.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.OptionsImport">
+            <summary>
+                <para>Provides access to options specific for document import from different formats.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.Import.RichTextEditDocumentImportOptions"/> class instance containing import options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.OptionsVerticalScrollbar">
+            <summary>
+                <para>Provides access to the options specific to the vertical scrollbar of the RichEditControl.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.VerticalScrollbarOptions"/> object used to specify options for the vertical scrollbar.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.Register">
+            <summary>
+                <para>Registers the current RepositoryItemRichTextEdit instance within the default Repository.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.ShowCaretInReadOnly">
+            <summary>
+                <para>Gets or sets whether the mouse caret is displayed in read-only mode.
+</para>
+            </summary>
+            <value><b>true</b> if the mouse caret is displayed in read-only mode; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit.VerticalIndent">
+            <summary>
+                <para>Gets or sets a vertical margin between the border and text.
+</para>
+            </summary>
+            <value>An integer value that specifies a vertical margin, in pixels, between the border and text.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.RichEditCustomMarkDrawEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraRichEdit.RichEditControl.CustomMarkDraw"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditCustomMarkDrawEventArgs.#ctor(System.Drawing.Graphics,DevExpress.XtraRichEdit.Layout.Export.CustomMarkVisualInfoCollection)">
+            <summary>
+                <para>Initializes a new instance of the RichEditCustomMarkDrawEventArgs class with the specified settings.
+</para>
+            </summary>
+            <param name="graphics">
+		A <see cref="T:System.Drawing.Graphics"/> object that provides GDI+ drawing functionality.
+
+            </param>
+            <param name="visualInfoCollection">
+		A <b>DevExpress.XtraRichEdit.Layout.Export.CustomMarkVisualInfoCollection</b> collection containing custom marks visual info.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditCustomMarkDrawEventArgs.Graphics">
+            <summary>
+                <para>Gets an object used for painting.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Graphics"/> object which provides GDI+ drawing functionality.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditCustomMarkDrawEventArgs.VisualInfoCollection">
+            <summary>
+                <para>Provides access to information required to visualize custom marks.
+</para>
+            </summary>
+            <value>A <b>DevExpress.XtraRichEdit.Layout.Export.CustomMarkVisualInfoCollection</b> collection containing custom marks visual info.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.PopupMenuShowingEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraRichEdit.RichEditControl.PopupMenuShowing"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.PopupMenuShowingEventHandler.Invoke(System.Object,DevExpress.XtraRichEdit.PopupMenuShowingEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.Xpf.RichEdit.RichEditControl.PopupMenuShowing"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event sender (typically a <see cref="T:DevExpress.XtraRichEdit.RichEditControl"/>).
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraRichEdit.PopupMenuShowingEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.PopupMenuShowingEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraRichEdit.RichEditControl.PopupMenuShowing"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.PopupMenuShowingEventArgs.#ctor(DevExpress.XtraRichEdit.Menu.RichEditPopupMenu)">
+            <summary>
+                <para>Initializes a new instance of the PopupMenuShowingEventArgs class with the specified settings.
+</para>
+            </summary>
+            <param name="menu">
+		A <see cref="T:DevExpress.XtraRichEdit.Menu.RichEditPopupMenu"/> which represents the event's popup menu. This value is assigned to the <see cref="P:DevExpress.XtraRichEdit.PopupMenuShowingEventArgs.Menu"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.PopupMenuShowingEventArgs.Menu">
+            <summary>
+                <para>Gets or sets the popup (context) menu for which this event was raised.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.Menu.RichEditPopupMenu"/> object, which represents the context menu for the event. 
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraEditors.Repository.RichTextEditHorizontalScrollbarOptions">
+
+            <summary>
+                <para>Represents the class containing options for the horizontal scrollbar.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraEditors.Repository.RichTextEditHorizontalScrollbarOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RichTextEditHorizontalScrollbarOptions class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraEditors.Repository.RichTextEditBehaviorOptions">
+
+            <summary>
+                <para>Represents the storage of settings specifying end-user restrictions applied to document operations.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraEditors.Repository.RichTextEditBehaviorOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RichTextEditBehaviorOptions class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.RichEditPen">
+
+            <summary>
+                <para>Defines an object used to draw lines on the layout canvas.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditPen.#ctor(System.Drawing.Color,System.Int32)">
+            <summary>
+                <para>Initializes new instance of the RichEditPen class with the specified settings.
+</para>
+            </summary>
+            <param name="color">
+		 
+            </param>
+            <param name="thickness">
+		 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditPen.#ctor(System.Drawing.Color)">
+            <summary>
+                <para>Initializes new instance of the RichEditPen class with the specified settings.
+</para>
+            </summary>
+            <param name="color">
+		 
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditPen.Color">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.RichEditBrush">
+
+            <summary>
+                <para>Defines a brush for custom draw on the layout canvas. Brushes are used to fill graphics shapes and draw text. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditBrush.#ctor(System.Drawing.Color)">
+            <summary>
+                <para>Initializes new instance of the RichEditBrush class with the specified settings.
+</para>
+            </summary>
+            <param name="color">
+		 
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditBrush.Color">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.VerticalScrollbarOptions">
+
+            <summary>
+                <para>Represents the class containing options for the vertical scrollbar.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.VerticalScrollbarOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the VerticalScrollbarOptions class with default settings.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.Import.RichTextEditDocumentImportOptions">
+
+            <summary>
+                <para>Contains options used for loading (importing) documents from the <see cref="T:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit"/> control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.Import.RichTextEditDocumentImportOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RichTextEditDocumentImportOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.Export.RichTextEditDocumentExportOptions">
+
+            <summary>
+                <para>Contains options used for saving (exporting) documents from the <see cref="T:DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit"/> control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.Export.RichTextEditDocumentExportOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RichTextEditDocumentExportOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.ImeCloseStatus">
+
+            <summary>
+                <para>Lists possible results of finalizing the input and closing the input method editor window.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraRichEdit.ImeCloseStatus.ImeCompositionCancel">
+            <summary>
+                <para>Composition string in the input method editor is discarded.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraRichEdit.ImeCloseStatus.ImeCompositionComplete">
+            <summary>
+                <para>The composition string is used as the result string to insert in the document.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.Commands.FindPrevCommand">
+
+            <summary>
+                <para>Looks for the previous matching string as defined in the search criteria given by the preceding FindCommand.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.Commands.FindPrevCommand.#ctor(DevExpress.XtraRichEdit.IRichEditControl)">
+            <summary>
+                <para>Initializes a new instance of the FindPrevCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		An object implementing the <see cref="T:DevExpress.XtraRichEdit.IRichEditControl"/> interface, specifying the owner of the command.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.Commands.FindPrevCommand.DescriptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a command description.
+</para>
+            </summary>
+            <value>An <b>XtraRichEditStringId</b> enumeration value, identifying the resource string.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.Commands.FindPrevCommand.Id">
+            <summary>
+                <para>Gets the ID of the FindPrevCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.Commands.RichEditCommandId"/> member, identifying the command.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.Commands.FindPrevCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a menu caption corresponding to FindPrevCommand.
+</para>
+            </summary>
+            <value>A <b>XtraRichEditStringId</b> enumeration value, identifying the resource string.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.Commands.FindNextCommand">
+
+            <summary>
+                <para>Looks for the next matching string as defined in the search criteria given by the preceding FindCommand.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.Commands.FindNextCommand.#ctor(DevExpress.XtraRichEdit.IRichEditControl)">
+            <summary>
+                <para>Initializes a new instance of the FindNextCommand class with the specified owner.
+</para>
+            </summary>
+            <param name="control">
+		An object exposing the <b>DevExpress.XtraRichEdit.IRichEditControl</b> interface specifying the owner of the command (usually the RichEditControl).
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.Commands.FindNextCommand.DescriptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a command description.
+</para>
+            </summary>
+            <value>An <b>XtraRichEditStringId</b> enumeration value, identifying the resource string.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.Commands.FindNextCommand.Id">
+            <summary>
+                <para>Gets the ID of the FindNextCommand.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.Commands.RichEditCommandId"/> member, identifying the command.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.Commands.FindNextCommand.MenuCaptionStringId">
+            <summary>
+                <para>Gets a string resource identifier of a menu caption corresponding to FindNextCommand.
+</para>
+            </summary>
+            <value>A <b>XtraRichEditStringId</b> enumeration value, identifying the resource string.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.RichEditAppearance">
+
+            <summary>
+                <para>Represents appearance settings specific to the RichEditControl.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditAppearance.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RichEditAppearance class with default settings. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditAppearance.Text">
+            <summary>
+                <para>Provides access to the appearance object containing appearance settings for the text.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Utils.AppearanceObject"/> representing properties used to customize the look and feel of the text.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.Menu.RichEditPopupMenu">
+
+            <summary>
+                <para>Represents a popup (context) menu of the <b>RichEditControl</b>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.Menu.RichEditPopupMenu.#ctor(System.EventHandler)">
+            <summary>
+                <para>Initializes a new instance of the RichEditPopupMenu class with the specified handler of the <see cref="E:DevExpress.XtraBars.PopupMenuBase.BeforePopup"/> event.
+</para>
+            </summary>
+            <param name="beforePopup">
+		An event handler that will be invoked when menu is about to be displayed. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.Menu.RichEditPopupMenu.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RichEditPopupMenu class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.PreparePopupMenuEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraRichEdit.RichEditControl.PreparePopupMenu"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.PreparePopupMenuEventHandler.Invoke(System.Object,DevExpress.XtraRichEdit.PreparePopupMenuEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraRichEdit.RichEditControl.PreparePopupMenu"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event sender (typically a <see cref="T:DevExpress.XtraRichEdit.RichEditControl"/>).
+
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraRichEdit.PreparePopupMenuEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.PreparePopupMenuEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraRichEdit.RichEditControl.PreparePopupMenu"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.PreparePopupMenuEventArgs.#ctor(DevExpress.XtraRichEdit.Menu.RichEditPopupMenu)">
+            <summary>
+                <para>Initializes a new instance of the PreparePopupMenuEventArgs class with the specified settings.
+
+</para>
+            </summary>
+            <param name="menu">
+		A <see cref="T:DevExpress.XtraRichEdit.Menu.RichEditPopupMenu"/> object that is the context menu to display.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.HorizontalScrollbarOptions">
+
+            <summary>
+                <para>Represents the class containing options for the horizontal scrollbar.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.HorizontalScrollbarOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the HorizontalScrollbarOptions class with default settings.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.RichEditScrollbarVisibility">
+
+            <summary>
+                <para>Specifies the visibility of a scroll bar.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraRichEdit.RichEditScrollbarVisibility.Auto">
+            <summary>
+                <para>A scroll bar is automatically displayed when required.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraRichEdit.RichEditScrollbarVisibility.Hidden">
+            <summary>
+                <para>A scroll bar is hidden.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraRichEdit.RichEditScrollbarVisibility.Visible">
+            <summary>
+                <para>A scroll bar is visible.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.ScrollbarOptions">
+
+            <summary>
+                <para>Represents the base class for scrollbar options.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.ScrollbarOptions.Visibility">
+            <summary>
+                <para>Gets or sets a value that specifies the visibility of a scroll bar.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.RichEditScrollbarVisibility"/> enumeration member specifying the visibility mode.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.RichEditControlOptions">
+
+            <summary>
+                <para>Represents the storage of settings specific for the <see cref="T:DevExpress.XtraRichEdit.RichEditControl"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControlOptions.#ctor(DevExpress.XtraRichEdit.Internal.InnerRichEditDocumentServer)">
+            <summary>
+                <para>Initializes a new instance of the RichEditControlOptions class specific for the <see cref="T:DevExpress.XtraRichEdit.RichEditDocumentServer"/>.
+</para>
+            </summary>
+            <param name="documentServer">
+		A <see cref="T:DevExpress.XtraRichEdit.RichEditDocumentServer"/> instance.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControlOptions.HorizontalScrollbar">
+            <summary>
+                <para>Provides access to the options specific to the horizontal scrollbar of the RichEditControl.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.HorizontalScrollbarOptions"/> object used to specify options for the horizontal scrollbar.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControlOptions.VerticalScrollbar">
+            <summary>
+                <para>Provides access to the options specific for the vertical scrollbar of the RichEditControl.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.VerticalScrollbarOptions"/> object used to specify options for the vertical scrollbar.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.RichEditControl">
+
+            <summary>
+                <para>A control to create, load, modify, print, save and convert rich text documents in different formats.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RichEditControl class with default settings.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.About">
+            <summary>
+                <para>Invokes the <b>About</b> dialog box.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.AcceptsEscape">
+            <summary>
+                <para>Gets or sets a value indicating whether pressing the ESC key is processed by the RichEditControl.
+</para>
+            </summary>
+            <value><b>true</b> if the input ESC key is processed by the RichEditControl , otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.AcceptsReturn">
+            <summary>
+                <para>Gets or sets a value indicating whether pressing the RETURN key is processed by the RichEditControl.
+</para>
+            </summary>
+            <value><b>true</b> if the input RETURN key is processed by the RichEditControl , otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.AcceptsTab">
+            <summary>
+                <para>Gets or sets a value indicating whether pressing the TAB key types a TAB character instead of moving the focus to the next control in the tab order.
+</para>
+            </summary>
+            <value><b>true</b> if users can enter tabs in a RichEditControl using the TAB key, <b>false</b> if pressing the TAB key moves the focus.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.ActiveRecordChanged">
+            <summary>
+                <para>Occurs after traversing to the next data record in a mail merge data source.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.ActiveRecordChanging">
+            <summary>
+                <para>Occurs before traversing to the next data record in a mail merge data source.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.ActiveView">
+            <summary>
+                <para>Gets the <b>View</b> currently used by the RichEditControl to display the document. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.RichEditView"/> class instance, which is one of the views listed in the <see cref="T:DevExpress.XtraRichEdit.RichEditViewType"/> enumeration.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.ActiveViewChanged">
+            <summary>
+                <para>Occurs when the value of the <see cref="P:DevExpress.XtraRichEdit.RichEditControl.ActiveView"/> property is changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.ActiveViewType">
+            <summary>
+                <para>Gets or sets the type of the <b>View</b> which is currently used by the RichEditControl to show the document. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.RichEditViewType"/> enumeration value specifying the active <b>View</b> type.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback,System.Boolean)">
+            <summary>
+                <para>Adds the specified service to the service container. 
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to add. 
+
+            </param>
+            <param name="callback">
+		A callback object that is used to create the service. This allows a service to be declared as available, but delays the creation of the object until the service is requested. 
+
+            </param>
+            <param name="promote">
+		<b>true</b> to promote this request to any parent service containers; otherwise, <b>false</b>. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback)">
+            <summary>
+                <para>Adds the specified service to the service container. 
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to add. 
+
+            </param>
+            <param name="callback">
+		A callback object that is used to create the service. This allows a service to be declared as available, but delays the creation of the object until the service is requested. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.AddService(System.Type,System.Object,System.Boolean)">
+            <summary>
+                <para>Adds the specified service to the service container. 
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to add. 
+
+            </param>
+            <param name="serviceInstance">
+		An instance of the service type to add. This object must implement or inherit from the type indicated by the serviceType parameter.
+
+            </param>
+            <param name="promote">
+		<b>true</b> to promote this request to any parent service containers; otherwise, <b>false</b>. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.AddService(System.Type,System.Object)">
+            <summary>
+                <para>Adds the specified service to the service container. 
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to add. 
+
+            </param>
+            <param name="serviceInstance">
+		An instance of the service type to add. This object must implement or inherit from the type indicated by the serviceType parameter.
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.AfterExport">
+            <summary>
+                <para>Occurs after the document is successfully exported.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.AllowDrop">
+            <summary>
+                <para>Gets or sets a value indicating whether the control allows drag-and-drop operations. This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value><b>true</b> if drag-and-drop is enabled in the control; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.Appearance">
+            <summary>
+                <para>Provides access to the object containing appearance settings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.RichEditAppearance"/> object containig appearance settings specific to the RichEditControl.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.AssignShortcutKeyToCommand(System.Windows.Forms.Keys,System.Windows.Forms.Keys,DevExpress.XtraRichEdit.Commands.RichEditCommandId)">
+            <summary>
+                <para>Assigns a shortcut key to a command. The shortcut key is available for all RichEdit views.
+
+</para>
+            </summary>
+            <param name="key">
+		A <see cref="T:System.Windows.Forms.Keys"/> enumeration member specifying a key to assign.
+
+            </param>
+            <param name="modifier">
+		A <see cref="T:System.Windows.Forms.Keys"/> enumeration member specifying a modifier key.
+
+            </param>
+            <param name="commandId">
+		A <see cref="T:DevExpress.XtraRichEdit.Commands.RichEditCommandId"/> enumeration member specifying a command.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.AssignShortcutKeyToCommand(System.Windows.Forms.Keys,System.Windows.Forms.Keys,DevExpress.XtraRichEdit.Commands.RichEditCommandId,DevExpress.XtraRichEdit.RichEditViewType)">
+            <summary>
+                <para>Assigns a shortcut key to a command. The shortcut key is available for the specified RichEditView.
+
+</para>
+            </summary>
+            <param name="key">
+		A <see cref="T:System.Windows.Forms.Keys"/> enumeration member specifying a key to assign.
+
+            </param>
+            <param name="modifier">
+		A <see cref="T:System.Windows.Forms.Keys"/> enumeration member specifying a modifier key.
+
+            </param>
+            <param name="commandId">
+		A <see cref="T:DevExpress.XtraRichEdit.Commands.RichEditCommandId"/> enumeration member specifying a command.
+
+            </param>
+            <param name="viewType">
+		A <see cref="T:DevExpress.XtraRichEdit.RichEditView"/> specifying the view in which a shortcut will be effective
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.AutoCorrect">
+            <summary>
+                <para>Fires when text is typed in the control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.AutoSizeMode">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraRichEdit.AutoSizeMode"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.BackColor">
+            <summary>
+                <para>This property is not in effect for the RichEditControl class. 
+</para>
+            </summary>
+            <value> A <see cref="T:System.Drawing.Color"/> value representing the background color.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.BackgroundImage">
+            <summary>
+                <para>This property is not in effect for the RichEditControl class. 
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.BackgroundImageLayout">
+            <summary>
+                <para>This property is not in effect for the RichEditControl class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.BeforeDispose">
+            <summary>
+                <para>Occurs before the RichEdit control is released from memory
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.BeforeExport">
+            <summary>
+                <para>Occurs before the document is saved (exported to a certain format).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.BeforeImport">
+            <summary>
+                <para>Occurs before a document is loaded (imported from an external source).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.BeforePagePaint">
+            <summary>
+                <para>Enables you to specify a custom <see cref="T:DevExpress.XtraRichEdit.API.Layout.PagePainter"/> descendant to alter the way the layout elements are drawn.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.BeginUpdate">
+            <summary>
+                <para>Locks the RichEditControl object by disallowing visual updates until the <b>EndUpdate</b> or <b>CancelUpdate</b> method is called.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.BookmarkFormShowing">
+            <summary>
+                <para>Occurs before the Bookmark dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.BorderStyle">
+            <summary>
+                <para>Gets or sets the border style for the RichEdit control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraEditors.Controls.BorderStyles"/> enumeration value which specifies the border style of the scheduler control.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.CalculateDocumentVariable">
+            <summary>
+                <para>Fires for the DOCVARIABLE field and allows you to update its value.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.CancelUpdate">
+            <summary>
+                <para>Unlocks the RichEditControl object after it has been locked by the <b>BeginUpdate</b> method, without causing an immediate visual update.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.CanRedo">
+            <summary>
+                <para>Indicates whether there are actions that occurred recently within the control that can be reapplied.
+
+</para>
+            </summary>
+            <value><b>true</b> if there are operations that have been undone that can be reapplied; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.CanUndo">
+            <summary>
+                <para>Indicates whether the user can undo the previous operation.
+</para>
+            </summary>
+            <value><b>true</b> if the user can undo the previous opration; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ClearUndo">
+            <summary>
+                <para>Clears information about recent operations, so they cannot not be undone.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.ClipboardSetDataException">
+            <summary>
+                <para>Occurs when an exception is thrown while trying to place data onto the clipboard.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.CloseImeWindow(DevExpress.XtraRichEdit.ImeCloseStatus)">
+            <summary>
+                <para>Finalizes the input method editor composition and closes IME window.
+</para>
+            </summary>
+            <param name="closeSatus">
+		A <see cref="T:DevExpress.XtraRichEdit.ImeCloseStatus"/> enumeration member specifying how the composition string is treated.
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.CloseReviewingPane">
+            <summary>
+                <para>Occurs when closing the reviewing pane displaying document comments.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.ColumnsSetupFormShowing">
+            <summary>
+                <para>Occurs before the Columns dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.CommentInserted">
+            <summary>
+                <para>Occurs after a new comment is created in the document.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.ContentChanged">
+            <summary>
+                <para>Occurs when the document content was changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.Copy">
+            <summary>
+                <para>Copies the content of the selection to the clipboard.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.CreateCommand(DevExpress.XtraRichEdit.Commands.RichEditCommandId)">
+            <summary>
+                <para>Create a <see cref="T:DevExpress.XtraRichEdit.Commands.RichEditCommand"/> object by the command identifier.
+</para>
+            </summary>
+            <param name="commandId">
+		A <see cref="T:DevExpress.XtraRichEdit.Commands.RichEditCommandId"/> structure member, which specifies a command.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraRichEdit.Commands.RichEditCommand"/> instance, representing a Rich Text Control command.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.CreateDocumentServer">
+            <summary>
+                <para>Gets the document server instance.
+</para>
+            </summary>
+            <returns>An object with the <see cref="T:DevExpress.XtraRichEdit.IRichEditDocumentServer"/> interface.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.CreateMailMergeOptions">
+            <summary>
+                <para>Creates an object for specifying the options used in mail merge operations.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.MailMergeOptions"/> class instance containing options used for mail merge. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.CreateNewDocument(System.Boolean)">
+            <summary>
+                <para>Creates and loads a new empty document. Optionally, raises the DocumentClosing event.
+</para>
+            </summary>
+            <param name="raiseDocumentClosing">
+		<b>true</b>, to raise the <see cref="E:DevExpress.XtraRichEdit.RichEditControl.DocumentClosing"/> event; otherwise, <b>false</b>.
+
+            </param>
+            <returns><b>true</b>, if a new document is created and loaded; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.CustomDrawActiveView">
+            <summary>
+                <para>Occurs before the active RichEdit view is displayed, and enables you to draw graphics on the document area.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.CustomizeMergeFields">
+            <summary>
+                <para>Fires when the 'Insert Merge Field' command button is clicked, and enables you to customize a drop-down field list.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.CustomMarkDraw">
+            <summary>
+                <para>Fires before a custom mark is painted, and enables you to visualize the custom mark as required.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.Cut">
+            <summary>
+                <para>Removes the selection from the document, and places it on the clipboard.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.DefaultViewType">
+            <summary>
+                <para>Gets the default view type used by the RichEdit control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.RichEditViewType"/> enumeration member, which specifies the RichEdit view.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.DeleteTableCellsFormShowing">
+            <summary>
+                <para>Occurs before the Delete Cells dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.DeselectAll">
+            <summary>
+                <para>Specifies that no content is selected in the control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.Document">
+            <summary>
+                <para>Provides access to a <see cref="T:DevExpress.XtraRichEdit.API.Native.Document"/> interface specifying the control's document.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.Document"/> interface specifying a document loaded in the control.
+
+
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.DocumentClosing">
+            <summary>
+                <para>Occurs when a document that contains unsaved changes is about to be closed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.DocumentLayout">
+            <summary>
+                <para>Provides access to Layout API.
+</para>
+            </summary>
+            <value>A <see cref="DocumentLayout"/> object that is the key object for Layout API.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.DocumentLoaded">
+            <summary>
+                <para>Occurs after a document is loaded into the RichEdit control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.DocumentProtectionChanged">
+            <summary>
+                <para>Fires when the document protection is enforced or dropped.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.DocumentProtectionQueryNewPasswordFormShowing">
+            <summary>
+                <para>Occurs before the Start Enforcing Protection dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.DocumentProtectionQueryPasswordFormShowing">
+            <summary>
+                <para>Occurs before the Unprotect Document dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.DpiX">
+            <summary>
+                <para>Gets the current dpi value for the X-coordinate.
+
+</para>
+            </summary>
+            <value>A <b>Single</b> dpi value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.DpiY">
+            <summary>
+                <para>Gets the current dpi value for the Y-coordinate.
+
+</para>
+            </summary>
+            <value>A <b>Single</b> dpi value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.DragDropMode">
+            <summary>
+                <para>Gets or sets the drag-and-drop mode which is active in the RichEditControl.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.DragDropMode"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.EditStyleFormShowing">
+            <summary>
+                <para>Fires before the Style Editor dialog is displayed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.EmptyDocumentCreated">
+            <summary>
+                <para>Occurs when a new document is created in the RichEdit Control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.EnableToolTips">
+            <summary>
+                <para>Gets or sets whether to display tooltips for data fields in documents.
+</para>
+            </summary>
+            <value><b>true</b>, to display data field tooltips; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.EndUpdate">
+            <summary>
+                <para>Unlocks the RichEditControl object after a call to the <b>BeginUpdate</b> method and causes an immediate visual update.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ExportToPdf(System.IO.Stream)">
+            <summary>
+                <para>Exports the content of the RichEditControl to the specified stream in PDF format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, to which the created document is exported.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ExportToPdf(System.String)">
+            <summary>
+                <para>Exports the document content to the specified file path in PDF format.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created PDF file.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ExportToPdf(System.String,DevExpress.XtraPrinting.PdfExportOptions)">
+            <summary>
+                <para>Exports the content of the RichEditControl to the specified file path in PDF format, applying PDF-specific options.
+
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created PDF file.
+
+            </param>
+            <param name="pdfExportOptions">
+		A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object which specifies the PDF export options.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ExportToPdf(System.IO.Stream,DevExpress.XtraPrinting.PdfExportOptions)">
+            <summary>
+                <para>Exports the content of the RichEditControl to the specified stream in PDF format, applying PDF-specific options.
+
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, to which the created document is exported.
+
+            </param>
+            <param name="pdfExportOptions">
+		A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object which specifies the PDF export options.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ExportToPdf(System.IO.Stream,DevExpress.Pdf.PdfCreationOptions,DevExpress.Pdf.PdfSaveOptions)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="stream">
+		 
+            </param>
+            <param name="creationOptions">
+		 
+            </param>
+            <param name="saveOptions">
+		 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ExportToPdf(System.String,DevExpress.Pdf.PdfCreationOptions,DevExpress.Pdf.PdfSaveOptions)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="fileName">
+		 
+            </param>
+            <param name="creationOptions">
+		 
+            </param>
+            <param name="saveOptions">
+		 
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.FinishHeaderFooterEditing">
+            <summary>
+                <para>Occurs when the end-user finishes editing a header or footer.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.FloatingInlineObjectLayoutOptionsFormShowing">
+            <summary>
+                <para>Raised before the Inline and Floating Object Layout Dialog is shown.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.Font">
+            <summary>
+                <para>Gets or sets the font of the text that has no direct font formatting or style applied.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Font"/> object.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.FontFormShowing">
+            <summary>
+                <para>Occurs before the Font dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ForceSyntaxHighlight">
+            <summary>
+                <para>Reserved for future use.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.ForeColor">
+            <summary>
+                <para>Gets or sets the color of the text that has no direct font formatting or style applied.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> object representing the color.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.GetBoundsFromPosition(DevExpress.XtraRichEdit.API.Native.DocumentPosition)">
+            <summary>
+                <para>Gets the rectangle representing the character at the specified position.
+
+</para>
+            </summary>
+            <param name="pos">
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/>, specifying the position in the document.
+
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.Rectangle"/> representing the area occupied by a character or the <b>System.Drawing.Rectangle.Empty</b> value if the bounds could not be determined. Measured in the units that are in effect.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.GetBoundsFromPositionF(DevExpress.XtraRichEdit.API.Native.DocumentPosition)">
+            <summary>
+                <para>Gets the rectangle representing the character at the specified position.
+</para>
+            </summary>
+            <param name="pos">
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/>, specifying the position in the document.
+
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.RectangleF"/> representing the area occupied by a character or the <b>System.Drawing.Rectangle.Empty</b> value if the bounds could not be determined. Measured in the units that are in effect.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.GetLayoutPhysicalBoundsFromPosition(DevExpress.XtraRichEdit.API.Native.DocumentPosition)">
+            <summary>
+                <para>Gets the rectangle representing the character at the specified position with coordinates in a layout model.
+</para>
+            </summary>
+            <param name="pos">
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/> representing the position in the document. 
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.Rectangle"/> representing the character. Measured in layout units.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.GetPositionFromPoint(System.Drawing.PointF)">
+            <summary>
+                <para>Gets the position in the document closest to the specified point. 
+
+</para>
+            </summary>
+            <param name="clientPoint">
+		A <see cref="T:System.Drawing.PointF"/> object that specifies a point in the RichEditControl window.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentPosition"/> object representing a position in the document. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.GetService(System.Type)">
+            <summary>
+                <para>Gets the service object of the specified type. 
+</para>
+            </summary>
+            <param name="serviceType">
+		An object that specifies the type of service object to get. 
+
+            </param>
+            <returns>A service object of the specified type,or a null reference (Nothing in Visual Basic) if there is no service object of this type. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.GetService``1">
+            <summary>
+                <para>Gets the specified service.
+</para>
+            </summary>
+            <returns>A service object of the specified type or null for reference types and zero for numeric value types if a service is not available.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.GetShortcutKey(DevExpress.XtraRichEdit.Commands.RichEditCommandId,DevExpress.XtraRichEdit.RichEditViewType)">
+            <summary>
+                <para>Gets the shortcut key for the specified command.
+</para>
+            </summary>
+            <param name="commandId">
+		A <see cref="T:DevExpress.XtraRichEdit.Commands.RichEditCommandId"/> enumeration member specifying a command.
+
+            </param>
+            <param name="viewType">
+		A <see cref="T:DevExpress.XtraRichEdit.RichEditViewType"/> enumeration member specifying the RichEdit $view.
+
+            </param>
+            <returns>A <see cref="T:System.Windows.Forms.Keys"/> enumeration member identifying shortcut keys.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.HtmlText">
+            <summary>
+                <para>Gets or sets the control's content as HTML text.
+</para>
+            </summary>
+            <value>A string containing text in HTML format.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.HtmlTextChanged">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.HyperlinkClick">
+            <summary>
+                <para>Occurs when an end-user clicks the hyperlink to activate it.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.HyperlinkFormShowing">
+            <summary>
+                <para>Occurs before the Edit Hyperlink dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.InitializeDocument">
+            <summary>
+                <para>Occurs before a document is loaded. Handle this event to set initial document settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.InsertMergeFieldFormShowing">
+            <summary>
+                <para>Occurs before the Insert Merge Field dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.InsertTableCellsFormShowing">
+            <summary>
+                <para>Occurs before the Insert Cells dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.InsertTableFormShowing">
+            <summary>
+                <para>Occurs before the Insert Table dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.InvalidFormatException">
+            <summary>
+                <para>Fires when the supplied data could not be recognized as data in the assumed format for import.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.IsFloatingObjectSelected">
+            <summary>
+                <para>Indicates whether any floating object in the document is selected.
+</para>
+            </summary>
+            <value><b>true</b> if a floating object is selected; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.IsImeWindowOpen">
+            <summary>
+                <para>Determines whether the Input Method Editor (IME) composition window is active.
+</para>
+            </summary>
+            <returns><b>true</b> if the IME window is open; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.IsPrintingAvailable">
+            <summary>
+                <para>Indicates whether the RichEditControl can be printed or exported.
+</para>
+            </summary>
+            <value><b>true</b> if the control can be printed and exported; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.IsSelectionInComment">
+            <summary>
+                <para>Indicates whether the selection (CaretPosition) is located in a comment.
+</para>
+            </summary>
+            <value><b>true</b> if the caret is located in the comment; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.IsSelectionInFooter">
+            <summary>
+                <para>Indicates whether the selection (CaretPosition) is located in the document footer.
+</para>
+            </summary>
+            <value><b>true</b> if the caret is located in the footer; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.IsSelectionInHeader">
+            <summary>
+                <para>Indicates whether the selection (CaretPosition) is located in the document header.
+</para>
+            </summary>
+            <value><b>true</b> if the caret is located in the header; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.IsSelectionInHeaderOrFooter">
+            <summary>
+                <para>Indicates whether the selection (CaretPosition) is located in the main document or the header or footer.
+</para>
+            </summary>
+            <value><b>true</b> if the caret is located in the header or footer; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.IsSelectionInTable">
+            <summary>
+                <para>Gets whether the entire selection is contained in one table.
+</para>
+            </summary>
+            <returns><b>true</b> if a selection is within one table; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.IsSelectionInTextBox">
+            <summary>
+                <para>Indicates whether the selection (CaretPosition) is located in a text box.
+</para>
+            </summary>
+            <value><b>true</b> if the caret is located in the text box; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.IsUpdateLocked">
+            <summary>
+                <para>Gets whether the control has been locked for updating.
+</para>
+            </summary>
+            <value><b>true</b> if the control is locked; otherwise, <b>false</b>. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.LayoutUnit">
+            <summary>
+                <para>Gets or sets a unit of measure used for a document model layout.
+</para>
+            </summary>
+            <value>One of the <see cref="T:DevExpress.XtraRichEdit.DocumentLayoutUnit"/> enumeration values.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.LineNumberingFormShowing">
+            <summary>
+                <para>Occurs before the Line Numbers dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.LoadDocument">
+            <summary>
+                <para>Invokes the "Open..." file dialog, creates a specific importer and loads the file.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.LoadDocument(System.Windows.Forms.IWin32Window)">
+            <summary>
+                <para>Invokes the <b>Open</b> file dialog as a <i>child</i> of the specified <i>parent</i> window.
+</para>
+            </summary>
+            <param name="parent">
+		The <see cref="T:System.Windows.Forms.IWin32Window"/> that represents the parent window.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.LoadDocument(System.String,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Loads a document from a file, specifying the document's format.
+</para>
+            </summary>
+            <param name="fileName">
+		A string value specifying the path to the file from which to load a document.
+
+            </param>
+            <param name="documentFormat">
+		One of the <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> members.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.LoadDocument(System.IO.Stream,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Loads a document from a stream, specifying the document's format.
+</para>
+            </summary>
+            <param name="stream">
+		The stream from which to load a document.
+
+            </param>
+            <param name="documentFormat">
+		One of the <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> members.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.LoadDocument(System.String)">
+            <summary>
+                <para>Loads a specified file. The file format is identified by the file extension.
+</para>
+            </summary>
+            <param name="fileName">
+		A string specifying the path of the file to load.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.LoadDocumentTemplate(System.String,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Loads a specified document so it cannot be overwritten automatically.
+
+</para>
+            </summary>
+            <param name="fileName">
+		A string value specifying the path to the file from which to load a document.
+
+            </param>
+            <param name="documentFormat">
+		One of the <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> members.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.LoadDocumentTemplate(System.IO.Stream,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Loads a specified document so it cannot be overwritten automatically.
+
+</para>
+            </summary>
+            <param name="stream">
+		The stream from which to load a document.
+
+            </param>
+            <param name="documentFormat">
+		One of the <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> members.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.LoadDocumentTemplate(System.String)">
+            <summary>
+                <para>Loads a specified document so it cannot be overwritten automatically.
+
+</para>
+            </summary>
+            <param name="fileName">
+		A string value specifying the path to the file from which to load a document.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.LookAndFeel">
+            <summary>
+                <para>Provides access to the settings that specify the RichEdit control's look and feel.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object whose properties specify the control's look and feel.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.MailMerge(DevExpress.XtraRichEdit.IRichEditDocumentServer)">
+            <summary>
+                <para>Merges the current document and sends the result to the specified RichEditDocumentServer instance.
+</para>
+            </summary>
+            <param name="documentServer">
+		An object implementing the <b>IRichEditDocumentServer</b> interface, such as the <see cref="T:DevExpress.XtraRichEdit.RichEditDocumentServer"/> or the  <see cref="T:DevExpress.XtraRichEdit.RichEditControl"/> instance.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.MailMerge(System.IO.Stream,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Merges the current document and sends the result to the specified stream in a specified format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object that is the output stream.
+
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> enumeration member specifying the destination format.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.MailMerge(DevExpress.XtraRichEdit.API.Native.MailMergeOptions,System.String,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Merges the current document using the specified options and sends the result to the specified file in a specified format.
+</para>
+            </summary>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.MailMergeOptions"/> interface exposing options for the current merge.
+
+            </param>
+            <param name="fileName">
+		A name of the file to which the merged document is saved.
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> enumeration member specifying the destination format.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.MailMerge(DevExpress.XtraRichEdit.API.Native.MailMergeOptions,DevExpress.XtraRichEdit.API.Native.Document)">
+            <summary>
+                <para>Merges the current document using the specified options, and sends the result to the specified <see cref="T:DevExpress.XtraRichEdit.API.Native.Document"/>.
+</para>
+            </summary>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.MailMergeOptions"/> interface exposing options for the current merge.
+
+            </param>
+            <param name="targetDocument">
+		An object exposing the <see cref="T:DevExpress.XtraRichEdit.API.Native.Document"/> interface to which the merged document is sent.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.MailMerge(DevExpress.XtraRichEdit.API.Native.MailMergeOptions,DevExpress.XtraRichEdit.IRichEditDocumentServer)">
+            <summary>
+                <para>Merges the current document using the specified options and sends the result to the specified RichEditDocumentServer instance.
+</para>
+            </summary>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.MailMergeOptions"/> interface exposing options for the current merge.
+
+            </param>
+            <param name="targetDocumentServer">
+		An object implementing the <b>IRichEditDocumentServer</b> interface, such as the <see cref="T:DevExpress.XtraRichEdit.RichEditDocumentServer"/> or the  <see cref="T:DevExpress.XtraRichEdit.RichEditControl"/> instance.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.MailMerge(DevExpress.XtraRichEdit.API.Native.Document)">
+            <summary>
+                <para>Merges the current document and sends the result to the specified <see cref="T:DevExpress.XtraRichEdit.API.Native.Document"/>.
+</para>
+            </summary>
+            <param name="document">
+		An object exposing the <see cref="T:DevExpress.XtraRichEdit.API.Native.Document"/> interface to which the merged document is sent.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.MailMerge(System.String,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Merges the current document and sends the result to the specified file in a specified format.
+</para>
+            </summary>
+            <param name="fileName">
+		A name of the file to which the merged document is saved.
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> enumeration member specifying the destination format.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.MailMerge(DevExpress.XtraRichEdit.API.Native.MailMergeOptions,System.IO.Stream,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Merges the current document using the specified options and sends the result to the specified stream in a specified format.
+</para>
+            </summary>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.MailMergeOptions"/> interface exposing options for the current merge.
+
+            </param>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object that is the output stream.
+
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> enumeration member specifying the destination format.
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.MailMergeFinished">
+            <summary>
+                <para>Fires when mail merge is completed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.MailMergeRecordFinished">
+            <summary>
+                <para>Fires after each data record is merged with the document in the mail merge process.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.MailMergeRecordStarted">
+            <summary>
+                <para>Fires before each data record is merged with the document in the mail merge process.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.MailMergeStarted">
+            <summary>
+                <para>Fires before mail merge starts.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.MeasureSingleLineString(System.String,DevExpress.XtraRichEdit.API.Native.CharacterPropertiesBase)">
+            <summary>
+                <para>Calculates the length of a formatted string.
+
+</para>
+            </summary>
+            <param name="text">
+		A string to measure.
+
+            </param>
+            <param name="properties">
+		A <see cref="T:DevExpress.XtraRichEdit.API.Native.CharacterPropertiesBase"/> interface specifying formatting used to display a string.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.SizeF"/> object that is the rectangle required to display a string.
+
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.MenuManager">
+            <summary>
+                <para>Gets or sets the menu manager which controls the look and feel of context menus.
+
+</para>
+            </summary>
+            <value>An object that implements the <see cref="T:DevExpress.Utils.Menu.IDXMenuManager"/> interface.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.MhtText">
+            <summary>
+                <para>Gets or sets the control's content as MHT text.
+</para>
+            </summary>
+            <value>A string containing text in MHT format.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.MhtTextChanged">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.Model">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.Modified">
+            <summary>
+                <para>Gets or sets a value that indicates that the RichEdit control contents was modified since it was last saved. 
+
+</para>
+            </summary>
+            <value><b>true</b> if the control's contents was modified since it was last saved; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.ModifiedChanged">
+            <summary>
+                <para>Occurs when the value of the <see cref="P:DevExpress.XtraRichEdit.RichEditControl.Modified"/> property is changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.NumberingListFormShowing">
+            <summary>
+                <para>Occurs before the Bullets and Numbering dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.OpenDocumentBytes">
+            <summary>
+                <para>Gets or sets the control's content as an array of bytes in Open Office Text (.odt) format.
+</para>
+            </summary>
+            <value>An array of bytes containing data in the OpenDocument Text (.odt) format.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.OpenDocumentBytesChanged">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.OpenXmlBytes">
+            <summary>
+                <para>Gets or sets the control's content as an array of bytes in Office Open XML (Docx) format.
+</para>
+            </summary>
+            <value>An array of bytes representing the document in Docx format.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.OpenXmlBytesChanged">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.Options">
+            <summary>
+                <para>Provides access to the variety of options which can be specified for the RichEditControl.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraRichEdit.RichEditControlOptions"/> object containing various RichEditControl's options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.Overtype">
+            <summary>
+                <para>Specifies whether or not the overtype mode is enabled for the RichEdit control.
+</para>
+            </summary>
+            <value><b>true</b>, to enable the overtype mode; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.OvertypeChanged">
+            <summary>
+                <para>Fires when the <see cref="P:DevExpress.Xpf.RichEdit.RichEditControl.Overtype"/> property value has been changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.PageSetupFormShowing">
+            <summary>
+                <para>Occurs before the Page Setup dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.ParagraphFormShowing">
+            <summary>
+                <para>Occurs before the Paragraph dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.Paste">
+            <summary>
+                <para>Inserts the contents of the clipboard at the selection.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.PasteSpecialFormShowing">
+            <summary>
+                <para>Occurs before the Paste Special dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.PopupMenuShowing">
+            <summary>
+                <para>Occurs before a context (popup) menu is created for the control's document every time a context menu is being invoked.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.PreparePopupMenu">
+            <summary>
+                <para>Occurs before a context (popup) menu is created for the control's document every time a context menu is being invoked.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.Print">
+            <summary>
+                <para>Prints the document to the default printer.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.PropertyChanged">
+            <summary>
+                <para>Occurs every time any of the RichEditControl class properties has changed its value.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.RangeEditingPermissionsFormShowing">
+            <summary>
+                <para>Occurs before the Editing Permissions dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.ReadOnly">
+            <summary>
+                <para>Gets or sets whether document modifications are prohibited.
+</para>
+            </summary>
+            <value><b>true</b> if the document is in a read-only state; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.ReadOnlyChanged">
+            <summary>
+                <para>Occurs when the read-only state of the RichEdit control is changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.Redo">
+            <summary>
+                <para>Reapplies the last action that was undone in the control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.RemoveService(System.Type)">
+            <summary>
+                <para>Removes the service of specified type from the service container. 
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to remove. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.RemoveService(System.Type,System.Boolean)">
+            <summary>
+                <para>Removes the service of the specified type from the service container. 
+
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to remove. 
+
+            </param>
+            <param name="promote">
+		<b>true</b> to promote this request to any parent service containers; <b>otherwise</b>, false. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.RemoveShortcutKey(System.Windows.Forms.Keys,System.Windows.Forms.Keys,DevExpress.XtraRichEdit.RichEditViewType)">
+            <summary>
+                <para>Removes a command shortcut for the specified RichEditView.
+</para>
+            </summary>
+            <param name="key">
+		A <see cref="T:System.Windows.Forms.Keys"/> enumeration member specifying a shortcut key.
+
+            </param>
+            <param name="modifier">
+		A <see cref="T:System.Windows.Forms.Keys"/> enumeration member specifying a modifier key.
+
+            </param>
+            <param name="viewType">
+		A <see cref="T:DevExpress.XtraRichEdit.Commands.RichEditCommandId"/> enumeration member specifying a command.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.RemoveShortcutKey(System.Windows.Forms.Keys,System.Windows.Forms.Keys)">
+            <summary>
+                <para>Removes a command shortcut for all RichEdit views.
+</para>
+            </summary>
+            <param name="key">
+		A <see cref="T:System.Windows.Forms.Keys"/> enumeration member specifying a shortcut key.
+
+            </param>
+            <param name="modifier">
+		A <see cref="T:System.Windows.Forms.Keys"/> enumeration member specifying a modifier key.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ReplaceService``1(``0)">
+            <summary>
+                <para>Performs a service substitution.
+</para>
+            </summary>
+            <param name="newService">
+		A service of the specified type that will be registered.
+
+            </param>
+            <returns>Previously registered service of the specified type, or null (<b>Nothing</b> in Visual Basic) if the service does not exist.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ResetText">
+            <summary>
+                <para>Clears the text within the control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.RightToLeft">
+            <summary>
+                <para>This property is not in effect for the RichEditControl class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.RtfText">
+            <summary>
+                <para>Gets or sets the formatted text content of the control.
+</para>
+            </summary>
+            <value>A string, containing the document's content in rich text format.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.RtfTextChanged">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.SaveDocument(System.String,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Saves the control's document to a file, specifying the document's format.
+</para>
+            </summary>
+            <param name="fileName">
+		A string value specifying the path to a file into which to save the control's document.
+
+
+            </param>
+            <param name="documentFormat">
+		One of the <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> enumeration values.
+
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.SaveDocument(System.IO.Stream,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Saves the control's document to a stream, specifying the document's format.
+</para>
+            </summary>
+            <param name="stream">
+		The stream to output the document to.
+
+            </param>
+            <param name="documentFormat">
+		One of the <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> enumeration values.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.SaveDocument(System.Windows.Forms.IWin32Window)">
+            <summary>
+                <para>Saves a document in its original format to its original location. If original format and location are not specified, invokes the  <b>Save As</b> dialog that is shown modally as a child of the specified parent window.
+
+
+
+</para>
+            </summary>
+            <param name="parent">
+		The <see cref="T:System.Windows.Forms.IWin32Window"/> that represents the parent window.
+
+            </param>
+            <returns><b>true</b> if a document has been successfully saved; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.SaveDocument">
+            <summary>
+                <para>Saves a document in its original format to its original location.
+</para>
+            </summary>
+            <returns><b>true</b> if a document has been successfully saved; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.SaveDocumentAs">
+            <summary>
+                <para>Invokes a <b>Save As</b> dialog and saves a document.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.SaveDocumentAs(System.Windows.Forms.IWin32Window)">
+            <summary>
+                <para>Invokes the <b>Save As</b> form which is shown modally as a <i>child</i> of the specified <i>parent</i> window.
+
+</para>
+            </summary>
+            <param name="parent">
+		The <see cref="T:System.Windows.Forms.IWin32Window"/> that represents the parent window.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ScrollToCaret">
+            <summary>
+                <para>Scrolls the document to the caret position.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ScrollToCaret(System.Single)">
+            <summary>
+                <para>Scrolls the document so that the caret position is displayed at the specified relative vertical offset.
+</para>
+            </summary>
+            <param name="relativeVerticalPosition">
+		A number specifying the relative vertical offset. Must be within the range 0.0 - 1.0
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.SearchFormShowing">
+            <summary>
+                <para>Occurs when a search form is invoked before it is displayed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.SelectAll">
+            <summary>
+                <para>Selects the entire contents of the RichEditControl.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.SelectionChanged">
+            <summary>
+                <para>Fires in response to changing a selection in the document.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.ShowCaretInReadOnly">
+            <summary>
+                <para>Gets or sets whether the caret is shown if a RichEditControl's content is read-only.
+
+</para>
+            </summary>
+            <value><b>true</b> if the caret is shown; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ShowPrintDialog">
+            <summary>
+                <para>Invokes the <b>Print</b> dialog.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ShowPrintPreview">
+            <summary>
+                <para>Invokes the <b>Print Preview</b> window.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ShowReplaceForm">
+            <summary>
+                <para>Invokes the SearchForm dialog switched to the <b>Replace</b> tab.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ShowReviewingPaneForm">
+            <summary>
+                <para>Displays the Reviewing Pane that lists all document comments. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.ShowSearchForm">
+            <summary>
+                <para>Invokes the "Find and Replace" dialog.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.SpellChecker">
+            <summary>
+                <para>Gets or sets the component used for spelling check by the RichEdit control.
+</para>
+            </summary>
+            <value>A component which provides the <b>DevExpress.XtraSpellChecker.ISpellChecker</b> interface.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.SplitTableCellsFormShowing">
+            <summary>
+                <para>Occurs before the Split Cells dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.StartHeaderFooterEditing">
+            <summary>
+                <para>Occurs when the end-user starts editing a header or footer.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.SymbolFormShowing">
+            <summary>
+                <para>Occurs before the Symbol dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.TableOptionsFormShowing">
+            <summary>
+                <para>Occurs before the Table Options dialog is invoked.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.TablePropertiesFormShowing">
+            <summary>
+                <para>Occurs before the Table Properties dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.TableStyleFormShowing">
+            <summary>
+                <para>Occurs before a Table Style dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.TabsFormShowing">
+            <summary>
+                <para>Occurs before the Tabs dialog is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.Text">
+            <summary>
+                <para>Gets or sets the plain text content of the control.
+</para>
+            </summary>
+            <value>A string, containing the document's unformatted text.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.ToolTipController">
+            <summary>
+                <para>Gets or sets the tooltip controller component that controls the appearance, position and the content of the hints displayed by the RichEditControl.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.ToolTipController"/> component which controls the appearance and behavior of the hints displayed by the RichEditControl.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.Undo">
+            <summary>
+                <para>Cancels changes caused by the last operation.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.UnhandledException">
+            <summary>
+                <para>This event is raised when an unhandled exception of the <see cref="T:DevExpress.XtraRichEdit.RichEditControl"/> occurs.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.Unit">
+            <summary>
+                <para>Gets or sets a unit of measure used within the control. 
+</para>
+            </summary>
+            <value>One of the <see cref="T:DevExpress.Office.DocumentUnit"/> enumeration values.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.UnitChanged">
+            <summary>
+                <para>Fires after the <see cref="P:DevExpress.XtraRichEdit.RichEditControl.Unit"/> property is changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.UnitChanging">
+            <summary>
+                <para>Fires before the <see cref="P:DevExpress.XtraRichEdit.RichEditControl.Unit"/> property is changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.RichEditControl.UpdateCommandUI">
+            <summary>
+                <para>Refreshes the command UI of the RichEditControl.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.UpdateUI">
+            <summary>
+                <para>Raised when changes occur which may affect the control's UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.UseDeferredDataBindingNotifications">
+            <summary>
+                <para>Enables you to fire data binding events immediately for several text properties, resolving issues with multiple RichEdit controls bound to the same data source.
+</para>
+            </summary>
+            <value><b>true</b> to process data bindings in a separate thread as it is in the normal control update; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.VerticalScrollPosition">
+            <summary>
+                <para>Gets or sets the top visible position in the scrolled document.
+</para>
+            </summary>
+            <value>An <see cref="T:System.Int64"/> value that is the distance from the top of the scrolled document. Measured in units specified by the <see cref="P:DevExpress.XtraRichEdit.RichEditControl.LayoutUnit"/> property.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.VerticalScrollValue">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.Views">
+            <summary>
+                <para>Contains settings of the Views that are used to display a document in the RichEdit Control. 
+</para>
+            </summary>
+            <value> A <see cref="T:DevExpress.XtraRichEdit.RichEditViewRepository"/> object which stores the settings of the document Views. 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.VisiblePagesChanged">
+            <summary>
+                <para>Fires when RichEditControl starts or finishes displaying a document page.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraRichEdit.RichEditControl.WordMLText">
+            <summary>
+                <para>Gets or sets the control's content as the text in WordProcessingML (Microsoft Office Word 2003 XML) format.
+</para>
+            </summary>
+            <value>A string of text in WordML format.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.WordMLTextChanged">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraRichEdit.RichEditControl.ZoomChanged">
+            <summary>
+                <para>Fires when the zoom factor used to display the document is changed.
+</para>
+            </summary>
+
+
+        </member>
+    </members>
+</doc>

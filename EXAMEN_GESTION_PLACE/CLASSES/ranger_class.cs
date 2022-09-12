@@ -12,6 +12,7 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
         string designation;
         int ref_salle;
         int nombre_place;
+        int chaise_dispo_par_examen;
 
         public int Id
         {
@@ -62,6 +63,19 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
             set
             {
                 nombre_place = value;
+            }
+        }
+
+        public int Chaise_dispo_par_examen
+        {
+            get
+            {
+                return chaise_dispo_par_examen;
+            }
+
+            set
+            {
+                chaise_dispo_par_examen = value;
             }
         }
     }

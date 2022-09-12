@@ -112,8 +112,10 @@ namespace EXAMEN_GESTION_PLACE.CONTROLS
                 
             {
                 var ref_qr = txt_result.Text;
-                //principal_class.GetInstance().getAllBYID(gunaLabel1, gunaLabel2, gunaLabel3, pictureEdit1);
+
+                principal_class.GetInstance().getAllBYID(gunaLabel1, gunaLabel2, gunaLabel3,gunaLabel4,gunaLabel6,gunaLabel8,gunaLabel5,gunaLabel7, "show_program_to_affect_place_view", "id_inscription",txt_result.Text,DateTime.Parse(gunaDateTimePicker1.Text));
                 principal_class.GetInstance().retreivePhoto("photo", "t_etudiant", "id_etudiant", ref_qr, pictureEdit1);
+
                 txt_result.Text = "";
             }
             else

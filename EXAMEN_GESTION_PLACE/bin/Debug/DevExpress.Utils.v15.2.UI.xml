@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Utils.v15.2.UI</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Utils.UI.Localization.UtilsUIStringId">
+
+            <summary>
+                <para>Contains values corresponding to strings that can be localized for the End-User Report Designer for WPF's Field List.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Cmd_AddCalculatedField">
+            <summary>
+                <para>"Add Calculated Field"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Cmd_AddParameter">
+            <summary>
+                <para>"Add Parameter"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Cmd_ClearCalculatedFields">
+            <summary>
+                <para>"Remove All Calculated Fields"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Cmd_ClearParameters">
+            <summary>
+                <para>"Remove All Parameters"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Cmd_DeleteCalculatedField">
+            <summary>
+                <para>"Delete"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Cmd_DeleteParameter">
+            <summary>
+                <para>"Delete"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Cmd_EditCalculatedFields">
+            <summary>
+                <para>"Edit Calculated Fields..."
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Cmd_EditExpression">
+            <summary>
+                <para>"Edit Expression..."
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Cmd_EditParameters">
+            <summary>
+                <para>"Edit Parameters..."
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.CollectionEditor_Cancel">
+            <summary>
+                <para>"Add or remove <i>&lt;name of the collection item type&gt;</i> objects"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Btn_Cancel">
+            <summary>
+                <para>"Cancel".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Btn_Delete">
+            <summary>
+                <para>"Delete".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Btn_Ok">
+            <summary>
+                <para>"OK".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Cat_Currency">
+            <summary>
+                <para>"Currency".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Cat_DateTime">
+            <summary>
+                <para>"DateTime".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Cat_General">
+            <summary>
+                <para>"General".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Cat_Int32">
+            <summary>
+                <para>"Int32".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Cat_Number">
+            <summary>
+                <para>"Number".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Cat_Percent">
+            <summary>
+                <para>"Percent".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Cat_Special">
+            <summary>
+                <para>"Special".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_GrBox_Sample">
+            <summary>
+                <para>"Sample".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Lbl_Category">
+            <summary>
+                <para>"Category".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Lbl_CustomGeneral">
+            <summary>
+                <para>"General format has no specific number format".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Lbl_Prefix">
+            <summary>
+                <para>"Prefix:".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Lbl_Suffix">
+            <summary>
+                <para>"Suffix:".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Msg_BadSymbol">
+            <summary>
+                <para>"Error: Illegal symbol(s)".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Tab_Custom">
+            <summary>
+                <para>"Custom".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Tab_StandardTypes">
+            <summary>
+                <para>"Standard Types".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.FSForm_Text">
+            <summary>
+                <para>"FormatString Editor".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Msg_ContainsIllegalSymbols">
+            <summary>
+                <para>"Input format string contains illegal symbol(s)."
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Msg_ErrorTitle">
+            <summary>
+                <para>"Error".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.NonePickerNodeText">
+            <summary>
+                <para>"None".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Parameter_Type_Boolean">
+            <summary>
+                <para>"Boolean"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Parameter_Type_DateTime">
+            <summary>
+                <para>"DateTime"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Parameter_Type_Decimal">
+            <summary>
+                <para>"Decimal"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Parameter_Type_Double">
+            <summary>
+                <para>"Double"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Parameter_Type_Float">
+            <summary>
+                <para>"Float"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Parameter_Type_Guid">
+            <summary>
+                <para>"Guid"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Parameter_Type_Int16">
+            <summary>
+                <para>"Int16"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Parameter_Type_Int32">
+            <summary>
+                <para>"Int32"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Parameter_Type_Int64">
+            <summary>
+                <para>"Number (64 bit integer)"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.Parameter_Type_String">
+            <summary>
+                <para>"String"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.ParameterCollectionEditor_Title">
+            <summary>
+                <para>"Parameters"
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.PropGrid_TTip_Alphabetical">
+            <summary>
+                <para>"Alphabetical".
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.UI.Localization.UtilsUIStringId.PropGrid_TTip_Categorized">
+            <summary>
+                <para>"Categorized".
+</para>
+            </summary>
+
+
+        </member>
+    </members>
+</doc>

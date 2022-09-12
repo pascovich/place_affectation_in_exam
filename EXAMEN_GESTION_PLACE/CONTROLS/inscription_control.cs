@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EXAMEN_GESTION_PLACE.CLASSES;
+using EXAMEN_GESTION_PLACE.REPORTS;
+using DevExpress.XtraReports.UI;
 //using System.Configuration
 
 namespace EXAMEN_GESTION_PLACE.CONTROLS
@@ -165,6 +167,22 @@ MessageBoxIcon.Question);
 
             var code = new QRCoder.QRCode(mydata);
             pictureEdit2.Image = code.GetGraphic(50);
+        }
+
+        private void gunaButton5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                rpt_carte rptt = new rpt_carte();
+                rptt.DataSource = principal_class.GetInstance().get_Report_SS("carte_view", int.Parse(textBox3.Text));
+                ReportPrintTool printTool = new ReportPrintTool(rptt);
+                printTool.ShowPreviewDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

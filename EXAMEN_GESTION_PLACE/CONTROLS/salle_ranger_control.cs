@@ -121,6 +121,7 @@ namespace EXAMEN_GESTION_PLACE.CONTROLS
                     ranger_class re = new ranger_class();
                     re.Designation = txt_nom_ranger.Text;
                     re.Nombre_place = int.Parse(txt_number_ranger.Text);
+                    re.Chaise_dispo_par_examen = int.Parse(txt_number_ranger.Text);
                     re.Ref_salle = int.Parse(textBox1.Text);
 
                     principal_class.GetInstance().operation_ranger(re);

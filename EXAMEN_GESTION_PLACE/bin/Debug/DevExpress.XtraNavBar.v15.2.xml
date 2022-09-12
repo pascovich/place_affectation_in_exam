@@ -1,0 +1,5050 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.XtraNavBar.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.XtraNavBar.NavPaneState">
+
+            <summary>
+                <para>Enumerates possible states for a NavBarControl when the NavigationPane paint style is applied.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavPaneState.Collapsed">
+            <summary>
+                <para>A NavBarControl is in its minimized state.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavPaneState.Expanded">
+            <summary>
+                <para>A NavBarControl is in its normal state.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.OptionsNavPane">
+
+            <summary>
+                <para>Contains options that affect the control's appearance and behavior when the NavigationPane paint style is applied.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.OptionsNavPane.#ctor(DevExpress.XtraNavBar.OptionsNavPane)">
+            <summary>
+                <para>Initializes a new instance of the OptionsNavPane class with the options specified by the constructor's parameter.
+</para>
+            </summary>
+            <param name="source">
+		An <see cref="T:DevExpress.XtraNavBar.OptionsNavPane"/> object whose settings are copied to the newly created object.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.OptionsNavPane.#ctor(DevExpress.XtraNavBar.NavBarControl)">
+            <summary>
+                <para>Initializes a new instance of the OptionsNavPane class.
+</para>
+            </summary>
+            <param name="navBar">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> object that owns the created object. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.OptionsNavPane.NavBar"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.ActualNavPaneState">
+            <summary>
+                <para>Gets the actual expansion state of the NavBarControl (in the NavigationPane paint style).
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavPaneState"/> value that specifies the control's actual expansion state.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.AllowOptionsMenuItem">
+            <summary>
+                <para>Gets or sets whether an end-user can invoke the <b>Navigation Pane Options</b> dialog to customize the order of groups and font settings of items.
+</para>
+            </summary>
+            <value><b>true</b> if an end-user can invoke the Navigation Pane Options Dialog; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.AnimationFramesCount">
+            <summary>
+                <para>Gets or sets the number of animation frames when the control is being expanded or collapsed.
+</para>
+            </summary>
+            <value>An integer value that specifies the number of animation frames when the control is being expanded or collapsed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.CollapsedNavPaneContentControl">
+            <summary>
+                <para>Gets or sets the control embedded into the NavBarControl when the nav bar is painted using the Navigation Pane View and the nav bar is collapsed.
+</para>
+            </summary>
+            <value>The control embedded into the NavBarControl when the nav bar is painted using the Navigation Pane View and the nav bar is collapsed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.CollapsedWidth">
+            <summary>
+                <para>Gets or sets the control's width when in the collapsed state.
+</para>
+            </summary>
+            <value>An integer value that specifies the control's width in the collapsed state. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.DefaultNavPaneHeaderImageSize">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.OptionsNavPane.Dispose">
+            <summary>
+                <para>Disposes of the current object and releases all the allocated resources.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.ExpandButtonMode">
+            <summary>
+                <para>Gets or sets the direction of the expand button's arrow and also the direction in which the control is collapsed/expanded. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.Controls.ExpandButtonMode"/> value that specifies the direction of the expand button's arrow.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.ExpandedWidth">
+            <summary>
+                <para>Gets or sets the control's width when in the expanded state.
+</para>
+            </summary>
+            <value>An integer value that specifies the control's width in the expanded state.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.GroupImageShowMode">
+            <summary>
+                <para>Gets or sets whether a group image is always visible, or visible only when the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> is collapsed.
+
+</para>
+            </summary>
+            <value>The <b>GroupImageShowMode</b> value that specifies whether a group image is always visible or visible only when the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> is collapsed.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.IsAnimationInProgress">
+            <summary>
+                <para>Gets whether the control is being expanded or collapsed.
+</para>
+            </summary>
+            <value><b>true</b> if the control is being expanded or collapsed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.MaxPopupFormWidth">
+            <summary>
+                <para>Gets or sets the maximum width of the popup form displayed when clicking the active NavBarGroup in the collapsed NavBarControl.
+</para>
+            </summary>
+            <value>A <b>System.Int32</b> value specifying the maximum width of the popup form.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.NavBar">
+            <summary>
+                <para>Gets the NavBarControl that owns the current object.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> object that owns the current OptionsNavPane object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.NavPaneState">
+            <summary>
+                <para>Gets or sets the NavBarControl's expansion state  when the NavigationPane paint style is applied.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavPaneState"/> value that specifies the control's expansion state.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.PopupFormSize">
+            <summary>
+                <para>Gets or sets the popup form's size.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Size"/> structure that specifies the popup form's width and height, in pixels.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.ShowExpandButton">
+            <summary>
+                <para>Gets or sets whether the expand button is visible when the NavigationPane paint style is applied.
+</para>
+            </summary>
+            <value><b>true</b> if the expand button is visible; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.ShowGroupImageInHeader">
+            <summary>
+                <para>Gets or sets whether to display the active group's image in the NavBarControl's header.
+</para>
+            </summary>
+            <value><b>true</b> to display the active group's image in the NavBarControl's header; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.ShowHeaderText">
+            <summary>
+                <para>Gets or sets whether to display the active group's caption in the NavBarControl's header.
+
+</para>
+            </summary>
+            <value><b>true</b>, to display the active group's caption in the NavBarControl's header; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.ShowOverflowButton">
+            <summary>
+                <para>Gets or sets the visibility of the overflow button displayed within the Navigation Pane Overflow Panel.
+</para>
+            </summary>
+            <value><b>true</b> if the overflow button is visible; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.ShowOverflowPanel">
+            <summary>
+                <para>Gets or sets whether the Overflow panel is displayed.
+</para>
+            </summary>
+            <value><b>true</b> to display the Overflow panel; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.OptionsNavPane.ShowSplitter">
+            <summary>
+                <para>Gets or sets whether the Navigation Pane Splitter is visible.
+</para>
+            </summary>
+            <value><b>true</b> to display the splitter; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.SkinExplorerBarViewScrollStyle">
+
+            <summary>
+                <para>Lists the values that specify how a NavBarControl is scrolled when a skinning Explorer Bar View paint scheme is applied.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.SkinExplorerBarViewScrollStyle.Buttons">
+            <summary>
+                <para>The control is scrolled using scroll buttons.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.SkinExplorerBarViewScrollStyle.Default">
+            <summary>
+                <para>Currently, this is the same as the <see cref="F:DevExpress.XtraNavBar.SkinExplorerBarViewScrollStyle.Buttons"/> option.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.SkinExplorerBarViewScrollStyle.ScrollBar">
+            <summary>
+                <para>The control is scrolled using a scroll bar.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.LinkSelectionModeType">
+
+            <summary>
+                <para>Defines the set of values used to specify the link selection mode in the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.LinkSelectionModeType.None">
+            <summary>
+                <para>Link selection is disabled.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.LinkSelectionModeType.OneInControl">
+            <summary>
+                <para>Only one link at a time can be selected throughout the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.LinkSelectionModeType.OneInGroup">
+            <summary>
+                <para>Each group can have a selected link independent of other groups. A group will not have a selected link until you or an end-user has explicitly selected a link.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.LinkSelectionModeType.OneInGroupAndAllowAutoSelect">
+            <summary>
+                <para>Each group has a selected link independent of other groups. Unlike the <see cref="F:DevExpress.XtraNavBar.LinkSelectionModeType.OneInGroup"/> mode, the <b>OneInGroupAndAllowAutoSelect</b> mode enables automatic link selection in a group (on group activation) if the group does not already have a selection. By default, the first link in the group is auto-selected. To prevent a specific link from being auto-selected, use the <see cref="P:DevExpress.XtraNavBar.NavBarItem.AllowAutoSelect"/> and <see cref="P:DevExpress.XtraNavBar.NavBarItemLink.AllowAutoSelect"/> properties.
+
+Automatic link selection is not supported for Explorer Bar Views.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarLayoutOptions">
+
+            <summary>
+                <para>Provides members related to typical <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> layout settings.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarLayoutOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the NavBarLayoutOptions class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarLayoutOptions.StoreAppearance">
+            <summary>
+                <para>Gets or sets whether the items' appearance settings are also stored when the layout is saved to storage, and restored when the layout is restored from storage. 
+</para>
+            </summary>
+            <value><b>true</b>, if the items' appearance settings are included in the layout when it's saved to storage and these settings are restored when the layout is restored from storage; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarViewKind">
+
+            <summary>
+                <para>Lists values that specify the kind of the NavBarControl's paint style.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarViewKind.Default">
+            <summary>
+                <para>The nav bar is painted using the currently applied WindowsXP theme or Skin.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarViewKind.ExplorerBar">
+            <summary>
+                <para>The nav bar is painted flat, using the currently applied WindowsXP theme or Skin.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarViewKind.NavigationPane">
+            <summary>
+                <para>The nav bar is painted like a Navigation Pane, the look and feel settings are ignored.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarViewKind.SideBar">
+            <summary>
+                <para>The nav bar is painted like a Side Bar, it can only be painted flat, using the <b>Style3D</b> style or the currently applied WindowsXP theme.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarAppearances">
+
+            <summary>
+                <para>Provides the appearance settings used to paint the XtraNavBar control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarAppearances.#ctor">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraNavBar.NavBarAppearances"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.Background">
+            <summary>
+                <para>Gets the appearance settings used to paint the NavBarControl's background.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the NavBarControl's background.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.Button">
+            <summary>
+                <para>Gets the appearance settings used to paint scroll buttons.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint scroll buttons.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.ButtonDisabled">
+            <summary>
+                <para>Gets the appearance settings used to paint scroll buttons when they are disabled.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint scroll buttons when they are disabled.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.ButtonHotTracked">
+            <summary>
+                <para>Gets the appearance settings used to paint hot-tracked scroll buttons.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint hot-tracked scroll buttons.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.ButtonPressed">
+            <summary>
+                <para>Gets the appearance settings used to paint the pressed scroll button.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the pressed scroll button.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.GroupBackground">
+            <summary>
+                <para>Gets the appearance settings used to paint the group's background.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the group's background.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.GroupHeader">
+            <summary>
+                <para>Gets the appearance settings used to paint group headers.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint group headers.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.GroupHeaderActive">
+            <summary>
+                <para>Gets the appearance settings used to paint the header of the currently active Group.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the header of the currently active group.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.GroupHeaderHotTracked">
+            <summary>
+                <para>Gets the appearance settings used to paint the group header when it's hot-tracked.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the group header when it's hot-tracked.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.GroupHeaderPressed">
+            <summary>
+                <para>Gets the appearance settings used to paint the group header when it's pressed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the group header when it's pressed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.Hint">
+            <summary>
+                <para>Gets the appearance settings used to paint hints.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint hints.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.Item">
+            <summary>
+                <para>Gets the appearance settings used to paint item links.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint item links.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.ItemActive">
+            <summary>
+                <para>Gets the appearance settings used to paint the currently active item link.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the currently active item link.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.ItemDisabled">
+            <summary>
+                <para>Gets the appearance settings used to paint the item link which is disabled.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the item link which is disabled.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.ItemHotTracked">
+            <summary>
+                <para>Gets the appearance settings used to paint the item link when it's hot-tracked.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the item link when it's hot-tracked.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.ItemPressed">
+            <summary>
+                <para>Gets the appearance settings used to paint an item link when it's pressed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint an item link when it's pressed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.LinkDropTarget">
+            <summary>
+                <para>Gets the appearance settings used to paint the horizontal line which indicates the position that the link is being dragged to.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the horizontal line which indicates the position that the link is being dragged to.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.NavigationPaneHeader">
+            <summary>
+                <para>Gets the appearance settings used to paint the navigation pane's header.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the header of the navigation pane.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.NavPaneContentButton">
+            <summary>
+                <para>Gets the appearance settings used to paint the <b>Content Button</b>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that contains appearance settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.NavPaneContentButtonHotTracked">
+            <summary>
+                <para>Gets the appearance settings used to paint the <b>Content Button</b> when it is hot-tracked.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that contains appearance settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.NavPaneContentButtonPressed">
+            <summary>
+                <para>Gets the appearance settings used to paint the <b>Content Button</b> in the pressed state.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that contains appearance settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarAppearances.NavPaneContentButtonReleased">
+            <summary>
+                <para>Gets the appearance settings used to paint the <b>Content Button</b> after it has been pressed and released by a user.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that contains appearance settings.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarGroupControlContainer">
+
+            <summary>
+                <para>Represents the container displayed within a NavBar group when this group's <see cref="P:DevExpress.XtraNavBar.NavBarGroup.GroupStyle"/> property is set to <see cref="F:DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGroupControlContainer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraNavBar.NavBarGroupControlContainer"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroupControlContainer.Anchor">
+            <summary>
+                <para>Gets or sets which control edges are anchored to the edges of its container. This property is not supported by the NavBarGroupControlContainer class.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.AnchorStyles"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroupControlContainer.AutoScroll">
+            <summary>
+                <para>Gets or sets a value indicating whether the container will allow an end-user to scroll to any controls placed outside of its visible boundaries.
+</para>
+            </summary>
+            <value><b>true</b> if the container allows auto-scrolling; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroupControlContainer.BackColor">
+            <summary>
+                <para>Gets the background color of the control container.
+</para>
+            </summary>
+            <value>The background color of the control container.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroupControlContainer.Dock">
+            <summary>
+                <para>Gets or sets which edge of the parent container a control is docked to.
+</para>
+            </summary>
+            <value>This property always returns DockStyle.None.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroupControlContainer.Location">
+            <summary>
+                <para>Gets or sets the coordinates of the container's upper-left corner in relation to the group's upper-left corner.
+</para>
+            </summary>
+            <value>The <see cref="T:System.Drawing.Point"/> that represents the upper-left corner of the container relative to the upper-left corner of the group.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroupControlContainer.OwnerGroup">
+            <summary>
+                <para>Gets the group that owns the current control container.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object that specifies the group that owns and displays the control container.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroupControlContainer.Size">
+            <summary>
+                <para>Gets or sets the height and width of the container.
+</para>
+            </summary>
+            <value>The <see cref="T:System.Drawing.Size"/> object that represents the height and width of the container in pixels.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroupControlContainer.TabStop">
+            <summary>
+                <para>Gets or sets a value indicating whether a user can focus this control using the TAB key.
+</para>
+            </summary>
+            <value><b>true</b> if the user can focus the control using the TAB key; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroupControlContainer.Visible">
+            <summary>
+                <para>Gets or sets a value indicating whether the container is visible.
+</para>
+            </summary>
+            <value><b>true</b> if the control is visible; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarStringId">
+
+            <summary>
+                <para>Contains values corresponding to strings that can be localized.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarStringId.NavPaneChevronHint">
+            <summary>
+                <para>The text of the hint displayed for the dropdown button in the Overflow panel. This panel is available when the "NavigationPane" view is applied.
+<para>
+Default return value of the <b>GetLocalizedString</b> method: "Configure buttons"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarStringId.NavPaneMenuAddRemoveButtons">
+            <summary>
+                <para>The caption of the "Add or Remove Buttons" item in the dropdown menu displayed for the Overflow panel when the "NavigationPane" view is applied.
+<para>
+Default return value of the <b>GetLocalizedString</b> method: "Add or Remove Buttons"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarStringId.NavPaneMenuPaneOptions">
+            <summary>
+                <para>The title of the menu item displaying the <b>Navigation Pane Options</b> dialog (see <see cref="P:DevExpress.XtraNavBar.OptionsNavPane.AllowOptionsMenuItem"/>).
+<para>
+Default return value of the <b>GetLocalizedString</b> method: "Navigation Pane Options..."
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarStringId.NavPaneMenuShowFewerButtons">
+            <summary>
+                <para>The caption of the "Show Fewer Buttons" item in the dropdown menu displayed for the Overflow panel when the "NavigationPane" view is applied.
+<para>
+Default return value of the <b>GetLocalizedString</b> method: "Show Fewer Buttons"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarStringId.NavPaneMenuShowMoreButtons">
+            <summary>
+                <para>The caption of the "Show More Buttons" item in the dropdown menu displayed for the Overflow panel when the "NavigationPane" view is applied.
+<para>
+Default return value of the <b>GetLocalizedString</b> method: "Show More Buttons"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarStringId.NavPaneOptionsFormCancel">
+            <summary>
+                <para>The caption of the Cancel button in the <b>Navigation Pane Options</b> dialog (see <see cref="P:DevExpress.XtraNavBar.OptionsNavPane.AllowOptionsMenuItem"/>).
+<para>
+Default return value of the <b>GetLocalizedString</b> method: ""
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarStringId.NavPaneOptionsFormDescription">
+            <summary>
+                <para>A description label in the <b>Navigation Pane Options</b> dialog (see <see cref="P:DevExpress.XtraNavBar.OptionsNavPane.AllowOptionsMenuItem"/>).
+<para>
+Default return value of the <b>GetLocalizedString</b> method: "Display buttons in this order"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarStringId.NavPaneOptionsFormFont">
+            <summary>
+                <para>The caption of the Font button in the <b>Navigation Pane Options</b> dialog (see <see cref="P:DevExpress.XtraNavBar.OptionsNavPane.AllowOptionsMenuItem"/>).
+<para>
+Default return value of the <b>GetLocalizedString</b> method: "Font"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarStringId.NavPaneOptionsFormMoveDown">
+            <summary>
+                <para>The caption of the Move Down button in the <b>Navigation Pane Options</b> dialog (see <see cref="P:DevExpress.XtraNavBar.OptionsNavPane.AllowOptionsMenuItem"/>).
+<para>
+Default return value of the <b>GetLocalizedString</b> method: "Move Down"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarStringId.NavPaneOptionsFormMoveUp">
+            <summary>
+                <para>The caption of the Move Up button in the <b>Navigation Pane Options</b> dialog (see <see cref="P:DevExpress.XtraNavBar.OptionsNavPane.AllowOptionsMenuItem"/>).
+<para>
+Default return value of the <b>GetLocalizedString</b> method: "Move Up"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarStringId.NavPaneOptionsFormOk">
+            <summary>
+                <para>The caption of the Ok button in the <b>Navigation Pane Options</b> dialog (see <see cref="P:DevExpress.XtraNavBar.OptionsNavPane.AllowOptionsMenuItem"/>).
+<para>
+Default return value of the <b>GetLocalizedString</b> method: "OK"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarStringId.NavPaneOptionsFormReset">
+            <summary>
+                <para>The caption of the Reset button in the <b>Navigation Pane Options</b> dialog (see <see cref="P:DevExpress.XtraNavBar.OptionsNavPane.AllowOptionsMenuItem"/>).
+<para>
+Default return value of the <b>GetLocalizedString</b> method: "Reset"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarImage">
+
+            <summary>
+                <para>Contains possible styles for displaying images within groups' captions. 
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarImage.Default">
+            <summary>
+                <para>A group's caption displays a small image, if available. If no small image is available, the group displays a large image. If no large image is available, the group does not display any image.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarImage.Large">
+            <summary>
+                <para>A group's caption displays a large image, if available. If no large image is available, the group does not display any image.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarImage.Small">
+            <summary>
+                <para>A group's caption displays a small image, if available. If no small image is available, the group does not display any image.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarGroupStyle">
+
+            <summary>
+                <para>Contains possible styles for representing a group's contents.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer">
+            <summary>
+                <para><para>
+This setting allows you to display any controls within the group. In this case, the group does not display its links. Instead, it provides a container control - a surface on which you can place any arbitrary controls. For more information, see the <see cref="T:DevExpress.XtraNavBar.NavBarGroupControlContainer"/> topic.
+</para>
+
+In the image below the NavBarControl's group displays a Tree List control. 
+<para>
+
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarGroupStyle.Default">
+            <summary>
+                <para>The link arrangement mode is dependent on the current View.
+
+<para>
+In the following Views, links are painted in the <b>LargeIconsText</b> mode: <b>BaseView</b>, <b>FlatView</b>, <b>Office1View</b>, <b>Office2View</b>, <b>Office3View</b>, <b>AdvExplorerBarView</b>, <b>ExplorerBarView</b>, <b>UltraFlatExplorerBarView</b>, <b>XP1View</b>, <b>XP2View</b> and <b>XPExplorerBarView</b>.
+</para>
+
+<para>
+In other Views, links are painted in the <b>SmallIconsText</b> mode.
+</para>
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsList">
+            <summary>
+                <para>A group's links are displayed across then down, using large icons and without captions.
+<para>
+
+</para>
+This mode is supported in the following paint Views: <b>BaseView</b>, <b>FlatView</b>, <b>Office1View</b>, <b>Office2View</b>, <b>Office3View</b>, <b>UltraFlatExplorerBarView</b>, <b>XP1View</b>, <b>XP2View</b> and <b>NavigationPane</b>.
+
+<para>
+In other paint Views, links are painted differently:
+</para>
+
+<para>
+- <b>VSToolBoxView</b> - links are painted in the <b>SmallIconsList</b> mode.
+</para>
+<para>
+- all other paint Views - links are painted in the <b>LargeIconsText</b> mode.
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText">
+            <summary>
+                <para>A group's links are displayed in one column, using large icons and with captions. 
+<para>
+
+</para>
+<para>
+In the <b>VSToolBoxView</b> paint style, links are painted in the <b>SmallIconsText</b> mode.
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarGroupStyle.SmallIconsList">
+            <summary>
+                <para>A group's links are displayed across then down, using small icons and without captions. 
+<para>
+
+</para>
+This mode is supported in the following paint Views: <b>BaseView</b>, <b>FlatView</b>, <b>Office1View</b>, <b>Office2View</b>, <b>Office3View</b>, <b>VSToolBoxView</b>, <b>UltraFlatExplorerBarView</b>, <b>XP1View</b>, <b>XP2View</b> and <b>NavigationPane</b>.
+<para>
+In other paint Views, links are painted in the <b>SmallIconsText</b> mode.
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarGroupStyle.SmallIconsText">
+            <summary>
+                <para>A group's links are displayed in one column, using small icons and with captions. 
+<para>
+
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarGetHintEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.GetHint"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGetHintEventHandler.Invoke(System.Object,DevExpress.XtraNavBar.NavBarGetHintEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.GetHint"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		An object representing the source of the event (tyically the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>).
+
+            </param>
+            <param name="e">
+		An <see cref="T:DevExpress.XtraNavBar.NavBarGetHintEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarGetHintEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraNavBar.NavBarControl.GetHint"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGetHintEventArgs.#ctor(DevExpress.XtraNavBar.ViewInfo.NavBarHintInfo)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraNavBar.NavBarGetHintEventArgs"/> class.
+</para>
+            </summary>
+            <param name="hintInfo">
+		A <see cref="T:DevExpress.XtraNavBar.ViewInfo.NavBarHintInfo"/> object providing information on the element for which the hint is displayed. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.NavBarCustomHintEventArgs.HintInfo"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGetHintEventArgs.Appearance">
+            <summary>
+                <para>Gets the appearance settings used to paint the hint.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the hint.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGetHintEventArgs.Hint">
+            <summary>
+                <para>Gets or sets the hint text.
+</para>
+            </summary>
+            <value>A string value specifying the hint text.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarCustomHintEventArgs">
+
+            <summary>
+                <para>Serves as the base class for objects which provide data for hint related events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarCustomHintEventArgs.#ctor(DevExpress.XtraNavBar.ViewInfo.NavBarHintInfo)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraNavBar.NavBarCustomHintEventArgs"/> class.
+</para>
+            </summary>
+            <param name="hintInfo">
+		A <see cref="T:DevExpress.XtraNavBar.ViewInfo.NavBarHintInfo"/> object providing information on the element for which the hint event is triggered. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.NavBarCustomHintEventArgs.HintInfo"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarCustomHintEventArgs.Group">
+            <summary>
+                <para>Gets the group for which the hint is displayed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the group for which the hint is displayed. <b>null</b> (<b>Nothing</b> in Visual Basic) if the hint is displayed for another element.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarCustomHintEventArgs.HintInfo">
+            <summary>
+                <para>Gets an object providing information on the NavBarControl's element for which the hint event was fired.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.ViewInfo.NavBarHintInfo"/> object containing information on the element for which the hint event was fired.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarCustomHintEventArgs.Link">
+            <summary>
+                <para>Gets the link for which the hint is displayed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the link for which the hint is displayed. <b>null</b> (<b>Nothing</b> in Visual Basic) if the hint is displayed for another element.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarCustomDrawHintEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawHint"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarCustomDrawHintEventHandler.Invoke(System.Object,DevExpress.XtraNavBar.NavBarCustomDrawHintEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawHint"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		An object specifying the event source (typically the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>).
+
+            </param>
+            <param name="e">
+		An <see cref="T:DevExpress.XtraNavBar.NavBarCustomDrawHintEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarCustomDrawHintEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawHint"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarCustomDrawHintEventArgs.#ctor(DevExpress.XtraNavBar.ViewInfo.NavBarHintInfo,System.Windows.Forms.PaintEventArgs,System.Drawing.Rectangle)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraNavBar.NavBarCustomDrawHintEventArgs"/> class.
+</para>
+            </summary>
+            <param name="hintInfo">
+		A <see cref="T:DevExpress.XtraNavBar.ViewInfo.NavBarHintInfo"/> object containing information on the NavBarControl's element for which the event was fired. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.NavBarCustomHintEventArgs.HintInfo"/> property.
+
+            </param>
+            <param name="args">
+		A <see cref="T:System.Windows.Forms.PaintEventArgs"/> object containing painting information. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.NavBarCustomDrawHintEventArgs.PaintArgs"/> property.
+
+            </param>
+            <param name="bounds">
+		A <see cref="T:System.Drawing.Rectangle"/> structure specifying the hint region's bounds. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.NavBarCustomDrawHintEventArgs.Bounds"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarCustomDrawHintEventArgs.Appearance">
+            <summary>
+                <para>Gets the painted hint's appearance settings.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the painted hint's appearance settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarCustomDrawHintEventArgs.Bounds">
+            <summary>
+                <para>Gets the hint's bound rectangle.
+</para>
+            </summary>
+            <value>A <b>System.Drawing.Rectangle</b> object specifying the hint's boundaries.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarCustomDrawHintEventArgs.Handled">
+            <summary>
+                <para>Gets or sets a value specifying whether the control should perform default hint painting.
+</para>
+            </summary>
+            <value><b>true</b> if the control's default hint painting is disabled; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarCustomDrawHintEventArgs.Hint">
+            <summary>
+                <para>Gets the hint text.
+</para>
+            </summary>
+            <value>A string value representing the hint text.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarCustomDrawHintEventArgs.PaintArgs">
+            <summary>
+                <para>Gets an object containing painting parameters.
+</para>
+            </summary>
+            <value>A <b>System.Windows.Forms.PaintEventArgs</b> object containing painting parameters.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarCalcHintSizeEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.CalcHintSize"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarCalcHintSizeEventHandler.Invoke(System.Object,DevExpress.XtraNavBar.NavBarCalcHintSizeEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.CalcHintSize"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		An object representing the source of the event (typically the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>).
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarCalcHintSizeEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarCalcHintSizeEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraNavBar.NavBarControl.CalcHintSize"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarCalcHintSizeEventArgs.#ctor(DevExpress.XtraNavBar.ViewInfo.NavBarHintInfo,System.Drawing.Size)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraNavBar.NavBarCalcHintSizeEventArgs"/> class.
+</para>
+            </summary>
+            <param name="hintInfo">
+		A <see cref="T:DevExpress.XtraNavBar.ViewInfo.NavBarHintInfo"/> object containing information on the NavBarControl's element for which the event was fired. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.NavBarCustomHintEventArgs.HintInfo"/> property.
+
+            </param>
+            <param name="size">
+		A <see cref="T:System.Drawing.Size"/> structure specifying the size of the hint's region. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.NavBarCalcHintSizeEventArgs.Size"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarCalcHintSizeEventArgs.Size">
+            <summary>
+                <para>Gets or sets hint size.
+</para>
+            </summary>
+            <value>A <b>System.Drawing.Size</b> object whose properties specify hint size.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.ViewInfo.NavBarSelectedLinkChangedEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.SelectedLinkChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.ViewInfo.NavBarSelectedLinkChangedEventHandler.Invoke(System.Object,DevExpress.XtraNavBar.ViewInfo.NavBarSelectedLinkChangedEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.SelectedLinkChanged"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		An object representing the source of the event (typically the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>).
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraNavBar.ViewInfo.NavBarSelectedLinkChangedEventArgs"/> object that contains event data. 
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.ViewInfo.NavBarSelectedLinkChangedEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraNavBar.NavBarControl.SelectedLinkChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.ViewInfo.NavBarSelectedLinkChangedEventArgs.#ctor(DevExpress.XtraNavBar.NavBarGroup,DevExpress.XtraNavBar.NavBarItemLink)">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.XtraNavBar.ViewInfo.NavBarSelectedLinkChangedEventArgs"/> class.
+</para>
+            </summary>
+            <param name="group">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the group whose link has been selected. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.ViewInfo.NavBarSelectedLinkChangedEventArgs.Group"/> property.
+
+            </param>
+            <param name="link">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the link which has been selected. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.ViewInfo.NavBarSelectedLinkChangedEventArgs.Link"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ViewInfo.NavBarSelectedLinkChangedEventArgs.Group">
+            <summary>
+                <para>Gets a group containing the link which has been selected.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the group to which the selected link belongs.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ViewInfo.NavBarSelectedLinkChangedEventArgs.Link">
+            <summary>
+                <para>Gets the link which has been selected.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the selected link.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.ViewInfo.NavBarDragDropEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.NavDragDrop"/> and <see cref="E:DevExpress.XtraNavBar.NavBarControl.NavDragOver"/> events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.ViewInfo.NavBarDragDropEventHandler.Invoke(System.Object,DevExpress.XtraNavBar.ViewInfo.NavBarDragDropEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.NavDragDrop"/> and <see cref="E:DevExpress.XtraNavBar.NavBarControl.NavDragOver"/> events.
+</para>
+            </summary>
+            <param name="sender">
+		An object representing the event source (typically the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>).
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraNavBar.ViewInfo.NavBarDragDropEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.ViewInfo.NavBarDragDropEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraNavBar.NavBarControl.NavDragDrop"/> and <see cref="E:DevExpress.XtraNavBar.NavBarControl.NavDragOver"/> events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.ViewInfo.NavBarDragDropEventArgs.#ctor(DevExpress.XtraNavBar.NavBarGroup,System.Int32,System.Windows.Forms.IDataObject,System.Int32,System.Int32,System.Int32,System.Windows.Forms.DragDropEffects,System.Windows.Forms.DragDropEffects)">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.XtraNavBar.ViewInfo.NavBarDragDropEventArgs"/> class.
+</para>
+            </summary>
+            <param name="group">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the group to which the dragged link is about to be or has been dropped.
+
+            </param>
+            <param name="insertPosition">
+		An integer value specifying the zero-based index of the group link, before which the dragged link is about to be or has been dropped.
+
+            </param>
+            <param name="data">
+		An object supporting the <b>IDataObject</b> interface which contains data associated with this event.
+
+            </param>
+            <param name="keyState">
+		An integer value indicating the current state of the SHIFT, CTRL, and ALT keys.
+
+            </param>
+            <param name="x">
+		An integer value specifying the x-coordinate of the mouse cursor in pixels. 
+
+            </param>
+            <param name="y">
+		An integer value specifying the y-coordinate of the mouse cursor in pixels. 
+
+            </param>
+            <param name="allowedEffect">
+		One of the <b>DragDropEffects</b> enumeration values specifying the drag-and-drop operation allowed by the source of the drag event.
+
+            </param>
+            <param name="effect">
+		One of the <b>DragDropEffects</b> enumeration values specifying the drag-and-drop operation allowed by the target of the drag event.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ViewInfo.NavBarDragDropEventArgs.Group">
+            <summary>
+                <para>Gets a group into which a dragged item is about to be or has been dropped.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the target group of a drag-and-drop operation.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ViewInfo.NavBarDragDropEventArgs.InsertPosition">
+            <summary>
+                <para>Gets the position within the group to which the link is about to be or has been dropped.
+</para>
+            </summary>
+            <value>An integer value specifying the zero-based target link index.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawBackground"/>, <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawGroupClientBackground"/> and <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawGroupClientForeground"/> events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventHandler.Invoke(System.Object,DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawBackground"/>, <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawGroupClientBackground"/> and <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawGroupClientForeground"/> events.
+</para>
+            </summary>
+            <param name="sender">
+		An object representing the source of the event (typically the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>).
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawBackground"/>, <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawGroupClientBackground"/> and <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawGroupClientForeground"/> events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs.#ctor(DevExpress.Utils.Drawing.ObjectInfoArgs,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs"/> class.
+</para>
+            </summary>
+            <param name="objectInfo">
+		A <see cref="T:System.Drawing.Rectangle"/> structure which represents the painted element's bounding rectangle. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs.RealBounds"/> property.
+
+            </param>
+            <param name="realBounds">
+		A <see cref="T:DevExpress.Utils.Drawing.ObjectInfoArgs"/> object which contains the information about the painted element. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs.ObjectInfo"/> property.
+
+            </param>
+            <param name="appearance">
+		A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which specifies the painted element's appearance settings. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs.Appearance"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs.Appearance">
+            <summary>
+                <para>Gets the painted element's appearance settings.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the painted element's appearance settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs.Cache">
+            <summary>
+                <para>Gets an object which specifies the storage for the most  used pens, fonts and brushes.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs.Graphics">
+            <summary>
+                <para>Gets an object used to paint the object.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Graphics"/> object used for painting.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs.Handled">
+            <summary>
+                <para>Gets or sets a value specifying whether the control must perform default painting after an event handler has been executed.
+</para>
+            </summary>
+            <value><b>true</b> if the control doesn't perform default object painting after an event handler has been executed; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs.ObjectInfo">
+            <summary>
+                <para>Gets an object providing information on the element being painted.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.Drawing.ObjectInfoArgs"/> descendant providing the element's specific information.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs.RealBounds">
+            <summary>
+                <para>Gets the bounding rectangle of the painted object.
+</para>
+            </summary>
+            <value>A <b>System.Drawing.Rectangle</b> structure specifying the object's boundaries.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.ViewInfo.CustomDrawNavBarElementEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawGroupCaption"/> and <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawLink"/> events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.ViewInfo.CustomDrawNavBarElementEventHandler.Invoke(System.Object,DevExpress.XtraNavBar.ViewInfo.CustomDrawNavBarElementEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawGroupCaption"/> and <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawLink"/> events.
+</para>
+            </summary>
+            <param name="sender">
+		An object representing the source of the event (typically the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>).
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraNavBar.ViewInfo.CustomDrawNavBarElementEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.ViewInfo.CustomDrawNavBarElementEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawGroupCaption"/> and <see cref="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawLink"/> events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.ViewInfo.CustomDrawNavBarElementEventArgs.#ctor(DevExpress.Utils.Drawing.ObjectInfoArgs,System.Drawing.Rectangle,DevExpress.Utils.AppearanceObject)">
+            <summary>
+                <para>Initializes a new instance of the CustomDrawNavBarElementEventArgs class with the specified settings.
+</para>
+            </summary>
+            <param name="objectInfo">
+		A DevExpress.Utils.Drawing.ObjectInfoArgs object which contains the information about the painted element. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs.ObjectInfo"/> property.
+
+            </param>
+            <param name="realBounds">
+		A System.Drawing.Rectangle structure which represents the painted element's bounding rectangle. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs.RealBounds"/> property. 
+
+            </param>
+            <param name="appearance">
+		A AppearanceObject object which specifies the painted element's appearance settings. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.ViewInfo.CustomDrawObjectEventArgs.Appearance"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ViewInfo.CustomDrawNavBarElementEventArgs.Caption">
+            <summary>
+                <para>Gets or sets the caption of the painted element.
+</para>
+            </summary>
+            <value>A string value specifying the painted element's caption.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ViewInfo.CustomDrawNavBarElementEventArgs.Image">
+            <summary>
+                <para>Gets or sets the image displayed within the painted element.
+</para>
+            </summary>
+            <value>A <b>System.Drawing.Image</b> object representing the element's image.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.ICollectionItem">
+
+            <summary>
+                <para>Declares members implemented by collection items.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ICollectionItem.Collection">
+            <summary>
+                <para>When implemented by a class, gets the collection to which an item belongs.
+</para>
+            </summary>
+            <value>An object supporting the <b>System.Collections.ICollection</b> interface representing the collection which owns an item. <b>null</b> (<b>Nothing</b> in Visual Basic) if the item doesn't belong to the collection.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.ICollectionItem.ItemChanged">
+            <summary>
+                <para>When implemented by a class, fires in response to item property values changes.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ICollectionItem.ItemName">
+            <summary>
+                <para>When implemented by a class, gets the item's name.
+</para>
+            </summary>
+            <value>A string value specifying the item's name.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.ICollectionItem.SetCollection(DevExpress.XtraNavBar.Collection)">
+            <summary>
+                <para>When implemented by a class assigns the item's owning collection.
+</para>
+            </summary>
+            <param name="newCollection">
+		An object supporting the <b>System.Collections.ICollection</b> interface representing the collection to which the item belongs.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavReadOnlyLinkCollection">
+
+            <summary>
+                <para>Represents a read-only collection of links.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavReadOnlyLinkCollection.#ctor">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.XtraNavBar.NavReadOnlyLinkCollection"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavReadOnlyLinkCollection.Count">
+            <summary>
+                <para>Returns the actual number of links in the current collection.
+</para>
+            </summary>
+            <value>The number of links in the current collection.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavReadOnlyLinkCollection.IndexOf(DevExpress.XtraNavBar.NavBarItemLink)">
+            <summary>
+                <para>Returns the specified link's position within the collection.
+</para>
+            </summary>
+            <param name="link">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the link whose index is to be obtained.
+
+            </param>
+            <returns>An integer value representing the zero-based index of the specified link within the collection.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavReadOnlyLinkCollection.Item(System.Int32)">
+            <summary>
+                <para>Gets the item of the collection by its index.
+</para>
+            </summary>
+            <param name="index">
+		An integer value representing the zero-based index of the link to be obtained.
+
+            </param>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the link located at the specified position within the collection.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavLinkCollection">
+
+            <summary>
+                <para>Represents a collection of links between a group and items.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavLinkCollection.#ctor(DevExpress.XtraNavBar.NavBarGroup)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraNavBar.NavLinkCollection"/> class.
+</para>
+            </summary>
+            <param name="group">
+		The <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object that will own the created link collection. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.NavLinkCollection.Group"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavLinkCollection.Add(DevExpress.XtraNavBar.NavBarItem)">
+            <summary>
+                <para>Adds a link to the end of the collection.
+</para>
+            </summary>
+            <param name="item">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarItem"/> object to which the created link refers.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the added link.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavLinkCollection.AddRange(DevExpress.XtraNavBar.NavBarItemLink[])">
+            <summary>
+                <para>Adds a specified array of links to the end of the collection.
+</para>
+            </summary>
+            <param name="links">
+		An array of <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> objects whose elements are added to the end of the collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavLinkCollection.Contains(DevExpress.XtraNavBar.NavBarItemLink)">
+            <summary>
+                <para>Determines whether the NavLinkCollection contains a specific <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/>.
+</para>
+            </summary>
+            <param name="link">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object to locate in the NavLinkCollection.
+
+            </param>
+            <returns><b>true</b>, if the <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object is found in the NavLinkCollection; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavLinkCollection.Group">
+            <summary>
+                <para>Gets the NavBarControl's group that owns the link collection.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object that owns the link collection.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavLinkCollection.Insert(System.Int32,DevExpress.XtraNavBar.ICollectionItem)">
+            <summary>
+                <para>Inserts the specified link to the specified position within the collection.
+</para>
+            </summary>
+            <param name="index">
+		An integer value specifying the zero-based index of the inserted link within the collection.
+
+            </param>
+            <param name="item">
+		An <see cref="T:DevExpress.XtraNavBar.ICollectionItem"/> object representing the item to which the inserted link refers.
+
+            </param>
+            <returns>An object representing the inserted link.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavLinkCollection.Item(System.Int32)">
+            <summary>
+                <para>Gets an item of the collection by its index.
+</para>
+            </summary>
+            <param name="index">
+		An integer value specifying the zero-based index of the desired link.
+
+            </param>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the link located at the specified index within the collection.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavLinkCollection.Remove(DevExpress.XtraNavBar.NavBarItem)">
+            <summary>
+                <para>Removes all links to the item specified.
+</para>
+            </summary>
+            <param name="item">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarItem"/> object representing an item whose links are to be removed.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavLinkCollection.Sort(System.Collections.IComparer)">
+            <summary>
+                <para>Sorts links in the group using the specified <b>IComparer</b> object.
+</para>
+            </summary>
+            <param name="comparer">
+		A <see cref="T:System.Collections.IComparer"/> object providing custom comparing rules for the sorting routine.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavLinkCollection.SortByCaption">
+            <summary>
+                <para>Sorts the links in the collection by their captions.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavItemCollection">
+
+            <summary>
+                <para>Represents a collection of items within the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavItemCollection.#ctor(DevExpress.XtraNavBar.NavBarControl)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraNavBar.NavItemCollection"/> class.
+</para>
+            </summary>
+            <param name="navBar">
+		The <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> object that will own the collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavItemCollection.Add">
+            <summary>
+                <para>Adds a new item to the end of the collection and returns the corresponding object.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraNavBar.NavBarItem"/> object representing the newly created item.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavItemCollection.Add(DevExpress.XtraNavBar.NavBarItem)">
+            <summary>
+                <para>Adds the specified item to the collection.
+</para>
+            </summary>
+            <param name="item">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarItem"/> object to add to the collection.
+
+            </param>
+            <returns>The <see cref="T:DevExpress.XtraNavBar.NavBarItem"/> object added to the collection. This method returns the object passed as the method's parameter.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavItemCollection.Add(System.Boolean)">
+            <summary>
+                <para>Creates a new item and adds it to the end of the collection.
+</para>
+            </summary>
+            <param name="isSeparator">
+		A Boolean value that specifies whether to create a separator instead of a regular item.
+
+            </param>
+            <returns>Returns the newly created <see cref="T:DevExpress.XtraNavBar.NavBarItem"/> or <b>NavBarSeparatorItem</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavItemCollection.AddRange(DevExpress.XtraNavBar.NavBarItem[])">
+            <summary>
+                <para>Adds a specified array of items to the end of the collection.
+</para>
+            </summary>
+            <param name="items">
+		An array of <see cref="T:DevExpress.XtraNavBar.NavBarItem"/> objects whose elements are added to the end of the collection.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavItemCollection.Item(System.Int32)">
+            <summary>
+                <para>Gets an item of the collection by its index.
+</para>
+            </summary>
+            <param name="index">
+		An integer value specifying the zero-based index of the desired item.
+
+            </param>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarItem"/> object representing the item located at the specified index within the collection.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavItemCollection.Item(System.String)">
+            <summary>
+                <para>Gets an item of the collection by its name.
+</para>
+            </summary>
+            <param name="name">
+		A string value specifying the name of the desired item.
+
+            </param>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarItem"/> object with the required name. <b>null</b> (<b>Nothing</b> in Visual Basic) if there are no items with the specified name in the collection.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavGroupCollection">
+
+            <summary>
+                <para>Represents a collection of groups within the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavGroupCollection.#ctor(DevExpress.XtraNavBar.NavBarControl)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraNavBar.NavGroupCollection"/> class.
+</para>
+            </summary>
+            <param name="navBar">
+		The <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> object that will own the group collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavGroupCollection.Add">
+            <summary>
+                <para>Adds a new group to the end of the collection and returns the corresponding object.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the newly created group.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavGroupCollection.Add(DevExpress.XtraNavBar.NavBarGroup)">
+            <summary>
+                <para>Adds the specified group to the collection.
+</para>
+            </summary>
+            <param name="group">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object to add the collection.
+
+            </param>
+            <returns>The <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object that was added to the collection. This method returns the object passed as the method parameter.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavGroupCollection.AddRange(DevExpress.XtraNavBar.NavBarGroup[])">
+            <summary>
+                <para>Adds a specified array of groups to the end of the collection.
+</para>
+            </summary>
+            <param name="groups">
+		An array of <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> objects whose elements are added to the end of the collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavGroupCollection.GetVisibleGroupCount">
+            <summary>
+                <para>Returns the number of visible groups in the collection.
+</para>
+            </summary>
+            <returns>The number of visible groups in the collection.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavGroupCollection.Item(System.Int32)">
+            <summary>
+                <para>Gets an item of the collection by its index.
+</para>
+            </summary>
+            <param name="index">
+		An integer value specifying the zero-based index of the desired group.
+
+            </param>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the group located at the specified index within the collection.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavGroupCollection.Item(System.String)">
+            <summary>
+                <para>Gets an item of the collection by its name.
+</para>
+            </summary>
+            <param name="name">
+		A string value specifying the name of the desired group.
+
+            </param>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object with the required name. <b>null</b> (<b>Nothing</b> in Visual Basic) if there are no items with the specified name in the collection.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavElement">
+
+            <summary>
+                <para>Implements the common functionality of groups and items.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavElement.#ctor">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.XtraNavBar.NavElement"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.AllowGlyphSkinning">
+            <summary>
+                <para>Gets or sets whether the current NavElement's icon should be painted in this item's foreground color.
+
+</para>
+            </summary>
+            <value><b>true</b>, if the current NavElement's icon should be painted in this item's foreground color; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.AllowHtmlString">
+            <summary>
+                <para>Gets or sets whether the element's caption is formatted using HTML tags.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.DefaultBoolean"/> enumeration value that specifies whether the element's caption is formatted using HTML tags.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.Appearance">
+            <summary>
+                <para>Gets the appearance settings used to paint the element.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the element.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.AppearanceHotTracked">
+            <summary>
+                <para>Gets the appearance settings used to paint the current element when it's hot-tracked.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the element when it's hot-tracked.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.AppearancePressed">
+            <summary>
+                <para>Gets the appearance settings used to paint the element when it's pressed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the element when it's pressed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.Caption">
+            <summary>
+                <para>Gets or sets the element's caption.
+</para>
+            </summary>
+            <value>A string value specifying element caption.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavElement.DefaultImageSize">
+            <summary>
+                <para>Stores the original size of an image assigned to the <see cref="P:DevExpress.XtraNavBar.NavElement.LargeImage"/> or <see cref="P:DevExpress.XtraNavBar.NavElement.SmallImage"/> property.
+</para>
+            </summary>
+            <returns>A Size structure that is the original size of an image assigned to the <see cref="P:DevExpress.XtraNavBar.NavElement.LargeImage"/> or <see cref="P:DevExpress.XtraNavBar.NavElement.SmallImage"/> property.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavElement.GetPrefferedImageSize(System.Drawing.Size)">
+            <summary>
+                <para>Gets the current size of a NavElement's large or small icon.
+</para>
+            </summary>
+            <param name="r">
+		The <see cref="P:DevExpress.XtraNavBar.NavElement.LargeImageSize"/> or <see cref="P:DevExpress.XtraNavBar.NavElement.SmallImageSize"/> property's current value to be obtained.
+
+            </param>
+            <returns>A Size structure that is the NavElement's large or small icon's size.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.Hint">
+            <summary>
+                <para>Gets or sets the element's hint text.
+</para>
+            </summary>
+            <value>A string value specifying the text displayed in the element's hint.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.ImageUri">
+            <summary>
+                <para>Gets or sets the uniform resource identifier of the image in the DX Image Gallery displayed in the current NavElement. 
+A specific version of the addressed image is automatically chosen, based on the app context (the current skin and required image size).
+</para>
+            </summary>
+            <value>A <see cref="DxImageUri"/> object that specifies the uniform resource identifier of the image to be displayed in the current NavElement.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.LargeImage">
+            <summary>
+                <para>Specifies the large image displayed within the element.
+</para>
+            </summary>
+            <value>A <b>System.Drawing.Image</b> descendant specifying the element's large image.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.LargeImageIndex">
+            <summary>
+                <para>Specifies the element's large image by its index within the source image collection.
+</para>
+            </summary>
+            <value>An integer value specifying the index of the element's large image within the source image collection.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.LargeImages">
+            <summary>
+                <para>Gets the source of the large images that can be displayed in the group headers and links.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ImageList"/> object which provides the large images for group headers and links.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.LargeImageSize">
+            <summary>
+                <para>Gets or sets the size of the current NavElement's large image.
+
+</para>
+            </summary>
+            <value>A Size structure that is the size of the current NavElement's large image.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.NavBar">
+            <summary>
+                <para>Gets the control to which the element belongs.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> object representing the control to which the element belongs.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavElement.ResetSuperTip">
+            <summary>
+                <para>Removes the current NavElement's super tool-tip.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.SmallImage">
+            <summary>
+                <para>Specifies the small image displayed within the element.
+</para>
+            </summary>
+            <value>A <b>System.Drawing.Image</b> descendant specifying the element's small image.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.SmallImageIndex">
+            <summary>
+                <para>Specifies the element's small image by its index within the source image collection.
+</para>
+            </summary>
+            <value>An integer value specifying the index of the element's small image within the source image collection.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.SmallImages">
+            <summary>
+                <para>Gets the source of the small images that can be displayed in the group headers and links.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ImageList"/> object which provides the small images for group headers and links.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.SmallImageSize">
+            <summary>
+                <para>Gets or sets the size for the current NavElement's small image.
+
+</para>
+            </summary>
+            <value>A Size structure that is the size for the current NavElement's small image.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.SuperTip">
+            <summary>
+                <para>Gets or sets a super tool-tip for the current NavElement.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.SuperToolTip"/> object assigned to the current NavElement.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.Tag">
+            <summary>
+                <para>Gets or sets data associated with the element.
+</para>
+            </summary>
+            <value>A custom object associated with the element.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavElement.ToString">
+            <summary>
+                <para>Returns the element's full name.
+</para>
+            </summary>
+            <returns>A string value representing the element's name and caption.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavElement.Visible">
+            <summary>
+                <para>Gets or sets a value specifying the visibility of the element.
+</para>
+            </summary>
+            <value><b>true</b> if the element is visible; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarLinkEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle events which require a link as a parameter.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarLinkEventHandler.Invoke(System.Object,DevExpress.XtraNavBar.NavBarLinkEventArgs)">
+            <summary>
+                <para>Represents the method that will handle events which require a link as the parameter.
+</para>
+            </summary>
+            <param name="sender">
+		An object representing the source of the event.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarLinkEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarLinkEventArgs">
+
+            <summary>
+                <para>Provides data for events that require a link as a parameter.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarLinkEventArgs.#ctor(DevExpress.XtraNavBar.NavBarItemLink)">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.XtraNavBar.NavBarLinkEventArgs"/> class.
+</para>
+            </summary>
+            <param name="link">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object for which an event is raised.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarLinkEventArgs.Link">
+            <summary>
+                <para>Gets the link for which the event is raised.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the link for which the event is raised.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarItemLink">
+
+            <summary>
+                <para>Represents a link between a group and an item.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarItemLink.#ctor(DevExpress.XtraNavBar.NavBarItem)">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> class.
+</para>
+            </summary>
+            <param name="item">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarItem"/> object specifying the item to which the created link corresponds.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItemLink.AllowAutoSelect">
+            <summary>
+                <para>Gets or sets whether the auto-selection feature is enabled for the current link. This property is in effect in <see cref="F:DevExpress.XtraNavBar.LinkSelectionModeType.OneInGroupAndAllowAutoSelect"/> mode for the Navigation Pane View and the Side Bar View.
+</para>
+            </summary>
+            <value><b>true</b>, if the auto-selection feature is enabled for the current link; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItemLink.AllowHtmlString">
+            <summary>
+                <para>Gets whether the caption of the element to which the current link corresponds is formatted using HTML tags.
+</para>
+            </summary>
+            <value><b>true</b>, if the element caption is formatted using HTML tags; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItemLink.Caption">
+            <summary>
+                <para>Gets the link's caption.
+</para>
+            </summary>
+            <value>A string value representing the link's caption.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarItemLink.Dispose">
+            <summary>
+                <para>Releases all resources used by this <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItemLink.Enabled">
+            <summary>
+                <para>Gets a value indicating whether the link responds to user actions.
+</para>
+            </summary>
+            <value><b>true</b> if the link is enabled; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarItemLink.GetImage">
+            <summary>
+                <para>Gets the image currently displayed within the link.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Drawing.Image"/> object which represents the image currently displayed within the link. <b>null</b> (<b>Nothing</b> in Visual Basic) if no image is displayed within the link.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarItemLink.GetImageSize">
+            <summary>
+                <para>Returns the width and height of the image displayed within the link.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Drawing.Size"/> structure which specifies the width and height of the image displayed within the link.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItemLink.Group">
+            <summary>
+                <para>Gets an object representing the group to which a link corresponds.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the group to which a link corresponds.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItemLink.Item">
+            <summary>
+                <para>Gets an object representing the item to which the link corresponds.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarItem"/> object to which the link corresponds.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarItemLink.ItemChanged">
+            <summary>
+                <para>Fires when the link's properties change.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItemLink.ItemName">
+            <summary>
+                <para>Gets the name of the item to which the link corresponds.
+</para>
+            </summary>
+            <value>A string value representing the name of the corresponding link.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItemLink.NavBar">
+            <summary>
+                <para>Returns the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> control to which the link belongs.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> object representing the owning control.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarItemLink.PerformClick">
+            <summary>
+                <para>Simulates the Click event for the current object.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItemLink.State">
+            <summary>
+                <para>Gets the state of the link.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.Drawing.ObjectState"/> value specifying the link's state.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItemLink.Visible">
+            <summary>
+                <para>Gets or sets a value specifying whether the link is visible.
+</para>
+            </summary>
+            <value><b>true</b> if the link is visible; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarItemLink.VisibleChanged">
+            <summary>
+                <para>Fires immediately after the visibility of the item link has been changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItemLink.VisibleCore">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value>A Boolean value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarItem">
+
+            <summary>
+                <para>Represents an item within the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarItem.#ctor">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.XtraNavBar.NavBarItem"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarItem.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraNavBar.NavBarItem"/> class with the specified caption.
+</para>
+            </summary>
+            <param name="caption">
+		A string value specifying the caption for the item being created. The value is assigned to the item's <see cref="P:DevExpress.XtraNavBar.NavElement.Caption"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItem.AllowAutoSelect">
+            <summary>
+                <para>Gets or sets whether auto-selection is enabled for all links of the current NavBarItem. This property is in effect in the <see cref="F:DevExpress.XtraNavBar.LinkSelectionModeType.OneInGroupAndAllowAutoSelect"/> mode.
+</para>
+            </summary>
+            <value><b>true</b>, if auto-selection is enabled for all links of the current NavBarItem; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItem.AppearanceDisabled">
+            <summary>
+                <para>Gets the appearance settings used to paint the disabled item's link(s).
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance setting used to paint the disabled item's link(s).
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarItem.BindCommand(System.Linq.Expressions.Expression`1,System.Object,System.Func`1)">
+            <summary>
+                <para>Uses the command selector to find an appropriate parameterized command in the source and bind it to this NavBarItem.
+</para>
+            </summary>
+            <param name="commandSelector">
+		An Expression that selects the appropriate command from the <i>source</i> object. 
+
+            </param>
+            <param name="source">
+		An Object (typically, a ViewModel) where the <i>commandSelector</i> looks for the required command.
+
+            </param>
+            <param name="queryCommandParameter">
+		A Func delegate that passes the specific Object to the <i>command</i> as a parameter. 
+
+            </param>
+            <returns>An IDisposable object. Disposing of this object unbinds the <i>command</i> from this NavBarItem.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarItem.BindCommand(System.Object,System.Func`1)">
+            <summary>
+                <para>Binds the specific parameterized command to this NavBarItem.
+</para>
+            </summary>
+            <param name="command">
+		An Object that is the command to be bound to this NavBarItem. 
+
+            </param>
+            <param name="queryCommandParameter">
+		A Func delegate that passes the specific Object to the <i>command</i> as a parameter. 
+
+            </param>
+            <returns>An IDisposable object. Disposing of this object unbinds the <i>command</i> from this NavBarItem.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarItem.BindCommand``1(System.Linq.Expressions.Expression{System.Action`1},System.Object,System.Func{``0})">
+            <summary>
+                <para>Uses the command selector to find an appropriate parameterized command of the target type in the source and bind it to this NavBarItem.
+</para>
+            </summary>
+            <param name="commandSelector">
+		An Expression that selects the appropriate command from the <i>source</i> object. 
+
+            </param>
+            <param name="source">
+		An Object (typically, a ViewModel) where the <i>commandSelector</i> looks for the required command.
+
+            </param>
+            <param name="queryCommandParameter">
+		A Func delegate that passes the specific Object to the <i>command</i> as a parameter. 
+
+            </param>
+            <returns>An IDisposable object. Disposing of this object unbinds the <i>command</i> from this NavBarItem.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItem.CanDrag">
+            <summary>
+                <para>Gets or sets a value specifying whether an item can be dragged.
+</para>
+            </summary>
+            <value><b>true</b> if an item can be dragged; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItem.Collection">
+            <summary>
+                <para>Gets the collection to which an item belongs.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavItemCollection"/> collection which owns an item.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItem.Enabled">
+            <summary>
+                <para>Gets or sets a value specifying whether an item responds to user actions.
+</para>
+            </summary>
+            <value><b>true</b> if an item responds to user actions; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarItem.IsSeparator">
+            <summary>
+                <para>Returns a Boolean value that indicates whether the current object is a separator.
+</para>
+            </summary>
+            <returns><b>true</b>, if the current object is a separator; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarItem.LinkClicked">
+            <summary>
+                <para>Fires immediately after an item has been clicked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarItem.LinkPressed">
+            <summary>
+                <para>Fires immediately after a user pressed the item.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItem.Links">
+            <summary>
+                <para>Gets the collection of links which refer to the item.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavReadOnlyLinkCollection"/> collection containing links which refer to the item.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarItem.StyleDisabledName">
+            <summary>
+                <para>Gets or sets the item's disabled style.
+</para>
+            </summary>
+            <value>A string value specifying the name of the style applied to the item when it is disabled.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarHitInfo">
+
+            <summary>
+                <para>Contains information about the control's section located under a specified point.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarHitInfo.#ctor(DevExpress.XtraNavBar.NavBarControl)">
+            <summary>
+                <para>Creates a new instance of the <see cref="T:DevExpress.XtraNavBar.NavBarHitInfo"/> class.
+</para>
+            </summary>
+            <param name="navBar">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> object specifying the control for which the object is created.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarHitInfo.CalcHitInfo(System.Drawing.Point,DevExpress.XtraNavBar.NavBarHitTest[])">
+            <summary>
+                <para>Calculates hit information for the test point.
+</para>
+            </summary>
+            <param name="p">
+		A <b>System.Drawing.Point</b> object specifying the test point.
+
+            </param>
+            <param name="validLinkHotTracks">
+		An array of <see cref="T:DevExpress.XtraNavBar.NavBarHitTest"/> enumeration values which are valid for the current paint style.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarHitInfo.Clear">
+            <summary>
+                <para>Clears hit information.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarHitInfo.Clone">
+            <summary>
+                <para>Creates a copy of this <see cref="T:DevExpress.XtraNavBar.NavBarHitInfo"/> object.
+</para>
+            </summary>
+            <returns>A copy of this <see cref="T:DevExpress.XtraNavBar.NavBarHitInfo"/> object.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarHitInfo.ExpandButtonBounds">
+            <summary>
+                <para>Gets the bounds of the NavBarControl's expand button (applied when the NavigationPane paint style is applied).
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Rectangle"/> value that represents the bounds of the NavBarControl's expand button.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarHitInfo.Group">
+            <summary>
+                <para>Gets a group over whose area a test point resides.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the group located under a test point. <b>null</b> (<b>Nothing</b> in Visual Basic) if the test point is not over a control group.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarHitInfo.HitPoint">
+            <summary>
+                <para>Gets the test point coordinates.
+</para>
+            </summary>
+            <value>A <b>System.Drawing.Point</b> object reprersenting the test point.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarHitInfo.HitTest">
+            <summary>
+                <para>Gets the control's section over which the test point resides.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarHitTest"/> enumeration value indicating the control's section over which the test point resides.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarHitInfo.InExpandButton">
+            <summary>
+                <para>Gets a value indicating whether the test point is over a NavBarControl's expand/collapse button (in the NavigationPane paint style). 
+</para>
+            </summary>
+            <value><b>true</b> if the test point is over the expand/collapse button; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarHitInfo.InGroup">
+            <summary>
+                <para>Gets a value indicating whether the test point is over a group.
+</para>
+            </summary>
+            <value><b>true</b> if the test point is over a group's client area or group's caption; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarHitInfo.InGroupButton">
+            <summary>
+                <para>Indicates whether the test point is within a group button.
+</para>
+            </summary>
+            <value><b>true</b> if the test point is within a group button; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarHitInfo.InGroupCaption">
+            <summary>
+                <para>Gets a value indicating whether the test point is over a group caption.
+</para>
+            </summary>
+            <value><b>true</b> if the test point is over a group caption; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarHitInfo.InLink">
+            <summary>
+                <para>Gets a value indicating whether the test point is over a link.
+</para>
+            </summary>
+            <value><b>true</b> if the test point is over a link; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarHitInfo.IsEquals(System.Object)">
+            <summary>
+                <para>Returns a value indicating whether the specified object has the same contents as this one.
+</para>
+            </summary>
+            <param name="obj">
+		An object whose contents are compared to this object's contents.
+
+            </param>
+            <returns><b>true</b> if this object and that  specified have the same contents; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarHitInfo.Link">
+            <summary>
+                <para>Gets the link over which the test point resides.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the link located under the test point. <b>null</b> (<b>Nothing</b> in Visual Basic) if the test point is not over a link.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarHitInfo.NavBar">
+            <summary>
+                <para>Gets the control for which hit information has been calculated.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> object representing the control for which hit information has been calculated.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarGroupEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.ActiveGroupChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGroupEventHandler.Invoke(System.Object,DevExpress.XtraNavBar.NavBarGroupEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarControl.ActiveGroupChanged"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		An object representing the source of the event (typically the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>).
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarGroupEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarGroupEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraNavBar.NavBarControl.ActiveGroupChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGroupEventArgs.#ctor(DevExpress.XtraNavBar.NavBarGroup)">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.XtraNavBar.NavBarGroupEventArgs"/> class.
+</para>
+            </summary>
+            <param name="group">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the group for which the event has fired.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroupEventArgs.Group">
+            <summary>
+                <para>Gets a group for which the event is fired.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the group for which the event is raised.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarGroup">
+
+            <summary>
+                <para>Represents a group within a <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGroup.#ctor">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGroup.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> class, with the specified caption.
+</para>
+            </summary>
+            <param name="caption">
+		A string representing the NavBar group's caption.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGroup.AddItem">
+            <summary>
+                <para>Creates a new item in a NavBarControl and creates a link to this item in the current group.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the link to the item being created.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.AppearanceBackground">
+            <summary>
+                <para>Gets the appearance settings used to paint the group's background.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the group's background.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.BackgroundImage">
+            <summary>
+                <para>Gets or sets the group's background image.
+</para>
+            </summary>
+            <value>A <b>System.Drawing.Image</b> descendant representing the group's background image.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarGroup.CalcGroupClientHeight">
+            <summary>
+                <para>Fires when the group's client height is calculated.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.CollapsedNavPaneContentControl">
+            <summary>
+                <para>Gets or sets the control embedded into the NavBarControl when the nav bar is painted using the Navigation Pane View, the current group is active and the nav bar is collapsed.
+</para>
+            </summary>
+            <value>The control embedded into the NavBarControl when the nav bar is painted using the Navigation Pane View, the current group is active and the nav bar is collapsed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.Collection">
+            <summary>
+                <para>Gets a collection of groups to which the group belongs.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavGroupCollection"/> object that owns the group.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.ControlContainer">
+            <summary>
+                <para>Gets or sets the control container displayed by the group when its <see cref="P:DevExpress.XtraNavBar.NavBarGroup.GroupStyle"/> property is set to <see cref="F:DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroupControlContainer"/> object representing the container displayed by the group when the <see cref="F:DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer"/> style  is applied. <b>null</b> if this style is not applied.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.ControlContainerName">
+            <summary>
+                <para>Gets or sets the control container's name for the current group.
+</para>
+            </summary>
+            <value>A string representing the name of the group's control container. An empty string if the control container is not available. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.DragDropFlags">
+            <summary>
+                <para>Gets or sets a set of flags controlling the group's behavior as it relates to link drag and drop operations.
+</para>
+            </summary>
+            <value>A set of <see cref="T:DevExpress.XtraNavBar.NavBarDragDrop"/> enumeration values specifying a link's drag-and-drop options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.Expanded">
+            <summary>
+                <para>Gets or sets a value specifying whether the group is expanded.
+</para>
+            </summary>
+            <value><b>true</b> if the group is expanded, otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGroup.GetDragDropFlags">
+            <summary>
+                <para>Returns a set of flags which unambiguously specify the group's drag-and-drop behavior. 
+</para>
+            </summary>
+            <returns>A set of <see cref="T:DevExpress.XtraNavBar.NavBarDragDrop"/> enumeration values specifying the group's drag-and-drop behavior. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGroup.GetImage">
+            <summary>
+                <para>Returns the image to display within the group caption.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Drawing.Image"/> object specifying the image to display within the group caption. <b>null</b> if no image is assigned to the group.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGroup.GetImageSize">
+            <summary>
+                <para>Returns the width and height of the image displayed within the group caption.
+</para>
+            </summary>
+            <returns>A System.Drawing.Size structure specifying the width and height of the image displayed within the group caption.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGroup.GetLinksUseSmallImage">
+            <summary>
+                <para>Gets whether the links belonging to the group use small images.
+</para>
+            </summary>
+            <returns><b>true</b> if the group's links are painted using small images; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGroup.GetPrefferedImageSize">
+            <summary>
+                <para>Gets the size of an image for the currently displayed NavBarGroup icon.
+
+</para>
+            </summary>
+            <returns>A Size structure that is the currently displayed NavBarGroup icon's size.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGroup.GetShowAsIconsView">
+            <summary>
+                <para>Gets whether the group's links are displayed using only images and without captions.
+</para>
+            </summary>
+            <returns><b>true</b> if the group's links are displayed without captions; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.GroupCaptionUseImage">
+            <summary>
+                <para>Gets or sets whether a big or small image is displayed within the group caption.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarImage"/> value representing the fixed image size to use within the group caption.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.GroupClientHeight">
+            <summary>
+                <para>Gets or sets the height of the group's client area.
+</para>
+            </summary>
+            <value>The height of the group's client area, in pixels.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.GroupStyle">
+            <summary>
+                <para>Gets or sets the way links are displayed within the current group, or whether to display a custom control within the group. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroupStyle"/> value specifying how the group's content is presented.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarGroup.InsertItem(System.Int32)">
+            <summary>
+                <para>Creates a new item in a NavBarControl and creates a link to this item at the specified position in the current group.
+</para>
+            </summary>
+            <param name="position">
+		The position to insert the link into.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the link to the item being created.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.ItemLinks">
+            <summary>
+                <para>Gets an object containing the collection of links which belong to the group.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavLinkCollection"/> object containing the collection of group links.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.LinksUseSmallImage">
+            <summary>
+                <para>Gets or sets a value specifying whether group links use small or large images.
+</para>
+            </summary>
+            <value><b>true</b> if the contained links use small images, otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.NavigationPaneVisible">
+            <summary>
+                <para>Gets or sets whether the group's button is displayed at the bottom of the NavBarControl when the "NavigationPane" view is applied.
+</para>
+            </summary>
+            <value><b>true</b> if the  group's button is displayed at the bottom of the NavBarControl; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.SelectedLink">
+            <summary>
+                <para>Gets or sets an object representing the group's selected link.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the group's selected link. <b>null</b> (<b>Nothing</b> in Visual Basic) if none of the group items are selected.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.SelectedLinkIndex">
+            <summary>
+                <para>Gets or sets a value specifying the index of the group's selected link.
+</para>
+            </summary>
+            <value>An integer value specifying the zero-based index of the selected link within the group. <b>-1</b> if none of the group's links are curretly selected.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.ShowAsIconsView">
+            <summary>
+                <para>Gets or sets a value specifying whether links are displayed as a set of icons.
+</para>
+            </summary>
+            <value><b>true</b> if contained links are displayed as a set of icons; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.ShowIcons">
+            <summary>
+                <para>Gets or sets whether link icons are shown in the current group.
+</para>
+            </summary>
+            <value>A DefaultBoolean enumeration value that specifies whether link icons are shown in the current group.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.State">
+            <summary>
+                <para>Returns the NavBar group's state.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.Drawing.ObjectState"/> value specifying the group's state.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.TextureBackgroundBrush">
+            <summary>
+                <para>Gets an object representing the brush used to fill the group client area.
+</para>
+            </summary>
+            <value>A <b>System.Drawing.Brush</b> descendant representing the brush used to fill the group's client area.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.TopVisibleLinkIndex">
+            <summary>
+                <para>Gets or sets the index of the link which is displayed at the top of the current group.
+</para>
+            </summary>
+            <value>An integer value specifying the top visible link's zero-based index.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.UseSmallImage">
+            <summary>
+                <para>Gets or sets a value specifying whether a large or small image is displayed within the group caption.
+</para>
+            </summary>
+            <value><b>true</b> if a small image is displayed within the group caption; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarGroup.VisibleItemLinks">
+            <summary>
+                <para>Gets the collection of currently visible links within the group.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavReadOnlyLinkCollection"/> object containing the collection of group visible links.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarControl">
+
+            <summary>
+                <para>Represents the XtraNavBar control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.#ctor">
+            <summary>
+                <para>Creates a new <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> object.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.About">
+            <summary>
+                <para>Invokes the <b>About</b> dialog window.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.ActiveGroup">
+            <summary>
+                <para>Returns an object representing the currently active group.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the currently active group.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.ActiveGroupChanged">
+            <summary>
+                <para>Fires when the active group changes.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.ActiveGroupName">
+            <summary>
+                <para>This member supports the .NET Framework infrastructure and cannot be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.AllowDrop">
+            <summary>
+                <para>Gets or sets a value that specifies whether the XtraNavBar can accept data that an end-user drags onto it.
+
+</para>
+            </summary>
+            <value><b>true</b> if drag-and-drop operations are allowed in the control; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.AllowGlyphSkinning">
+            <summary>
+                <para>Gets or sets whether all items within the current NavBarControl should paint their icons in the items' foreground colors.
+
+</para>
+            </summary>
+            <value><b>true</b>, if all items within the current NavBarControl should paint their icons in the items' foreground colors; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.AllowHtmlString">
+            <summary>
+                <para>Gets or sets whether the group and item captions are formatted using HTML tags.
+</para>
+            </summary>
+            <value><b>true</b>, if the group and item captions are formatted using HTML tags; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.AllowSelectedLink">
+            <summary>
+                <para>This property is obsolete. Use the <see cref="P:DevExpress.XtraNavBar.NavBarControl.LinkSelectionMode"/> property instead.
+</para>
+            </summary>
+            <value><b>true</b> if links can be selected; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.Appearance">
+            <summary>
+                <para>Provides access to the properties that control the appearance of the NavBarControl's elements.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarAppearances"/> object which provides the appearance settings for the NavBarControl's elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.AvailableNavBarViews">
+            <summary>
+                <para>Provides access to the collection of BaseViewInfoRegistrator objects which contain information on painting corresponding Views. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarViewCollection"/> collection that contains BaseViewInfoRegistrator objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.BackgroundImage">
+            <summary>
+                <para>This property is not supported by the NavBarControl class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.BackgroundImageLayout">
+            <summary>
+                <para>This property is not supported by the NavBarControl class.
+</para>
+            </summary>
+            <value>An ImageLayout value.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.BeforeLoadLayout">
+            <summary>
+                <para>Occurs before a layout is restored from storage (a stream, xml file or the system registry).
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.BeginInit">
+            <summary>
+                <para>Begins the runtime initialization of the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> control that is used on a form, or by another component.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.BeginUpdate">
+            <summary>
+                <para>Locks the NavBarControl object by preventing visual updates of the object and its elements until the <b>EndUpdate</b> method is called.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.BorderStyle">
+            <summary>
+                <para>Gets or sets the border style of the NavBarControl.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraEditors.Controls.BorderStyles"/> enumeration value specifying the control's border style.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.CalcCollapsedPaneWidth">
+            <summary>
+                <para>Calculates the NavBarControl's width in the minimized state (when the NavigationPane paint style is applied).
+</para>
+            </summary>
+            <returns>An integer value that specifies the NavBarControl's width in the minimized state.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.CalcHintSize">
+            <summary>
+                <para>Allows you to assign a custom hint size before a hint is displayed in the VSToolBoxView paint style.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.CalcHitInfo(System.Drawing.Point)">
+            <summary>
+                <para>Gets an object containing information about the control at a specified point.
+</para>
+            </summary>
+            <param name="p">
+		A <b>System.Drawing.Point</b> object specifying the examined point.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraNavBar.NavBarHitInfo"/> object providing information about the control's specified point.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.ContentButtonHint">
+            <summary>
+                <para>Gets or sets the content button's hint.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value that specifies the content button's hint.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.Cursor">
+            <summary>
+                <para>Gets or sets a value specifying the cursor type used when the mouse pointer is over the control, but is not over a group caption or a link.
+</para>
+            </summary>
+            <value>A <b>System.Windows.Forms.Cursor</b> class descendant specifying the cursor type (predefined cursor types are represented by the <b>System.Windows.Forms.Cursors</b> class properties).
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawBackground">
+            <summary>
+                <para>Provides the capability to custom paint the control's background.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawGroupCaption">
+            <summary>
+                <para>Provides the ability to perform custom painting of group captions.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawGroupClientBackground">
+            <summary>
+                <para>Provides the ability to perform custom painting of group client areas.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawGroupClientForeground">
+            <summary>
+                <para>Provides the ability to perform custom painting of a group client area's foreground.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawHint">
+            <summary>
+                <para>Provides the capability to perform custom painting of hints in the VSToolBoxView paint style.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.CustomDrawLink">
+            <summary>
+                <para>Provides the ability to perform custom painting of links.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarControl.DefaultPaintStyleName">
+            <summary>
+                <para>Gets the default paint style name.
+</para>
+            </summary>
+            <returns>The "Default" string.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.DragDropFlags">
+            <summary>
+                <para>Gets or sets a set of flags controlling the control's behavior as it relates to link drag and drop operations.
+</para>
+            </summary>
+            <value>A set of <see cref="T:DevExpress.XtraNavBar.NavBarDragDrop"/> enumeration values specifying a link's drag-and-drop options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.EachGroupHasSelectedLink">
+            <summary>
+                <para>This property is obsolete. Use the <see cref="P:DevExpress.XtraNavBar.NavBarControl.LinkSelectionMode"/> property instead.
+
+</para>
+            </summary>
+            <value><b>true</b> if each group can have a selected link; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.EndInit">
+            <summary>
+                <para>Ends the runtime initialization of the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.EndUpdate">
+            <summary>
+                <para>Unlocks the NavBarControl object after a call to the <b>BeginUpdate</b> method and causes an immediate visual update.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.ExplorerBarGroupInterval">
+            <summary>
+                <para>Gets or sets the interval (in pixels) between neighboring groups when any of the explorer views are applied.
+</para>
+            </summary>
+            <value>An integer value specifying the interval (in pixels) between neighboring groups.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.ExplorerBarGroupOuterIndent">
+            <summary>
+                <para>Gets or sets the size of the horizontal indent (in pixels) between a group's edges and the NavBarControl's edges when any of the explorer views are applied.
+</para>
+            </summary>
+            <value>An integer value specifying the size of the indent between a group's edges and the NavBarControl's edge.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.ExplorerBarShowGroupButtons">
+            <summary>
+                <para>Gets or sets whether group expand buttons are visible within group headers (when any of the explorer bar views are applied. ).
+</para>
+            </summary>
+            <value><b>true</b> if group expand buttons are visible within group headers; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.ExplorerBarStretchLastGroup">
+            <summary>
+                <para>Gets or sets whether the last group in the Explorer Bar View is stretched to fill the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>.
+</para>
+            </summary>
+            <value><b>true</b>, if the last group in the Explorer Bar View is stretched to fill the NavBarControl; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.FireDelayedSelectedLinkChangedEvent">
+            <summary>
+                <para>Gets whether the last added item link is selected and the <see cref="E:DevExpress.XtraNavBar.NavBarControl.SelectedLinkChanged"/> event fires as a result.
+
+</para>
+            </summary>
+            <value><b>true</b> if the last added item link is selected and the <see cref="E:DevExpress.XtraNavBar.NavBarControl.SelectedLinkChanged"/> event fires as a result; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.GetAllowSelectedLink">
+            <summary>
+                <para>Returns a value that determines whether links can actually be selected in the current View.
+</para>
+            </summary>
+            <returns><b>true</b>, if links can be selected; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.GetDragDropFlags">
+            <summary>
+                <para>Returns a set of flags which specify the control's drag and drop behavior.
+</para>
+            </summary>
+            <returns>A set of <see cref="T:DevExpress.XtraNavBar.NavBarDragDrop"/> enumeration values specifying the control's drag and drop behavior. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.GetHideGroupCaptions">
+            <summary>
+                <para>Returns a value that determines whether group captions are actually visible,
+</para>
+            </summary>
+            <returns><b>true</b> if group captions are visible; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.GetHint">
+            <summary>
+                <para>Allows hints to be customized dynamically.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.GetToolTipController">
+            <summary>
+                <para>Returns the tooltip controller component that controls the appearance, position and content of the hints displayed by the XtraNavBar control. 
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.Utils.ToolTipController"/> component which controls the appearance and behavior of the hints displayed by the XtraNavBar control.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.GetViewInfo">
+            <summary>
+                <para>Returns the object which contains the internal information used to render the control.
+</para>
+            </summary>
+            <returns>A NavBarViewInfo object which contains the internal information used to render the control.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.GroupBackgroundImage">
+            <summary>
+                <para>Specifies the image displayed as a background for groups.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Image"/> object specifying the image to be displayed for a group's background.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.GroupCollapsed">
+            <summary>
+                <para>Fires immediately after a group has been collapsed. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.GroupCollapsing">
+            <summary>
+                <para>Occurs when a group is about to be collapsed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.GroupExpanded">
+            <summary>
+                <para>Fires immediately after a group has been expanded.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.GroupExpanding">
+            <summary>
+                <para>Occurs when a group is about to be expanded.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.Groups">
+            <summary>
+                <para>Gets a collection of objects representing groups of the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavGroupCollection"/> object holding a collection of groups.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.GroupTextureBackgroundBrush">
+            <summary>
+                <para>Gets an object representing the brush used to fill a group's background.
+</para>
+            </summary>
+            <value>A <b>System.Drawing.Brush</b> descendant representing the brush used to fill a group's background.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.HideGroupCaptions">
+            <summary>
+                <para>Gets or sets a value specifying whether group captions are visible.
+</para>
+            </summary>
+            <value><b>true</b> if group captions are hidden; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.HideNavPaneForm">
+            <summary>
+                <para>Closes the opened NavPane Form.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.HotTrackedGroup">
+            <summary>
+                <para>Gets an object representing the group over whose caption the mouse pointer rests.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the group whose caption is currently under the mouse pointer. <b>null</b> (<b>Nothing</b> in Visual Basic) if the mouse pointer is not currently over a group caption.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.HotTrackedGroupCursor">
+            <summary>
+                <para>Gets or sets a value specifying the cursor type used when a mouse pointer is over a group caption.
+</para>
+            </summary>
+            <value>A <b>System.Windows.Forms.Cursor</b> class descendant specifying the cursor type (predefined cursor types are represented by the <b>System.Windows.Forms.Cursors</b> class properties).
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.HotTrackedItemCursor">
+            <summary>
+                <para>Gets or sets a value specifying the cursor type used when a mouse pointer is over a group caption.
+</para>
+            </summary>
+            <value>A <b>System.Windows.Forms.Cursor</b> class descendant specifying the cursor type (predefined cursor types are represented by the <b>System.Windows.Forms.Cursors</b> class properties).
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.HotTrackedLink">
+            <summary>
+                <para>Gets an object representing the link over which the mouse pointer rests.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the link which is currently under the mouse pointer. <b>null</b> (<b>Nothing</b> in Visual Basic) if the mouse pointer is not currently over a link.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.HotTrackedLinkChanged">
+            <summary>
+                <para>Fires when the mouse pointer either enters or leaves a link area.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.HtmlImages">
+            <summary>
+                <para>Gets or sets a collection of images that can be inserted into the group and item captions using HTML tags.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.ImageCollection"/> object that stores a collection of images.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.IsDesignMode">
+            <summary>
+                <para>Gets a value indicating whether the control is currently in design mode.
+</para>
+            </summary>
+            <value><b>true</b> if the control is currently in design mode; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.IsLoading">
+            <summary>
+                <para>Gets a value indicating whether the control is being initialized.
+</para>
+            </summary>
+            <value><b>true</b> if the control is being initialized; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.Items">
+            <summary>
+                <para>Gets the collection of items within the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavLinkCollection"/> object holding the collection of items.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.LargeImages">
+            <summary>
+                <para>Gets or sets an object that serves as the source of large images used in the NavBarControl.
+</para>
+            </summary>
+            <value>An object that is an image collection providing large images for the NavBarControl's items. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.LayoutChanged">
+            <summary>
+                <para>Recalculates look and feel information and forces the control to repaint itself.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.LayoutUpgrade">
+            <summary>
+                <para>Occurs after a layout whose version doesn't match the current layout version has been loaded from a stream, xml file or system registry.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.LayoutVersion">
+            <summary>
+                <para>Gets or sets the version of the control's layout.
+
+</para>
+            </summary>
+            <value>A string representing the version of the control's layout.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.LinkClicked">
+            <summary>
+                <para>Fires immediately after a link has been clicked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.LinkInterval">
+            <summary>
+                <para>Gets or sets the interval (in pixels) between neighboring links in a group.
+</para>
+            </summary>
+            <value>An integer value specifying the interval (in pixels) between neighboring links in a group.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.LinkPressed">
+            <summary>
+                <para>Fires immediately after a link has been pressed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.LinkSelectionMode">
+            <summary>
+                <para>Gets or sets whether link selection is enabled and whether each group or only one group can contain a selected link simultaneously.
+</para>
+            </summary>
+            <value>The <see cref="T:DevExpress.XtraNavBar.LinkSelectionModeType"/> value that specifies the link selection mode.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.LookAndFeel">
+            <summary>
+                <para>Provides access to the settings which control the NavBarControl's look and feel.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object whose properties specify the NavBarControl's look and feel.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.MenuManager">
+            <summary>
+                <para>Gets or sets an object that controls the look and feel of the control's popup menus.
+</para>
+            </summary>
+            <value>An object that controls the look and feel of the control's popup menus.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.NavDragDrop">
+            <summary>
+                <para>Fires immediately after a link has been dropped.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.NavDragOver">
+            <summary>
+                <para>Fires repeatedly when a link is being dragged and is allowed to be dropped.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.NavigationPaneGroupClientHeight">
+            <summary>
+                <para>Gets or sets the default minimum height of the client area for the active group when the "NavigationPane" view is applied.
+</para>
+            </summary>
+            <value>An integer value specifying the default minimum height of the active group's client area when the "NavigationPane" view is applied.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.NavigationPaneMaxVisibleGroups">
+            <summary>
+                <para>Gets the maximum number of groups for which buttons are displayed within a NavBarControl when the "NavigationPane" view is applied.
+</para>
+            </summary>
+            <value>The maximum number of groups for which buttons are displayed in the "NavigationPane" view. <b>-1</b> if the maximum number of group buttons is not limited.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.NavigationPaneOverflowPanelUseSmallImages">
+            <summary>
+                <para>Gets or sets whether groups in the Overflow panel are represented by small or large icons.
+</para>
+            </summary>
+            <value><b>true</b> if groups are represented by small images in the Overflow panel; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.NavPaneForm">
+            <summary>
+                <para>Gets the NavPane Form's settings.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.Forms.NavPaneForm"/> object that represents the NavPane Form.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.NavPaneMinimizedGroupFormShowing">
+            <summary>
+                <para>Occurs when a minimized <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> within a Navigation Pane View is expanded.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.NavPaneOptionsApplyGroupFont">
+            <summary>
+                <para>Allows you to apply a font to a group after font settings have been changed by an end-user via the <b>Navigation Pane Options</b> dialog.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.NavPaneOptionsCanEditGroupFont">
+            <summary>
+                <para>Allows you to specify whether an end-user can edit font settings for individual groups via the <b>Navigation Pane Options</b> dialog.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.NavPaneOptionsReset">
+            <summary>
+                <para>Fires when the <b>Reset</b> button in the <b>Navigation Pane Options</b> dialog is clicked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.NavPaneShowCollapsedGroupContent">
+            <summary>
+                <para>Displays the content of the nav bar control when it is painted using the Navigation Pane style and the nav bar is collapsed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.NavPaneStateChanged">
+            <summary>
+                <para>Fires after the NavBarControl's expansion state has been changed (in the NavigationPane paint style).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.OptionsLayout">
+            <summary>
+                <para>Contains options that control how the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>'s layout is stored to/restored from a stream, xml file or system registry.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarLayoutOptions"/> object providing options that control how the layout is stored and restored.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.OptionsNavPane">
+            <summary>
+                <para>Contains options that determine the appearance and behavior of the NavBarControl when the NavigationPane paint style is applied.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.OptionsNavPane"/> object that contains corresponding options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.PaintAppearance">
+            <summary>
+                <para>Provides access to the appearance settings currently used to paint the NavBarControl's elements. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarAppearances"/> object containing the appearance settings currently used to paint the NavBarControl's elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.PaintStyleKind">
+            <summary>
+                <para>Gets or sets the kind of the NavBarControl's paint style.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarViewKind"/> enumeration member which specifies the kind of the NavBarControl's paint style.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.PaintStyleName">
+            <summary>
+                <para>Gets or sets the name of the paint style applied to the NavBarControl.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value specifying the name of the paint style applied to the NavBarControl.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.PressedGroup">
+            <summary>
+                <para>Gets an object representing the group whose caption is pressed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the group whose caption is pressed. <b>null</b> (<b>Nothing</b> in Visual Basic) if none of groups are pressed at the moment.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.PressedLink">
+            <summary>
+                <para>Gets an object representing the pressed link.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the pressed link. <b>null</b> (<b>Nothing</b> in Visual Basic) if none of the links are pressed at present.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.ResetStyles">
+            <summary>
+                <para>Restores the control's styles to the default state.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.RestoreCursor">
+            <summary>
+                <para>Sets the mouse cursor to the type specified by the <see cref="P:DevExpress.XtraNavBar.NavBarControl.Cursor"/> property.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.RestoreFromRegistry(System.String)">
+            <summary>
+                <para>Restores the control layout stored at a specified system registry path.
+</para>
+            </summary>
+            <param name="path">
+		A string value specifying the system registry path.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.RestoreFromStream(System.IO.Stream)">
+            <summary>
+                <para>Loads a control's layout from a stream.
+</para>
+            </summary>
+            <param name="stream">
+		A <b>System.IO.Stream</b> object from which the control's settings are read.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.RestoreFromXml(System.String)">
+            <summary>
+                <para>Loads a control's layout from a specified XML file.
+</para>
+            </summary>
+            <param name="xmlFile">
+		A string value specifying the XML file from which cointrol settings are read.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.SaveToRegistry(System.String)">
+            <summary>
+                <para>Saves the control's layout to the specified system registry path.
+</para>
+            </summary>
+            <param name="path">
+		A string value specifying the system registry path to which the layout is saved.
+
+            </param>
+            <returns><b>true</b> if the layout was successfully saved; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.SaveToStream(System.IO.Stream)">
+            <summary>
+                <para>Saves the control's layout to a stream.
+</para>
+            </summary>
+            <param name="stream">
+		A <b>System.IO.Stream</b> object to which the control's layout is written.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.SaveToXml(System.String)">
+            <summary>
+                <para>Saves a control's layout to a specified XML file.
+</para>
+            </summary>
+            <param name="xmlFile">
+		A string value specifying the XML file name.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.ScrollMode">
+            <summary>
+                <para>Gets or sets a value that specifies when the NavBarControl's content can be scrolled.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarScrollMode"/> enumeration value that specifies the NavBarControl's scroll mode.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.SelectedLink">
+            <summary>
+                <para>Gets or sets an object representing the selected link.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarItemLink"/> object representing the selected link.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.NavBarControl.SelectedLinkChanged">
+            <summary>
+                <para>Fires immediately after a link has been selected.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.SelectLinkOnPress">
+            <summary>
+                <para>Gets or sets whether a link is selected on the MouseDown or MouseUp event.
+</para>
+            </summary>
+            <value><b>true</b> if a link is selected on the MouseDown event; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.SetCursor(System.Windows.Forms.Cursor)">
+            <summary>
+                <para>Sets the mouse pointer type when it is over the control.
+</para>
+            </summary>
+            <param name="newCursor">
+		A <b>System.Windows.Forms.Cursor</b> descendant specifying the cursor type (available cursor types can be accessed via properties of the <b>System.Windows.Forms.Cursors</b> class).
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.SharedImageCollectionImageSizeMode">
+            <summary>
+                <para>Gets or sets the value that specifies how the display size of images is determined when the images are obtained from a <see cref="T:DevExpress.Utils.SharedImageCollection"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.SharedImageCollectionImageSizeMode"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.ShowGroupHint">
+            <summary>
+                <para>Gets or sets a value specifying whether group hints are displayed.
+</para>
+            </summary>
+            <value><b>true</b> if group hints are displayed; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.ShowHintInterval">
+            <summary>
+                <para>Gets or sets the time interval after the mouse pointer stops over an element and before its hint is displayed.
+</para>
+            </summary>
+            <value>An integer value specifying the time interval in milliseconds.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.ShowIcons">
+            <summary>
+                <para>Gets or sets whether link icons are shown.
+</para>
+            </summary>
+            <value>A DefaultBoolean enumeration value that specifies whether link icons are shown.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.ShowLinkHint">
+            <summary>
+                <para>Gets or sets a value specifying whether link hints are displayed.
+</para>
+            </summary>
+            <value><b>true</b> if link hints are displayed, otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.ShowNavPaneForm">
+            <summary>
+                <para>Shows the NavPane Form. This method is in effect if the Navigation Pane View is applied.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.SkinExplorerBarViewScrollStyle">
+            <summary>
+                <para>Gets or sets how the control is scrolled when a skinning Explorer Bar View paint scheme is applied.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.SkinExplorerBarViewScrollStyle"/> value that specifies scroll mode.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.SmallImages">
+            <summary>
+                <para>Gets or sets an object that serves as the source of small images used in the NavBarControl.
+</para>
+            </summary>
+            <value>An object that is an image collection providing small images for the NavBarControl's items. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.State">
+            <summary>
+                <para>Gets a value indicating the control's state.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraNavBar.NavBarState"/> enumeration value indicating the current control's state.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.StoreDefaultPaintStyleName">
+            <summary>
+                <para>This member supports the .NET Framework infrastructure and cannot be used directly from your code.
+</para>
+            </summary>
+            <value><b>true</b> to store the default paint style name; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.SuspendFormLayoutInAnimation">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.TabStop">
+            <summary>
+                <para>Gets or sets a value indicating whether a user can focus this control using the TAB key.
+</para>
+            </summary>
+            <value><b>true</b> if the user can focus the control using the TAB key; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.ToolTipController">
+            <summary>
+                <para>Gets or sets the tooltip controller component that controls the appearance, position and the content of the hints displayed by the XtraNavBar control. 
+</para>
+            </summary>
+            <value>The <see cref="T:DevExpress.Utils.ToolTipController"/> component which controls the appearance and behavior of the hints displayed by the XtraNavBar control.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarControl.UpdateSelectedLink">
+            <summary>
+                <para>Updates the selected link in the active group.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.View">
+            <summary>
+                <para>Gets or sets an object specifying the control's paint style.
+</para>
+            </summary>
+            <value>A <b>BaseViewInfoRegistrator</b> object or descendant specifying the control's paint style.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarControl.ViewName">
+            <summary>
+                <para>Gets or sets the name of the View that specifies the paint scheme.
+</para>
+            </summary>
+            <value>A string that specifies the name of the current View.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarCalcGroupClientHeightEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarGroup.CalcGroupClientHeight"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarCalcGroupClientHeightEventHandler.Invoke(System.Object,DevExpress.XtraNavBar.NavBarCalcGroupClientHeightEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.NavBarGroup.CalcGroupClientHeight"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		An object representing the source of the event (typically a <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object representing the group whose client height is calculated).
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarCalcGroupClientHeightEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarCalcGroupClientHeightEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraNavBar.NavBarGroup.CalcGroupClientHeight"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.NavBarCalcGroupClientHeightEventArgs.#ctor(DevExpress.XtraNavBar.NavBarGroup,System.Int32)">
+            <summary>
+                <para>Initializes a new instance of the <see cref="T:DevExpress.XtraNavBar.NavBarCalcGroupClientHeightEventArgs"/> class.
+</para>
+            </summary>
+            <param name="group">
+		A <see cref="T:DevExpress.XtraNavBar.NavBarGroup"/> object for which the height is calculated. This parameter value is assigned to the <see cref="P:DevExpress.XtraNavBar.NavBarGroupEventArgs.Group"/> property.
+
+            </param>
+            <param name="height">
+		An integer value specifying the automatically calculated height for the group. This value is assigned to the <see cref="P:DevExpress.XtraNavBar.NavBarCalcGroupClientHeightEventArgs.Height"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.NavBarCalcGroupClientHeightEventArgs.Height">
+            <summary>
+                <para>Gets or sets the group's client area height.
+</para>
+            </summary>
+            <value>An integer value specifying the height of the group's client area in pixels.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.ComponentCollectionItem">
+
+            <summary>
+                <para>Implements the basic functionality of collection items.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.ComponentCollectionItem.#ctor">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.XtraNavBar.ComponentCollectionItem"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.ComponentCollectionItem.ItemChanged">
+            <summary>
+                <para>Fires when item property values are changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.ComponentCollectionItem.Name">
+            <summary>
+                <para>Gets or sets the item's name.
+</para>
+            </summary>
+            <value>A string value representing the name of the item.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.CollectionItemEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.Collection.CollectionItemChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.CollectionItemEventHandler.Invoke(System.Object,DevExpress.XtraNavBar.CollectionItemEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraNavBar.Collection.CollectionItemChanged"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		An object representing the source of the event (typically the collection whose item has been changed).
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraNavBar.CollectionItemEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.CollectionItemEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraNavBar.Collection.CollectionItemChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.CollectionItemEventArgs.#ctor(System.Object)">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.XtraNavBar.CollectionItemEventArgs"/> class.
+</para>
+            </summary>
+            <param name="item">
+		An object representing the item whose changes invoked the <see cref="E:DevExpress.XtraNavBar.Collection.CollectionItemChanged"/> event.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraNavBar.CollectionItemEventArgs.Item">
+            <summary>
+                <para>Gets the item whose changes invoked the <see cref="E:DevExpress.XtraNavBar.Collection.CollectionItemChanged"/> event.
+</para>
+            </summary>
+            <value>An object representing the item whose property changes caused the <see cref="E:DevExpress.XtraNavBar.Collection.CollectionItemChanged"/> event to fire.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.Collection">
+
+            <summary>
+                <para>Serves as a base for classes maintaining a collection of items.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.Collection.#ctor">
+            <summary>
+                <para>Creates an instance of the <see cref="T:DevExpress.XtraNavBar.Collection"/> class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.Collection.Add(DevExpress.XtraNavBar.ICollectionItem)">
+            <summary>
+                <para>Adds a specified item to the end of the collection.
+</para>
+            </summary>
+            <param name="item">
+		An object supporting the <see cref="T:DevExpress.XtraNavBar.ICollectionItem"/> interface representing an item to be added.
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.Collection.CollectionChanged">
+            <summary>
+                <para>Fires when the number or arrangement of items within the collection changes.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraNavBar.Collection.CollectionItemChanged">
+            <summary>
+                <para>Fires when property values of a collection item change.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.Collection.IndexOf(DevExpress.XtraNavBar.ICollectionItem)">
+            <summary>
+                <para>Returns the specified item's position within the collection.
+</para>
+            </summary>
+            <param name="item">
+		An object supporting the <see cref="T:DevExpress.XtraNavBar.ICollectionItem"/> interface whose index is to be determined.
+
+            </param>
+            <returns>An integer value representing the zero-based index of the specified item within the collection.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.Collection.Insert(System.Int32,DevExpress.XtraNavBar.ICollectionItem)">
+            <summary>
+                <para>Inserts the specified item into the specified position within the collection.
+</para>
+            </summary>
+            <param name="index">
+		An integer value specifying the zero-based index at which the item is added.
+
+            </param>
+            <param name="item">
+		An object supporting the <see cref="T:DevExpress.XtraNavBar.ICollectionItem"/> interface which is to be inserted to the collection.
+
+            </param>
+            <returns>An object representing the added item.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.Collection.Move(System.Int32,System.Int32)">
+            <summary>
+                <para>Moves the item to another position within the list.
+</para>
+            </summary>
+            <param name="fromIndex">
+		An integer value specifying the zero-based index of the item to be moved.
+
+            </param>
+            <param name="toIndex">
+		An integer value specifying the zero-based destination index of the moved item.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraNavBar.Collection.Remove(DevExpress.XtraNavBar.ICollectionItem)">
+            <summary>
+                <para>Removes the specified item from the collection.
+</para>
+            </summary>
+            <param name="item">
+		An object supporting the <see cref="T:DevExpress.XtraNavBar.ICollectionItem"/> interface representing the item to be removed.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarState">
+
+            <summary>
+                <para>Contains values representing a user action performed over the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> control.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarState.ContentButtonPressed">
+            <summary>
+                <para>The content button is being pressed (in the NavigationPane paint style).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarState.DownButtonPressed">
+            <summary>
+                <para>A user is currently pressing the down scroll button.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarState.ExpandButtonPressed">
+            <summary>
+                <para>The expand button is being pressed (in the NavigationPane paint style).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarState.GroupPressed">
+            <summary>
+                <para>A user is curently pressing a group caption.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarState.LinkDragging">
+            <summary>
+                <para>A user is currently dragging a link.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarState.LinkPressed">
+            <summary>
+                <para>A user is currently pressing a link.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarState.NavigationPaneOveflowButton">
+            <summary>
+                <para>A user is currently pressing a button within the Overflow panel when the "NavigationPane" view is applied.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarState.NavigationPaneSizing">
+            <summary>
+                <para>A user is currently dragging the splitter when the "NavigationPane" view is applied. The splitter is displayed between the active group and the group buttons in this view.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarState.Normal">
+            <summary>
+                <para>No user operation are currently performed over the control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarState.UpButtonPressed">
+            <summary>
+                <para>A user is currently pressing the up scroll button.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarHitTest">
+
+            <summary>
+                <para>Contains values identifying elements of the <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> control.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.ContentButton">
+            <summary>
+                <para>The test point belongs to the content button (in the NavigationPane paint style).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.DownButton">
+            <summary>
+                <para>The test point is over a down scroll button.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.ExpandButton">
+            <summary>
+                <para>The test point belongs to the expand button (in the NavigationPane paint style).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.GroupBottom">
+            <summary>
+                <para>The test point is over a group's bottom header, these are displayed when the XtraNavBar is painted using the <b>SkinExplorerBarView</b> style.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.GroupBottomButton">
+            <summary>
+                <para>The test point is over a button used to expand/collapse a group. Such a button is displayed at the bottom of each group when the XtraNavBar control is painted using the <b>SkinExplorerBarView</b> style.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.GroupCaption">
+            <summary>
+                <para>The test point is over a group caption.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.GroupCaptionButton">
+            <summary>
+                <para>The test point is over a group expanding/collapsing button.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.GroupClient">
+            <summary>
+                <para>The test point is over a group's client area.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.Link">
+            <summary>
+                <para>The test point is over a link.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.LinkCaption">
+            <summary>
+                <para>The test point is over a link caption.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.LinkImage">
+            <summary>
+                <para>The test point is over a link image.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.NavigationPaneHeader">
+            <summary>
+                <para>The test point is over the header that is displayed at the control's top edge when the "NavigationPane" view is applied.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.NavigationPaneOverflowPanel">
+            <summary>
+                <para>The test point is over the empty region of the Overflow panel. This panel is available when the "NavigationPane" view is applied.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.NavigationPaneOverflowPanelButton">
+            <summary>
+                <para>The test point is over a button within the Overflow panel that is available when the "NavigationPane" view is applied.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.NavigationPaneSplitter">
+            <summary>
+                <para>The test point is over the splitter that divides the currently expanded group from group buttons when the "NavigationPane" view is applied.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.None">
+            <summary>
+                <para>The test point is not over one of the mentioned elements or outside the control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarHitTest.UpButton">
+            <summary>
+                <para>The test point is over an up scroll button.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraNavBar.NavBarDragDrop">
+
+            <summary>
+                <para>Contains values specifying drag-and-drop options.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarDragDrop.AllowDrag">
+            <summary>
+                <para>If active for a <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> control, its links are allowed to be dragged. If active for a group, a user can drag items of this group.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarDragDrop.AllowDrop">
+            <summary>
+                <para>If active for a <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> control, links of this control can be dropped onto it. If active for a group, links of the control can be dropped onto this group. Links of other controls cannot be dropped unless the <b>AllowOuterDrop</b> option is active. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarDragDrop.AllowOuterDrop">
+            <summary>
+                <para>If active for a <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> control, links of other <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> controls can be dropped onto the control. If active for a group, links of other controls can be dropped onto this group. Use the <b>AllowDrop</b> option to specify whether links of this control can be dropped onto the control/group.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarDragDrop.Default">
+            <summary>
+                <para>If active for a <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> control, enables the <b>AllowDrag</b> and <b>AllowDrop</b> options and disables all others. If active for a group, the group inherits the control's set of drag-and-drop options.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraNavBar.NavBarDragDrop.None">
+            <summary>
+                <para>If active, disables all other options. Drag-and-drop operations are prohibited for a control/group in such a case.
+</para>
+            </summary>
+
+
+        </member>
+    </members>
+</doc>
