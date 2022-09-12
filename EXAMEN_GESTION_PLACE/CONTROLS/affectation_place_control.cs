@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EXAMEN_GESTION_PLACE.CLASSES;
+using AForge;
+using AForge.Video;
+using AForge.Video.DirectShow;
+using ZXing;
+using ZXing.Aztec;
 
 namespace EXAMEN_GESTION_PLACE.CONTROLS
 {
@@ -47,11 +52,16 @@ namespace EXAMEN_GESTION_PLACE.CONTROLS
             //    MessageBox.Show(ex.Message);
             //}
         }
-
+        FilterInfoCollection filterInfoCollection;
+        VideoCaptureDevice captureDevise; 
         private void affectation_place_control_Load(object sender, EventArgs e)
         {
             try
             {
+                filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+                foreach (FilterInfo filterInfo in filterInfoCollection)
+                    cboDevice.Items.Add(filterInfo.Name);
+                cboDevice.SelectedIndex = 0;
                 //dataGridView1.DataSource =  principal_class.GetInstance().GetTable("exemple_qr");
             }catch(Exception ex)
             {
@@ -83,5 +93,43 @@ namespace EXAMEN_GESTION_PLACE.CONTROLS
                 MessageBox.Show(ex.Message);
             }
         }
+      
+        
+
+        private void gunaButton1_Click_1(object sender, EventArgs e)
+        {
+            captureDevise = new VideoCaptureDevice(filterInfoCollection[cboDevice.SelectedIndex].MonikerString);
+
+            //captureDevise.NewFrame += CaptureDevice_NewFrame;
+            // captureDevise.NewFrame +=
+            //captureDevise.Start();
+
+        }
+
+        private void txt_result_OnValueChanged(object sender, EventArgs e)
+        {
+            if (txt_result.Text.Length==5)
+                
+            {
+                var ref_qr = txt_result.Text;
+                //principal_class.GetInstance().getAllBYID(gunaLabel1, gunaLabel2, gunaLabel3, pictureEdit1);
+                principal_class.GetInstance().retreivePhoto("photo", "t_etudiant", "id_etudiant", ref_qr, pictureEdit1);
+                txt_result.Text = "";
+            }
+            else
+            {
+
+            }
+
+        }
+
+
+        //private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        //{
+        //    //throw new NotImplementedException();
+        //    pictureEdit1.Image = (Bitmap)eventArgs.
+        //}
+
+
     }
 }

@@ -28,40 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(affectation_place_control));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
-            this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
+            this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
-            this.gunaGroupBox3 = new Guna.UI.WinForms.GunaGroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaGroupBox3 = new Guna.UI.WinForms.GunaGroupBox();
+            this.cboDevice = new System.Windows.Forms.ComboBox();
+            this.txt_result = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.gunaGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.gunaGroupBox2.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_result);
+            this.groupBox1.Controls.Add(this.gunaButton1);
             this.groupBox1.Controls.Add(this.bunifuMaterialTextbox1);
             this.groupBox1.Controls.Add(this.gunaDataGridView1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -71,6 +77,32 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "SELECT  WHO WE WANT AFFECT PLACE";
+            // 
+            // gunaButton1
+            // 
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
+            this.gunaButton1.ImageSize = new System.Drawing.Size(35, 35);
+            this.gunaButton1.Location = new System.Drawing.Point(376, 18);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Radius = 20;
+            this.gunaButton1.Size = new System.Drawing.Size(91, 41);
+            this.gunaButton1.TabIndex = 19;
+            this.gunaButton1.Text = "sho";
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click_1);
             // 
             // bunifuMaterialTextbox1
             // 
@@ -94,37 +126,37 @@
             // 
             // gunaDataGridView1
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.gunaDataGridView1.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(11, 66);
+            this.gunaDataGridView1.Location = new System.Drawing.Point(11, 103);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.RowHeadersVisible = false;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(587, 218);
+            this.gunaDataGridView1.Size = new System.Drawing.Size(587, 162);
             this.gunaDataGridView1.TabIndex = 0;
             this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -165,28 +197,6 @@
             this.gunaGroupBox1.Text = "SELECTIONNE LA DATE D\'EXAMEN";
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
             // 
-            // gunaDateTimePicker1
-            // 
-            this.gunaDateTimePicker1.BaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaDateTimePicker1.CustomFormat = null;
-            this.gunaDateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Location = new System.Drawing.Point(18, 44);
-            this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
-            this.gunaDateTimePicker1.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Size = new System.Drawing.Size(237, 30);
-            this.gunaDateTimePicker1.TabIndex = 17;
-            this.gunaDateTimePicker1.Text = "dimanche 11 septembre 2022";
-            this.gunaDateTimePicker1.Value = new System.DateTime(2022, 9, 11, 16, 5, 29, 889);
-            // 
             // gunaButton3
             // 
             this.gunaButton3.AnimationHoverSpeed = 0.07F;
@@ -213,6 +223,28 @@
             this.gunaButton3.Text = "SHOW EXAM PROGRAM";
             this.gunaButton3.Click += new System.EventHandler(this.gunaButton3_Click);
             // 
+            // gunaDateTimePicker1
+            // 
+            this.gunaDateTimePicker1.BaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker1.BorderColor = System.Drawing.Color.Silver;
+            this.gunaDateTimePicker1.CustomFormat = null;
+            this.gunaDateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker1.Location = new System.Drawing.Point(18, 44);
+            this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
+            this.gunaDateTimePicker1.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker1.Size = new System.Drawing.Size(237, 30);
+            this.gunaDateTimePicker1.TabIndex = 17;
+            this.gunaDateTimePicker1.Text = "dimanche 11 septembre 2022";
+            this.gunaDateTimePicker1.Value = new System.DateTime(2022, 9, 11, 16, 5, 29, 889);
+            // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.gunaGroupBox2);
@@ -227,6 +259,7 @@
             this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox2.BaseColor = System.Drawing.Color.White;
             this.gunaGroupBox2.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox2.Controls.Add(this.textBox1);
             this.gunaGroupBox2.Controls.Add(this.pictureEdit1);
             this.gunaGroupBox2.Controls.Add(this.groupBox4);
             this.gunaGroupBox2.Controls.Add(this.groupBox3);
@@ -235,66 +268,27 @@
             this.gunaGroupBox2.LineColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox2.Location = new System.Drawing.Point(13, 28);
             this.gunaGroupBox2.Name = "gunaGroupBox2";
-            this.gunaGroupBox2.Size = new System.Drawing.Size(464, 568);
+            this.gunaGroupBox2.Size = new System.Drawing.Size(464, 539);
             this.gunaGroupBox2.TabIndex = 17;
             this.gunaGroupBox2.Text = "STUDENT DESTAILS INFORMATIONS";
             this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
             // 
-            // gunaGroupBox3
+            // textBox1
             // 
-            this.gunaGroupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaGroupBox3.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaGroupBox3.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox3.Location = new System.Drawing.Point(12, 420);
-            this.gunaGroupBox3.Name = "gunaGroupBox3";
-            this.gunaGroupBox3.Size = new System.Drawing.Size(611, 186);
-            this.gunaGroupBox3.TabIndex = 18;
-            this.gunaGroupBox3.Text = "OTHERS EXAM DETAILS";
-            this.gunaGroupBox3.TextLocation = new System.Drawing.Point(10, 8);
+            this.textBox1.Location = new System.Drawing.Point(88, 348);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(278, 188);
+            this.textBox1.TabIndex = 4;
             // 
-            // groupBox2
+            // pictureEdit1
             // 
-            this.groupBox2.Controls.Add(this.gunaLabel1);
-            this.groupBox2.Location = new System.Drawing.Point(17, 45);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(133, 50);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "NAME";
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(30, 21);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(57, 17);
-            this.gunaLabel1.TabIndex = 1;
-            this.gunaLabel1.Text = "lbl_nom";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.gunaLabel2);
-            this.groupBox3.Location = new System.Drawing.Point(156, 45);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(153, 50);
-            this.groupBox3.TabIndex = 1;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "POSTNAME";
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.gunaLabel2.Location = new System.Drawing.Point(30, 21);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(84, 17);
-            this.gunaLabel2.TabIndex = 1;
-            this.gunaLabel2.Text = "lbl_postnom";
+            this.pictureEdit1.Location = new System.Drawing.Point(88, 115);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit1.Size = new System.Drawing.Size(278, 223);
+            this.pictureEdit1.TabIndex = 3;
             // 
             // groupBox4
             // 
@@ -317,18 +311,96 @@
             this.gunaLabel3.TabIndex = 1;
             this.gunaLabel3.Text = "lbl_prenom";
             // 
-            // pictureEdit1
+            // groupBox3
             // 
-            this.pictureEdit1.Location = new System.Drawing.Point(88, 115);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(278, 267);
-            this.pictureEdit1.TabIndex = 3;
+            this.groupBox3.Controls.Add(this.gunaLabel2);
+            this.groupBox3.Location = new System.Drawing.Point(156, 45);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(153, 50);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "POSTNAME";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.gunaLabel2.Location = new System.Drawing.Point(30, 21);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(84, 17);
+            this.gunaLabel2.TabIndex = 1;
+            this.gunaLabel2.Text = "lbl_postnom";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.gunaLabel1);
+            this.groupBox2.Location = new System.Drawing.Point(17, 45);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(133, 50);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "NAME";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.gunaLabel1.Location = new System.Drawing.Point(30, 21);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(57, 17);
+            this.gunaLabel1.TabIndex = 1;
+            this.gunaLabel1.Text = "lbl_nom";
+            // 
+            // gunaGroupBox3
+            // 
+            this.gunaGroupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox3.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox3.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaGroupBox3.LineColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox3.Location = new System.Drawing.Point(12, 420);
+            this.gunaGroupBox3.Name = "gunaGroupBox3";
+            this.gunaGroupBox3.Size = new System.Drawing.Size(611, 186);
+            this.gunaGroupBox3.TabIndex = 18;
+            this.gunaGroupBox3.Text = "OTHERS EXAM DETAILS";
+            this.gunaGroupBox3.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // cboDevice
+            // 
+            this.cboDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDevice.FormattingEnabled = true;
+            this.cboDevice.Location = new System.Drawing.Point(517, 46);
+            this.cboDevice.Name = "cboDevice";
+            this.cboDevice.Size = new System.Drawing.Size(121, 21);
+            this.cboDevice.TabIndex = 19;
+            // 
+            // txt_result
+            // 
+            this.txt_result.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_result.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txt_result.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_result.HintForeColor = System.Drawing.Color.Empty;
+            this.txt_result.HintText = "";
+            this.txt_result.isPassword = false;
+            this.txt_result.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txt_result.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_result.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txt_result.LineThickness = 3;
+            this.txt_result.Location = new System.Drawing.Point(426, 79);
+            this.txt_result.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_result.Name = "txt_result";
+            this.txt_result.Size = new System.Drawing.Size(148, 21);
+            this.txt_result.TabIndex = 20;
+            this.txt_result.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_result.OnValueChanged += new System.EventHandler(this.txt_result_OnValueChanged);
             // 
             // affectation_place_control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cboDevice);
             this.Controls.Add(this.gunaGroupBox3);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gunaGroupBox1);
@@ -342,13 +414,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.gunaGroupBox2.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gunaGroupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -371,5 +444,9 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private System.Windows.Forms.ComboBox cboDevice;
+        private System.Windows.Forms.TextBox textBox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txt_result;
     }
 }

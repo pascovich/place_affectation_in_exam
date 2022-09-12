@@ -201,7 +201,6 @@ F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectatio
 F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\bin\Debug\es\DevExpress.Pdf.v15.2.Core.resources.dll
 F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
 F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
-F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\obj\Debug\EXAMEN_GESTION_PLACE.csprojResolveAssemblyReference.cache
 F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\obj\Debug\EXAMEN_GESTION_PLACE.CONTROLS.affectation_place_control.resources
 F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\obj\Debug\EXAMEN_GESTION_PLACE.CONTROLS.etudiant_control.resources
 F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\obj\Debug\EXAMEN_GESTION_PLACE.CONTROLS.examen_control.resources
@@ -217,3 +216,10 @@ F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectatio
 F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\obj\Debug\EXAMEN_GESTION_PLACE.Properties.Resources.resources
 F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\obj\Debug\EXAMEN_GESTION_PLACE.csproj.GenerateResource.Cache
 F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\obj\Debug\EXAMEN_GESTION_PLACE.exe.licenses
+F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\bin\Debug\AForge.Video.DirectShow.dll
+F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\bin\Debug\zxing.dll
+F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\bin\Debug\zxing.presentation.dll
+F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\bin\Debug\AForge.Video.DirectShow.xml
+F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\bin\Debug\zxing.xml
+F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\bin\Debug\zxing.presentation.xml
+F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\obj\Debug\EXAMEN_GESTION_PLACE.csprojResolveAssemblyReference.cache

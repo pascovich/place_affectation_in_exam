@@ -1,4 +1,5 @@
-DevExpress.Patch.InMemoryPatch, DevExpress.Patch.Common, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7fc7bfca2443de66
 DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
-DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
 DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.Patch.InMemoryPatch, DevExpress.Patch.Common, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7fc7bfca2443de66
+DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a

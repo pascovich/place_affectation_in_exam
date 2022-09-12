@@ -186,6 +186,65 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
                 cmd.Dispose();
             }
         }
+        public void getAllBYID(GunaLabel l1,GunaLabel l2,GunaLabel l3,PictureEdit pic1)
+        {
+            innitialiseConnect();
+            if (!con.State.ToString().Trim().ToLower().Equals("open")) con.Open();
+            using (IDbCommand cmd = con.CreateCommand())
+            {
+                //cmd.CommandText = "SELECT montant_a_payer from tfacture where id_facture=" + a;
+                cmd.CommandText = "SELECT nom,postnom,prenom,photo from t_etudiant where";
+
+                IDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    l1.Text = rd[0].ToString();
+                    l2.Text = rd[1].ToString();
+                    l3.Text = rd[2].ToString();
+
+                    //pic1.EditValue = rd[3].FormattedValue;
+                    //principal.GetInstance().retreivePhoto("photo", "tclient", "id_client", txt_id.Text, pictureBox1);
+                }
+                rd.Close();
+                rd.Dispose();
+                cmd.Dispose();
+            }
+        }
+        public void retreivePhoto(string champPhoto, string nomTable, string nomChampcode, string value, PictureEdit pic)
+        {
+            try
+            {
+                innitialiseConnect();
+                if (!con.State.ToString().Trim().ToLower().Equals("open")) con.Open();
+
+                cmd = new SqlCommand("SELECT " + champPhoto + " from " + nomTable + " WHERE  format(" + nomChampcode + ",'00000') = '" + value + "'", con);
+                dt = new SqlDataAdapter(cmd);
+                Object result = cmd.ExecuteScalar();
+
+                if (DBNull.Value == (result))
+                {
+                }
+                else
+                {
+                    Byte[] buffer = (Byte[])result;
+                    MemoryStream ms = new MemoryStream(buffer);
+                    Image image = Image.FromStream(ms);
+                    pic.Image = image;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                cmd.Dispose();
+                con.Close();
+            }
+        }
+
         public void AfficheComboBoxOccupation(System.Windows.Forms.ComboBox cb, Label prix, string reference)
         {
             innitialiseConnect();
@@ -320,6 +379,7 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
             return _id.ToString();
         }
 
+        
         public string GetQllInfoQr(String champ, String table, String champcondition1, String valeur1)
         {
             string _id = string.Empty;
