@@ -186,44 +186,29 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
                 cmd.Dispose();
             }
         }
-        public void getAllBYID(GunaLabel nom,GunaLabel postnom,GunaLabel prenom, GunaLabel matr,GunaLabel des_aff,GunaLabel des_ann,GunaLabel des_cours,GunaLabel des_session, string nomTable,string nomChampcode,string value,DateTime dat)
+        public void getAllBYID(GunaLabel id_et,GunaLabel id_examen,GunaLabel nom,GunaLabel postnom,GunaLabel prenom, GunaLabel matr,GunaLabel des_aff,GunaLabel des_ann,GunaLabel des_cours,GunaLabel des_session, string nomTable,string nomChampcode,string value,DateTime dat)
         {
             innitialiseConnect();
             if (!con.State.ToString().Trim().ToLower().Equals("open")) con.Open();
             using (IDbCommand cmd = con.CreateCommand())
             {
-                cmd.CommandText= "SELECT nom,postnom,prenom,matricule,designation_affecter,designation_annee,designation_cours,designation_session from " + nomTable + " WHERE date_examen=@date1 and format(" + nomChampcode + ",'00000') = '" + value + "'";
+                cmd.CommandText= "SELECT id_inscription,id_examen,nom,postnom,prenom,matricule,designation_affecter,designation_annee,designation_cours,designation_session from " + nomTable + " WHERE date_examen=@date1 and format(" + nomChampcode + ",'00000') = '" + value + "'";
                 setParameterIDB(cmd, "@date1", DbType.DateTime, 30, dat);
-                //setParameter(cmd, "@date1", DbType.DateTime, 30, dat);
+               
                 IDataReader rd = cmd.ExecuteReader();
-                ///begin
-                //innitialiseConnect();
-                //if (!con.State.ToString().Trim().ToLower().Equals("open")) ;
-                //con.Open();
-                //cmd = new SqlCommand("SELECT * FROM " + nomTable + " WHERE date_examen=@date1", con);
-
-                //setParameter(cmd, "@date1", DbType.DateTime, 30, val1);
-                //dt = null;
-                //dt = new SqlDataAdapter(cmd);
-                //ds = new DataSet();
-
-                //dt.Fill(ds);
-                //con.Close();
-                //return ds.Tables[0];
-                //end
-
-
-
+              
                 while (rd.Read())
                 {
-                    nom.Text = rd[0].ToString();
-                    postnom.Text = rd[1].ToString();
-                    prenom.Text = rd[2].ToString();
-                    matr.Text = rd[3].ToString();
-                    des_aff.Text = rd[4].ToString();
-                    des_ann.Text = rd[5].ToString(); 
-                    des_cours.Text = rd[6].ToString();
-                    des_session.Text = rd[7].ToString();
+                    id_et.Text = rd[0].ToString();
+                    id_examen.Text = rd[1].ToString();
+                    nom.Text = rd[2].ToString();
+                    postnom.Text = rd[3].ToString();
+                    prenom.Text = rd[4].ToString();
+                    matr.Text = rd[5].ToString();
+                    des_aff.Text = rd[6].ToString();
+                    des_ann.Text = rd[7].ToString(); 
+                    des_cours.Text = rd[8].ToString();
+                    des_session.Text = rd[9].ToString();
 
                 }
                 rd.Close();
@@ -400,7 +385,39 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
             return _id.ToString();
         }
 
-        
+        public string GetNextNumPlace()
+        {
+            string _id = string.Empty;
+
+            innitialiseConnect();
+            if (!con.State.ToString().Trim().ToLower().Equals("open")) con.Open();
+            try
+            {
+                SqlCommand cmd = con.CreateCommand();
+                //cmd.CommandText = "SELECT DISTINCT " + champ + " FROM " + table + " WHERE " + champcondition1 + " = @valeur1";
+                cmd.CommandText = "SELECT top 1 id_ranger FROM t_ranger where chaise_restante_par_examen <> 0";
+               // SELECT top 1 chaise_restante_par_examen FROM t_ranger where chaise_restante_par_examen <> 0
+                //cmd.Parameters.Add(new SqlParameter("@valeur1", SqlDbType.NVarChar)).Value = valeur1;
+                SqlDataReader dr = null;
+                dr = cmd.ExecuteReader();
+                if (dr.HasRows)
+                    while (dr.Read())
+                        _id = dr.GetFieldValue<object>(0).ToString();
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return _id.ToString();
+        }
+
+
+
         public string GetQllInfoQr(String champ, String table, String champcondition1, String valeur1)
         {
             string _id = string.Empty;
@@ -1062,7 +1079,6 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
         {
             Random rnd = new Random();
             MessageBox.Show(rnd.Next().ToString());
-           
         }
     }
 }

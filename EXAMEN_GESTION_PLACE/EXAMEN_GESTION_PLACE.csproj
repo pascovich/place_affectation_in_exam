@@ -184,6 +184,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REPORTS\rpt_affect_place.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REPORTS\rpt_affect_place.Designer.cs">
+      <DependentUpon>rpt_affect_place.cs</DependentUpon>
+    </Compile>
     <Compile Include="REPORTS\rpt_carte.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -236,6 +242,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="REPORTS\rpt_affect_place.resx">
+      <DependentUpon>rpt_affect_place.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="REPORTS\rpt_carte.resx">
       <DependentUpon>rpt_carte.cs</DependentUpon>
     </EmbeddedResource>
