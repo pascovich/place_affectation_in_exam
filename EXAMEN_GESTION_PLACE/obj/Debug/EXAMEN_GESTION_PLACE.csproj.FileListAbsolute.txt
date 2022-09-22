@@ -317,3 +317,4 @@ F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectatio
 F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\bin\Debug\ja\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
 F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\bin\Debug\ru\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
 F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\obj\Debug\EXAMEN_GESTION_PLACE.REPORTS.rpt_carte.resources
+F:\pascovich\MES COURS\L1IG\GENIE LOGICIEL\EXAMEN_GESTION_PLACE\place_affectation_in_exam\EXAMEN_GESTION_PLACE\obj\Debug\EXAMEN_GESTION_PLACE.REPORTS.rpt_affect_place.resources

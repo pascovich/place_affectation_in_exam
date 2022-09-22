@@ -13,6 +13,8 @@ using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
 using ZXing.Aztec;
+using EXAMEN_GESTION_PLACE.REPORTS;
+using DevExpress.XtraReports.UI;
 
 namespace EXAMEN_GESTION_PLACE.CONTROLS
 {
@@ -118,6 +120,8 @@ namespace EXAMEN_GESTION_PLACE.CONTROLS
                 principal_class.GetInstance().retreivePhoto("photo", "t_etudiant", "id_etudiant", ref_qr, pictureEdit1);
 
                 txt_result.Text = "";
+                
+                
             }
             else
             {
@@ -144,6 +148,15 @@ namespace EXAMEN_GESTION_PLACE.CONTROLS
 
                     principal_class.GetInstance().operation_affectation_place(f);
 
+                    try
+                    {
+                        getPrint();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
                     txt_id_ranger.Text = "";
                     txt_id_etudiant.Text = "";
                     txt_id_examen.Text = "";
@@ -161,6 +174,21 @@ namespace EXAMEN_GESTION_PLACE.CONTROLS
                     MessageBox.Show("scan your badge please");
                 }
             }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void getPrint()
+        {
+            try
+            {
+
+                rpt_affect_place rptt = new rpt_affect_place();
+                rptt.DataSource = principal_class.GetInstance().get_Report_SS2("[show_aff_rpt_view]", int.Parse(txt_id_etudiant.Text),int.Parse(txt_id_examen.Text));
+                ReportPrintTool printTool = new ReportPrintTool(rptt);
+                printTool.ShowPreviewDialog();
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

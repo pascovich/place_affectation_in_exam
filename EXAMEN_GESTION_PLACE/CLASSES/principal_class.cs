@@ -1075,6 +1075,28 @@ namespace EXAMEN_GESTION_PLACE.CLASSES
             }
             return dst;
         }
+        public DataSet get_Report_SS2(string nomTable, int idTable,int id_examen)
+        {
+            DataSet dst;
+            try
+            {
+                innitialiseConnect();
+                if (!con.State.ToString().ToLower().Equals("open")) con.Open();
+                cmd = new SqlCommand("SELECT * FROM " + nomTable + " WHERE id_inscription = " + idTable + " AND id_examen = "+id_examen+"", con);
+                dt = new SqlDataAdapter(cmd);
+                dst = new DataSet();
+                dt.Fill(dst, nomTable);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                dt.Dispose(); con.Close();
+            }
+            return dst;
+        }
         public void generaterandom()
         {
             Random rnd = new Random();
